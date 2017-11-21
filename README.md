@@ -9,7 +9,7 @@ PowerShell provides better performance because it does not require a GUI. CLI ma
 Here are some of the things you can do with PowerShell:
 
 * Retrieve dependencies
-* Configure and clean systems for testing or deployment
+* Provision and configure systems for testing or deployment
 * Check network connectivity
 * Manage Azure services
 * Add and manage Active Directory users
