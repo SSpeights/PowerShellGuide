@@ -15,5 +15,7 @@ Here are some of the things you can do with PowerShell:
 * Add and manage Active Directory users
 * Structure and pipeline complex tasks
 
-I hope that PS is already a little bit convincing. There are certainly alternatives to creating Powershell solutions but for Operating in a Windows DevOps ecosystem, PowerShell is perhaps the best solution. Let's take a look at it in the follwoing sections.
+I hope that PS already sounds a little bit convincing. There are certainly alternatives to creating Powershell solutions but for Operating in a Windows DevOps ecosystem, PowerShell is perhaps the best solution. Let's take a look at it in the follwoing sections.
+
+Like other "Haufe Guides" this book does not profess to contain all of the information. The books purpose is to provide a good narrative and structure to help you on your PS-journey and get started with PowerShell. That being said the book itself will lean towards tasks that must be performed at Haufe Group, and, when it's done, there will be many contextually-places links that will take you to articles, tutorials, github repos and so on. These links will try to deep-link you right to the important information so you can learn what you need to know right away. 
 
