@@ -4,7 +4,7 @@ PowerShell has quite a few resources that can help you get up to speed with this
 
 * [Microsoft's PowerShell Documentation](https://docs.microsoft.com/en-us/powershell/)
 * [PowerShell Communities including StackOverflow](https://docs.microsoft.com/en-us/powershell/#pivot=main&panel=community)
-* [The Powershell Gallery](https://www.powershellgallery.com/) - Official repository for PS-Module and PS-Scripts
+* [The Powershell Gallery](https://www.powershellgallery.com/) - Official repository for PS-Module and PS-Scripts that you can download and use
 * [PowerShell Magazine](http://www.powershellmagazine.com/) \(PS-people like Keith Hill post articles here\)
 
 These resources are geared toward finding more tutorials and connecting with people to get anwers to questions. But the real star of the resource-show is the PowerShell CLI itself.
@@ -27,7 +27,5 @@ Before you do this though, you should be sure that you have all of the help on y
 
 ### Find-Module
 
-Like other repositories - e.g. Docker Hub - PowerShell has 
-
-
+Like other repositories - e.g. Docker Hub - PowerShell has
 
