@@ -8,7 +8,7 @@ You won't need it right away but an important resource will be the Powershell Ga
 
 ## Powershell command structure
 
-Powershell cmdlets have a VERB-NOUN structure and are generally case insensitive. There are other aspects of cmdlets that you need to note. These are: 
+Powershell cmdlets have a VERB-NOUN structure and are generally case insensitive. There are other aspects of cmdlets that you need to note. These are:
 
 * [Aliases](https://msdn.microsoft.com/en-us/library/dd878329%28v=vs.85%29.aspx)
 * [Positional Parameters \(but also named parameters\)](https://msdn.microsoft.com/en-us/library/dd878252%28v=vs.85%29.aspx)
@@ -30,19 +30,31 @@ While command nouns are configurable, verbs are not. Verbs are curated by Micros
 
 ## The Pipeline
 
-The pipeline is one of the features that makes PowerShell such a powerful tool. If you have worked with Linux you probably already know how pipe works. Piping enables stringing commands together - using the pipe "\|" symbol - to pass the result of a command to the next command. 
+The pipeline is one of the features that makes PowerShell such a powerful tool. If you have worked with Linux you probably already know how pipe works. Piping enables stringing commands together - using the pipe "\|" symbol - to pass the result of a command to the next command.
 
-The difference between PS piping and Linux Shell piping is, that the PowerShell is passing the result of a command as a .NET object and not as text, providing you more ways to use this returned result. That's not important right now. What's important is that you can chain single commands to implement the "Get \| Process \| Output" pipeline, which is a common powershell output where three things happen. 
+The difference between PS piping and Linux Shell piping is, that the PowerShell is passing the result of a command as a .NET object and not as text, providing you more ways to use this returned result. That's not important right now. What's important is that you can chain single commands to implement the "Get \| Process \| Output" pipeline, which is a common powershell output where three things happen.
 
 * You get some data that you need
 * You process that data and "do" something with it.
 * You output the results of your processing
 
-And you can repeat this pattern mutiple times, using the output of the previous pipeline a the "Get" data for the next one. 
+And you can repeat this pattern mutiple times, using the output of the previous pipeline a the "Get" data for the next one, enabling real power from the command line!
 
-### Scripts
+## Scripts
 
 You persist PS-cmdlet in .ps1 files. 
+
+Before I forget you can pipeline, directly into a PowerShell script. Try this. Create a .ps1 file with this code
+
+`foreach ($i in $input) {`
+
+`    $i`
+
+`}`
+
+ and from the PS-bash type - 1..20 \| .\&lt;FileName&gt;.ps1. The script should print numbers 1 - 20 to stdout - one number per line. 
+
+
 
 ### Functionality - the big picture
 
