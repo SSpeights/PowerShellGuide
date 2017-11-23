@@ -13,17 +13,22 @@ These resources are geared toward finding more tutorials and connecting with peo
 
 The easiest way to find out what you can do with PowerShell is to open the PS-console and type `get-help <ps-command>` or just `help <pscommand>.`
 
-Before you do this though, you should be sure that you have all of the help on your machine.
+Before you do this though, you should be sure that you have all of the help on your machine. 
+
+To do this, type `update-help` at the PS command prompt. 
 
 ### Finding useful commands
 
-* in the console
-* online
+To get a picture what kind of commands you can use
 
 ### Exemplary help
 
-* Examples
-* All
+* There are generally two ways to view help in the console itself or online - you can access both types from the command line. for help, just like anything else PowerShell, I recommend that you use the console. But, if you absolutely must have a more easily readable format, or if you cannot get the entire help page onto your computer you can always go online by adding the `-online` paramemter to your `get-help` command. 
+
+  Please also note that you when you make a help request, you can also ask for examples of a command or you can ask for the entire help page that contains all the help that there is. Some examples here are
+
+  * in the console 
+  * online
 
 ### Find-Module
 
