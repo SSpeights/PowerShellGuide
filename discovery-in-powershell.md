@@ -40,28 +40,29 @@ To get more specific you type in a get-command with \*stop\* as the filter: `gcm
 
 To see if it's the right one you call the help for this command with: `get-help stop-computer`.  Sure enough, with stop-computer you can shutdown local and remote computers.
 
-This is the "broad to narrow" search way to find commands in powershell. If you are just beginning with PowerShell, it is probably a good idea to find at least some of your commands like this.
+This is the "broad to narrow" search way to find commands in powershell. If you are just beginning with PowerShell, it is probably a good idea to find at least some of your commands like this. Remember, you may be working on headless servers in the future, and there will be no browser with which to google.
 
-**Achtung: Don't forget to google! **If this seems like a lot of work, I also found the "stop-computer" cmdlet by googling with "Powershell command to shut down computer": "stop-computer" was the first result; so in my opinion, googling is also a plausible alternative to discover PS-cmdlets, that allows you find what you want to do in plain text! Try googling for "Test network connection with PowerShell" and see what you get.
+**Achtung: Don't forget to google! **If this seems like a lot of work, I also found the "stop-computer" cmdlet by googling with "Powershell command to shut down computer": "stop-computer" was the first result; so in my opinion, googling is also a plausible alternative to discover PS-cmdlets, that allows you find what you want to do in plain text! Try googling for "Test network connection with PowerShell" and see what you get. once you find the command, you may want to move back to the console. 
 
 ## Exemplary help
 
 Not only does Powershell offer help pages from the console, you can call actual examples.
 
-Let's say you decide to not only save yourself from burnout but also save the company some money, by automating shutdown for yourtest and production remote systems - also at 18:00 everyday and you need a report of the results. To retrieve cmdlet examples, you add an "example" switch to your help cmdlet: `get-help stop-computer -example`.  
+Let's say you decide to not only save yourself from burnout but also save the company some money, by automating shutdown for yourtest and production remote systems - also at 18:00 everyday and you need a report of the results. To retrieve cmdlet examples, you add an "example" switch to your help cmdlet: `get-help stop-computer -example`.
 
 Examples are displayed in the console. Example number 2 fits your use case nicely and so you add it to a powershell script and schedule it to run at 18:00.
 
+There are other help switches that are useful and they are:
+
+* `get-help stop-computer -online `-  takes you to the "stop-computer" online help page \(Google may be faster here!\)
+
+* `get-help stop-computer -parameter <Parameter> `- displays help for one parameter of "stop-computer"
+
+* `get-help stop-computer -detail `- displays the help page with detailed documentation for parameters
+
+* `get-help stop-computer -full `- displays everything
 
 
-
-
-* There are generally two ways to view help in the console itself or online - you can access both types from the command line. for help, just like anything else PowerShell, I recommend that you use the console. But, if you absolutely must have a more easily readable format, or if you cannot get the entire help page onto your computer you can always go online by adding the `-online` paramemter to your `get-help` command.
-
-  Please also note that you when you make a help request, you can also ask for examples of a command or you can ask for the entire help page that contains all the help that there is. Some examples here are
-
-  * in the console 
-  * online
 
 ## Find-Module
 
