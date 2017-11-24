@@ -1,10 +1,6 @@
 # Powershell Framework
 
-## Scope of Powershell
-
-## OPP - Other People's Powershell
-
-You won't need it right away but an important resource will be the Powershell Gallery. This is where curated PowerShell Modules and scripts get stored so others in the PS-Community can use them. Currently, there are over 2,500 modules and scripts in the Gallery. Hopefully, it can speed you up by exposing code that performs a function first. I mention this first, but in the discovery section, this will be mentioned last, because we have to learn a little about PowerShell first before we go and access other people's code.
+Understanding a little bit about how PowerShell works goes a long way to helping you find the PS-Resources your need and code PS more efficiently and comfortably. You should now have an integrated development environment and you can use the IDE to take a look at how Powershell is semantically structured and get and how PowerShell helps you to code faster.
 
 ## Powershell command structure
 
@@ -15,8 +11,6 @@ Powershell cmdlets have a VERB-NOUN structure and are generally case insensitive
 * [Powershell Verbs](http://go.microsoft.com/fwlink/?LinkID=160773)
 
 Achtung: We are providing links to web pages here but encourage you to use the Powershell console. To get a list of PS-verbs,open PowerShell and type `get-verb`.
-
-## Cmdlet Grouping
 
 ### Aliases
 
@@ -31,6 +25,8 @@ Also very cool are positional parameters. To set the parameter you only have to 
 ### Powershell Verbs
 
 While command nouns are configurable, verbs are not. Verbs are curated by Microsoft, and you can find the official list by clicking the link in the list above. Even better though, you can get a list of verbs by typing `get-verb` from the command prompt in the PS-Console
+
+**Verbs are grouped logically,** and it is a good idea get acquainted with, which verbs belong to which groups. Knowing verb grouping helps you to search more intuitively for cmdlets.
 
 ## The Pipeline
 

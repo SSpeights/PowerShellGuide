@@ -1,5 +1,7 @@
 # Getting savvy with PowerShell
 
+PowerShell feature set is huge, and one of the major tasks, when you decide to use PowerShell, is to figure out which commands you need to get your task done. Once you get started - realize that PowerShell is very big and that leveraging the "Find" resources both in the CLI and on the web will be important to working effectively.
+
 PowerShell has quite a few resources that can help you get up to speed with this technology. There are many cmdlets in PowerShell so it is important to find out what they do and how you can used them. In addition, there is a large Powershell community and you can get help using the normal channels. Major outlets for PowerShell ideas are -
 
 * [Microsoft's PowerShell Documentation](https://docs.microsoft.com/en-us/powershell/)
@@ -8,6 +10,10 @@ PowerShell has quite a few resources that can help you get up to speed with this
 * [PowerShell Magazine](http://www.powershellmagazine.com/) \(PS-people like Keith Hill post articles here\)
 
 These resources are geared toward finding more tutorials and connecting with people to get anwers to questions. But the real star of the resource-show is the PowerShell CLI itself.
+
+## OPP - Other People's Powershell
+
+You won't need it right away but an important resource will be the Powershell Gallery. This is where curated PowerShell Modules and scripts get stored so others in the PS-Community can use them. Currently, there are over 2,500 modules and scripts in the Gallery. Hopefully, it can speed you up by exposing code that performs a function first. I mention this first, but in the discovery section, this will be mentioned last, because we have to learn a little about PowerShell first before we go and access other people's code.
 
 ## Make sure help is up to date
 
@@ -42,7 +48,7 @@ To see if it's the right one you call the help for this command with: `get-help 
 
 This is the "broad to narrow" search way to find commands in powershell. If you are just beginning with PowerShell, it is probably a good idea to find at least some of your commands like this. Remember, you may be working on headless servers in the future, and there will be no browser with which to google.
 
-**Achtung: Don't forget to google! **If this seems like a lot of work, I also found the "stop-computer" cmdlet by googling with "Powershell command to shut down computer": "stop-computer" was the first result; so in my opinion, googling is also a plausible alternative to discover PS-cmdlets, that allows you find what you want to do in plain text! Try googling for "Test network connection with PowerShell" and see what you get. once you find the command, you may want to move back to the console. 
+**Achtung: Don't forget to google! **If this seems like a lot of work, I also found the "stop-computer" cmdlet by googling with "Powershell command to shut down computer": "stop-computer" was the first result; so in my opinion, googling is also a plausible alternative to discover PS-cmdlets, that allows you find what you want to do in plain text! Try googling for "Test network connection with PowerShell" and see what you get. once you find the command, you may want to move back to the console.
 
 ## Exemplary help
 
@@ -54,17 +60,15 @@ Examples are displayed in the console. Example number 2 fits your use case nicel
 
 There are other help switches that are useful and they are:
 
-* `get-help stop-computer -online `-  takes you to the "stop-computer" online help page \(Google may be faster here!\)
+* `get-help stop-computer -online`-  takes you to the "stop-computer" online help page \(Google may be faster here!\)
 
-* `get-help stop-computer -parameter <Parameter> `- displays help for one parameter of "stop-computer"
+* `get-help stop-computer -parameter <Parameter>`- displays help for one parameter of "stop-computer"
 
-* `get-help stop-computer -detail `- displays the help page with detailed documentation for parameters
+* `get-help stop-computer -detail`- displays the help page with detailed documentation for parameters
 
-* `get-help stop-computer -full `- displays everything
+* `get-help stop-computer -full`- displays everything
 
-
-
-## Find-Module
+## Find-Script / Find-Module
 
 Like other repositories - e.g. Docker Hub - PowerShell has
 
