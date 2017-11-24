@@ -6,11 +6,11 @@ Understanding a little bit about how PowerShell works goes a long way to helping
 
 Powershell cmdlets have a VERB-NOUN structure and are generally case insensitive. There are other aspects of cmdlets that you need to note. These are:
 
+* [Powershell Verbs](https://www.gitbook.com/book/sspeights/haufe-group-beginning-powershell-guide/edit#)
 * [Aliases](https://msdn.microsoft.com/en-us/library/dd878329%28v=vs.85%29.aspx)
 * [Positional Parameters \(but also named parameters\)](https://msdn.microsoft.com/en-us/library/dd878252%28v=vs.85%29.aspx)
-* [Powershell Verbs](http://go.microsoft.com/fwlink/?LinkID=160773)
 
-Achtung: We are providing links to web pages here but encourage you to use the Powershell console. To get a list of PS-verbs,open PowerShell and type `get-verb`.
+Achtung: We are providing links to web pages here but encourage you to use the Powershell console. To get a list of PS-verbs,open PowerShell and type `get-verb`. 
 
 ### Aliases
 
@@ -26,7 +26,7 @@ Also very cool are positional parameters. To set the parameter you only have to 
 
 While command nouns are configurable, verbs are not. Verbs are curated by Microsoft, and you can find the official list by clicking the link in the list above. Even better though, you can get a list of verbs by typing `get-verb` from the command prompt in the PS-Console
 
-**Verbs are grouped logically,** and it is a good idea get acquainted with, which verbs belong to which groups. Knowing verb grouping helps you to search more intuitively for cmdlets.
+**Verbs are grouped logically,** and it is a good idea get acquainted with, which verbs belong to which groups. Knowing verb grouping helps you to search more intuitively for cmdlets. You can also filter verbs by group. Example: To print all verbse that belong to the "Security" group you type` get-verb | where-object {$_.Group -eq "Security"}`. 
 
 ## The Pipeline
 
@@ -38,7 +38,11 @@ The difference between PS piping and Linux Shell piping is, that the PowerShell 
 * You process that data and "do" something with it.
 * You output the results of your processing
 
-And you can repeat this pattern mutiple times, using the output of the previous pipeline a the "Get" data for the next one, enabling real power from the command line!
+And you can repeat this pattern mutiple times, using the output of the previous pipeline a the "Get" data for the next one, enabling real power from the command line! 
+
+Example: Using the pipeline you get all the PS-Verbs, you filter the verbs - only showing the verbs in the security goup, and you output those groups to a file. 
+
+`get-verb | where-object {$_.Group -eq "Security"} | Out-file Security-Verbs.txt`
 
 ## Scripts
 
