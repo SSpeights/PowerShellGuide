@@ -42,11 +42,19 @@ To see if it's the right one you call the help for this command with: `get-help 
 
 This is the "broad to narrow" search way to find commands in powershell. If you are just beginning with PowerShell, it is probably a good idea to find at least some of your commands like this.
 
-**Achtung: Don't forget - you can also google! **If this seems like too much work, I also found the "stop-computer" cmdlet by googling with "Powershell command to shut down computer": "stop-computer" was the first result; so in my opinion, googling is also a plausible alternative to discover PS-cmdlets, that allows you find what you want to do in plain text! Try googling for "Test network connection with PowerShell" and see what you get.
+**Achtung: Don't forget to google! **If this seems like a lot of work, I also found the "stop-computer" cmdlet by googling with "Powershell command to shut down computer": "stop-computer" was the first result; so in my opinion, googling is also a plausible alternative to discover PS-cmdlets, that allows you find what you want to do in plain text! Try googling for "Test network connection with PowerShell" and see what you get.
 
 ## Exemplary help
 
-Not only does Powershell have help, it also has 
+Not only does Powershell offer help pages from the console, you can call actual examples.
+
+Let's say you decide to not only save yourself from burnout but also save the company some money, by automating shutdown for yourtest and production remote systems - also at 18:00 everyday and you need a report of the results. To retrieve cmdlet examples, you add an "example" switch to your help cmdlet: `get-help stop-computer -example`.  
+
+Examples are displayed in the console. Example number 2 fits your use case nicely and so you add it to a powershell script and schedule it to run at 18:00.
+
+
+
+
 
 * There are generally two ways to view help in the console itself or online - you can access both types from the command line. for help, just like anything else PowerShell, I recommend that you use the console. But, if you absolutely must have a more easily readable format, or if you cannot get the entire help page onto your computer you can always go online by adding the `-online` paramemter to your `get-help` command.
 
