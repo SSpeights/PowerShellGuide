@@ -48,15 +48,15 @@ To see if it's the right one you call the help for this command with: `get-help 
 
 This is the "broad to narrow" search way to find commands in powershell. If you are just beginning with PowerShell, it is probably a good idea to find at least some of your commands like this. Remember, you may be working on headless servers in the future, and there will be no browser with which to google.
 
-**Achtung: Don't forget to google! **If this seems like a lot of work, I also found the "stop-computer" cmdlet by googling with "Powershell command to shut down computer": "stop-computer" was the first result; so in my opinion, googling is also a plausible alternative to discover PS-cmdlets, that allows you find what you want to do in plain text! Try googling for "Test network connection with PowerShell" and see what you get. once you find the command, you may want to move back to the console.
+**Achtung: Don't forget to google! **If this seems like a lot of work, I also found the "stop-computer" cmdlet by googling with "Powershell command to shut down computer": "stop-computer" was the first result; so in my opinion, googling is also a plausible alternative to discover PS-cmdlets. The good part is that you can enter what you want to do in plain text! Try googling for "Test network connection with PowerShell" and see what you get. Once you find the command though, you may want to move back to the console and use "Get-Help" to get the detailed usage information.
 
 ## Exemplary help
 
-Not only does Powershell offer help pages from the console, you can call actual examples.
+Not only does Powershell offer useful help pages from the console, you can also call actual examples, and often, these examples can speed up your scripting.
 
-Let's say you decide to not only save yourself from burnout but also save the company some money, by automating shutdown for yourtest and production remote systems - also at 18:00 everyday and you need a report of the results. To retrieve cmdlet examples, you add an "example" switch to your help cmdlet: `get-help stop-computer -example`.
+Let's say you decide to not only save yourself from burnout but also save the company some money, by automating shutdown for your test and production remote systems - also at 18:00 every day - and you need a report of the results. To retrieve cmdlet examples, you add an "example" switch to your help cmdlet: `get-help stop-computer -example`.
 
-Examples are displayed in the console. Example number 2 fits your use case nicely and so you add it to a powershell script and schedule it to run at 18:00.
+Examples are displayed in the console. Example number 2 fits your use case nicely and so you can copy and add it to a powershell script, make some small modifications and schedule it to run at 18:00.
 
 There are other help switches that are useful and they are:
 
@@ -70,5 +70,16 @@ There are other help switches that are useful and they are:
 
 ## Find-Script / Find-Module
 
-Like other repositories - e.g. Docker Hub - PowerShell has
+Like other repositories - e.g. Docker Hub, Ruby Gems, NPM - PowerShell has an online repository with curated scripts.
+
+## Section Targets
+
+* Find PS resources online
+* Find PS resources from the CLI
+* Get the basic cmdlet find pattern for PS CLI
+* Know how to find cmdlets you need
+* Know how to access the different kinds of PS help
+* Know how to find scripts and modules from the PS Gallery with the CLI
+
+
 

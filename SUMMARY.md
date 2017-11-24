@@ -2,10 +2,11 @@
 
 * [Introduction](README.md)
 * [PS - The Basics](chapter1.md)
-* [Effective PS development environements](effective-ps-development-environements.md)
+* [PS development environments](effective-ps-development-environements.md)
 * [PowerShell Framework](powershell-framework.md)
 * [Discovery in Powershell](discovery-in-powershell.md)
-* [Basic commands and the pipeline](basic-commands-and-the-pipeline.md)
-* [Expanding your command range](expanding-your-command-range.md)
+* [Essential commands](basic-commands-and-the-pipeline.md)
+* [Extending your command range](expanding-your-command-range.md)
+* [Pipelining](pipelining.md)
 * PS Scripts
 
