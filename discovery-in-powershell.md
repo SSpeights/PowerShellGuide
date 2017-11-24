@@ -1,4 +1,4 @@
-## Getting savvy with PowerShell
+# Getting savvy with PowerShell
 
 PowerShell has quite a few resources that can help you get up to speed with this technology. There are many cmdlets in PowerShell so it is important to find out what they do and how you can used them. In addition, there is a large Powershell community and you can get help using the normal channels. Major outlets for PowerShell ideas are -
 
@@ -9,28 +9,53 @@ PowerShell has quite a few resources that can help you get up to speed with this
 
 These resources are geared toward finding more tutorials and connecting with people to get anwers to questions. But the real star of the resource-show is the PowerShell CLI itself.
 
-### Make sure help is up to date
+## Make sure help is up to date
 
 The easiest way to find out what you can do with PowerShell is to open the PS-console and type `get-help <ps-command>` or just `help <pscommand>.`
 
-Before you do this though, you should be sure that you have all of the help on your machine. 
+Before you do this though, you should be sure that you have all of the help on your machine.
 
-To do this, type `update-help` at the PS command prompt. 
+To do this, type `update-help` at the PS command prompt.
 
-### Finding useful commands
+Achtung: you might want to try this at home, away from the proxy server.
 
-To get a picture what kind of commands you can use
+## PowerShell search pattern
 
-### Exemplary help
+When you want to find a specific command, most of the PowerSehll gurus recommend the following steps.
 
-* There are generally two ways to view help in the console itself or online - you can access both types from the command line. for help, just like anything else PowerShell, I recommend that you use the console. But, if you absolutely must have a more easily readable format, or if you cannot get the entire help page onto your computer you can always go online by adding the `-online` paramemter to your `get-help` command. 
+* Use your intuition and knowledge of Microsoft technologies 
+* Filter your get-command for plausible command names - so if your looking for IP configuration filter for \*IP\* \(you can also use a verb as a filter!\)
+* Scan the results and select the best looking command
+* Use "get-help + CommandName" to get detailed help
+
+## Finding useful commands
+
+Before we begin with this example, you can also google for PowerShell commands with pretty good success.
+
+let's say you have to keep yourself from working too much - otherwise you would work until midnight every night. To prevent yourself from overworking and experiencing burnout, you decide to automate computer shutdown at 18:00 Monday - Friday. PowerShell is your tool of choice.
+
+You know that "Shutdown" is not an official PowerShell verb, but you don't know what the actual verb is so, you type `get-verb` at the PS-prompt. You get a list of returned PS Verbs. There are a lot of verbs, but you see in the "Lifecycle" verb group there is a verb call stop.
+
+To get more specific you type in a get-command with \*stop\* as the filter: `gcm *stop*` . There are lots of commands so you decide to page the results and you type `gcm *stop* | more`. After scrolling down you see there is a "stop-computer" command.
+
+To see if it's the right one you call the help for this command with: `get-help stop-computer`.  Sure enough, with stop-computer you can shutdown local and remote computers.
+
+This is the "broad to narrow" search way to find commands in powershell. If you are just beginning with PowerShell, it is probably a good idea to find at least some of your commands like this.
+
+**Achtung: Don't forget - you can also google! **If this seems like too much work, I also found the "stop-computer" cmdlet by googling with "Powershell command to shut down computer": "stop-computer" was the first result; so in my opinion, googling is also a plausible alternative to discover PS-cmdlets, that allows you find what you want to do in plain text! Try googling for "Test network connection with PowerShell" and see what you get.
+
+## Exemplary help
+
+Not only does Powershell have help, it also has 
+
+* There are generally two ways to view help in the console itself or online - you can access both types from the command line. for help, just like anything else PowerShell, I recommend that you use the console. But, if you absolutely must have a more easily readable format, or if you cannot get the entire help page onto your computer you can always go online by adding the `-online` paramemter to your `get-help` command.
 
   Please also note that you when you make a help request, you can also ask for examples of a command or you can ask for the entire help page that contains all the help that there is. Some examples here are
 
   * in the console 
   * online
 
-### Find-Module
+## Find-Module
 
 Like other repositories - e.g. Docker Hub - PowerShell has
 
