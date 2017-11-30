@@ -1,26 +1,39 @@
 # Scripting basics in PowerShell
 
-Very simply, the reason why you want to learn how to crate Powershell scripts is because a script can be automated. Even if you only save 5 minutes by automating a task, if you have to perform that task 5 times a day - you still save 25 minutes. These savings add up. 
+Very simply, the reason why you want to learn how to create Powershell scripts is because a script can be automated. Even if you only save 5 minutes by automating a task, if you have to perform that task 5 times a day - you still save 25 minutes. These savings add up.
 
-PowerShell scripts have the .ps1 extension. If you have already selected an IDE for your scripting, you can go ahead and open it. Create a .ps1 script and name it "Hello.ps1" 
+PowerShell scripts have the .ps1 extension. If you have already selected an IDE for your scripting, you can go ahead and open it. Create a .ps1 script and name it "Hello.ps1"
 
-in the script add - `write-output "Hello"`. 
+in the script add - `write-output "Hello"`.
 
 To run the script go down to the console bash and type in .\Hello.ps1
 
+## PS Execution Policy
+
+**Achtung**: if you get an "unauthorized access warning" in red text and your script doesn't run. It means that you need to change your Execution policy so you can execute PS scripts on your system. You do this with the `Set-ExecutionPolicy` comand. To get the information you need to do this, [please visit this Microsoft technet page](https://technet.microsoft.com/en-us/library/ee176961.aspx). You must have an overview of the different Execution-Policies before you set a policy and talk to ICT first. Setting the policy to "unrestricted" might not be the best choice...
+
+## Syntax basics
+
 Just like a shell script in Linux, you must type in a ".\" to run the script. In this script, we just added a command, unlike the typing in write-output at the command line you can schedule this script to run whenever and as often as you like. Here are some of the basics you need to know about scripting -
 
-| PowerShell Script Basic Property | Value |
-| :--- | :--- |
-| PS Script file extension | .ps1 |
-| Run a PS script | .\&lt;ScriptName.ext&gt; |
-| PS Script variable character | $ |
-| PS Script escape character | \` |
-| PS Script pipline character | \|  |
+| PowerShell Script Basic Property | Value | Example |
+| :--- | :--- | :--- |
+| PS Script file extension | .ps1 |  |
+| Run a PS script | .\&lt;ScriptName.ext&gt; |  |
+| PS Script variable character | $ |  |
+| PS Script escape character | \` |  |
+| PS Script pipeline character | \| |  |
+| PS Script member enumeration | \(command -parameters\).property |  |
+| PS Script optional arguments | \[\] |  |
+| PS Block Statement | {} |  |
+| PS Script comment | \# |  |
 
-## Expanding on the basics
+## Section Targets
 
-
+* Learn how to enable running scripts
+* Learn the usage for PS operators and operands
+* Write some PS-Scripts
+* Write some more advanced scripts using variables, escaping special characters, retrieving individual properties
 
 
 

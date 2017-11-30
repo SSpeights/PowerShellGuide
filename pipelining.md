@@ -14,7 +14,12 @@ Example: Using the pipeline you get all the PS-Verbs, you filter the verbs - onl
 
 `get-verb | where-object {$_.Group -eq "Security"} | Out-file Security-Verbs.txt`
 
-## 
+## Section Targets
+
+* Using pipelines to execute the get data \| process data \| output result pattern
+* Learning some useful examples for important use cases
+
+
 
 
 
