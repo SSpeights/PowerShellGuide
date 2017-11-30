@@ -8,5 +8,5 @@
 * [Essential commands](basic-commands-and-the-pipeline.md)
 * [Extending your command range](expanding-your-command-range.md)
 * [Pipelining](pipelining.md)
-* PS Scripts
+* [PS Scripts](ps-scripts.md)
 
