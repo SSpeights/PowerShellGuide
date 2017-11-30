@@ -9,6 +9,6 @@
 * [Pipelining](pipelining.md)
 * [PS Script basics](ps-scripts.md)
 * [Prepare your script](prepare-your-script.md)
-* A bunch of commands
-* Refining with loops
+* [A bunch of commands](a-bunch-of-commands.md)
+* [Refining with loops](refining-with-loops.md)
 
