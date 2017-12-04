@@ -1,4 +1,4 @@
-# Write what you are going to do before coding
+# ite what you are going to do before coding
 
 No you don't have to do like this if you don't want to. But, scripts are in a sense just like code and it is good when other people can understand what a script is for - maybe they can use it too. Also, if you take the time to elaborate the tasks that your script should perform, i.e. if you think about if first and make a plan, you'll probably write a better script. Not only will other folks understand your script better - you will too. This is a good way to plan your script, especially if you're are just getting started with PS.
 
@@ -8,7 +8,7 @@ In this case the template is already created for you. [Our template example is h
 
 ## Create help - part 1
 
-Amazon starts their feature development with a press release. This is thier way for "working back from the objective". With a PowerShell script it makes sense to start **by creating a description of what your script should do**. PowerShell supports adding help documentation directly to the your script. You can then call the help directly from the command line, just like for all the standard cmdlets and scripts in the PS-gallery. You want to do this because if you have to go away from your script for a long time, you will need this documentation to refresh your memory when you come back. If this script is useful for other folks, it should also be as easy as possible for them to understand what it does. 
+Amazon starts their feature development with a press release. This is thier way for "working back from the objective". With a PowerShell script it makes sense to start **by creating a description of what your script should do**. PowerShell supports adding help documentation directly to the your script. You can then call the help directly from the command line, just like for all the standard cmdlets and scripts in the PS-gallery. You want to do this because if you have to go away from your script for a long time, you will need this documentation to refresh your memory when you come back. 
 
 To create CLI help you must have this section in your script.
 
@@ -36,28 +36,26 @@ The good news is that the help section is already included in the template. You 
 
 | Help node | Description |
 | :--- | :--- |
-| .SYNOPSIS | Short description of what your script does |
-| .DESCRIPTION | Long description of what your script does |
-| .PARAMETER &lt;Parameter-Name&gt; | Parameters in your script. |
-| .EXAMPLE | Usage examples. |
-| .NOTES | Special Notes about your script. |
-| .LINK | Link to online help or other online resource. You can go directly to this online resource with the get-help "-online" switch. |
+| .SYNOPSIS | Short description of what your script does. |
+| .DESCRIPTION | Long description of what your script does. |
+| .PARAMETER&lt;Parameter&gt; | Document the parameters in your script. |
+| .EXAMPLE | Usage examples for your script one .EXAMPLE node per example. To only see examples, use the "-example" switch. |
+| .NOTES | Special notes for your script like contact information. .NOTES is only displayed when the "-full" switch is used. |
+| .LINK | Link to online help or other online resource. You can go directly to the online resource with the get-help "-online" switch. |
 
 To see what we mean, go to the template folder in the PowerShell console and enter -  get-help .\8\_BaseTemplate.ps1. You should see the help information displayed in the console.
 
-## Add Data
-
-Also in the template are commented lines like script name, creator and so on. Fill these out too. It's good to know who to contact in case of questions. You can also fill these out in the ".Notes" section of the help. 
+**Achtung:** In general, you don't want to add a date unless you have to deliver this script to someone outside the company. In addtion to an IDE I assume that you are also using version control - Git or something else. Let your version control do the datetime-stamping for creation date and updates.
 
 ## Write out your tasks
 
-The "main" PS-Script is procedural and holds all of the routines in your script together and, in most cases, sequences them. For each routine in your script, you can have a task comment - \#Task1 - \#TaskX in the template. Here you write what each routine performs and maybe what it returns and passes to the next routine... Remember the basic pattern is Get data \| Process Data \| Output result. 
+The "main" PS-Script is procedural and holds all of the routines in your script together and, in most cases, sequences them. For each routine in your script, you can have a task comment - \#Task1 - \#TaskX in the template. Here you write what each routine performs and maybe what it returns and passes to the next routine... Remember the basic pattern is Get data \| Process Data \| Output result.
 
 Add variables and parameters as needed.
 
 ## Code / Test / Code more
 
-Now you script, testing it and scripting some more as needed. In this part you add any needed variable and parameter to your script. This is also where I would spike and stabilize. If I write something good then I would atabilize by refactoring hacked code into nice structures like variables, parameters, objects and so on.. &lt;here another chapter on structuring code&gt; 
+Now you script, testing it and scripting some more as needed. In this part you add any needed variable and parameter to your script. This is also where I would spike and stabilize. If I write something good then I would atabilize by refactoring hacked code into nice structures like variables, parameters, objects and so on. You can add your variables and parameters to the "\#Variable" section and the "\#Parameter" section, if you like.
 
 ## Comment your script
 
@@ -65,7 +63,7 @@ As needed, comment the important parts of your script, you want to be able under
 
 ## Write help - part 2
 
-When you are done add the rest of the help 
+When you are done add the rest of the help
 
 ## Section targets
 
