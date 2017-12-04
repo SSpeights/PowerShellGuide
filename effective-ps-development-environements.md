@@ -12,7 +12,7 @@ The big brother of VS Code. If you develop with Microsoft technologies chances a
 
 ### Atom with PS Add-On
 
-Another great editor is the Atom from the folks at GitHub. Atom is another popular editor where you can do a lot of the same things as in VS Code and Atom also has a well-liked Powershell plugin that has a not-trivial 70,000 downloads. If you don't want to bow down to Microsoft, Maybe you want to check out atom. One thing about Atom: I had trouble getting her to work from behind our beloved proxy server - if you dev in Windows you may want to stick with VS Code because configuring the proxy works like butter.
+Another great editor is "Atom" from the folks at GitHub. Atom is another popular editor where you can do a lot of the same things as in VS Code and Atom also has a well-liked Powershell plugin that has a not-trivial 70,000 downloads. If you don't want to bow down to Microsoft, Maybe you want to check out atom. One thing about Atom: I had trouble getting her to work from behind our beloved proxy server - if you dev in Windows you may want to stick with VS Code because configuring the proxy works like butter.
 
 ### ISE
 
@@ -24,9 +24,9 @@ It may be a requirement to run your scripts from other IDEs because you have dep
 
 In any case, specific dependencies for development and testing are out of scope for this book. We are only going to be looking at PowerShell, with maybe one or two exceptions. Maybe you will decide that PowerShell provides a better alternative for some or all of your use cases enables you to get rid of some of those annoying dependencies. In the next section, we will prime you a little bit more by showing you the how powershell is set up. Once you've scanned "PowerShell Framework", you will be ready to start locating useful PowerShell resources that can help you do your work.
 
-**After reading this section - you should know your PS-Dev-Environment alternatives.**
+## Section Targets:
 
-
+* Have some choices for your PowerShell Dev Environment
 
 
 
