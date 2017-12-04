@@ -40,7 +40,11 @@ Just like a shell script in Linux, you must type in a ".\" to run the script. In
 | PS Block Statement | {} | Used in cmdlets and in scripts Block statements can be seen as query filters |
 | PS Script comment | \# | document your scripts... |
 
-## 
+## Variables in scripting
+
+## Parameters in scripting
+
+
 
 ## Section Targets
 

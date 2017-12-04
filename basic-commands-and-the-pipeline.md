@@ -1,6 +1,6 @@
 # Your cmdlet list
 
-Once you have discovered cmdlets that can help you, it is a good idea to build up a repository of commands that you can always access and reuse. This makes it easier to reuse commands and even buil scripts that
+Once you have discovered cmdlets that can help you, it is a good idea to build up a repository of commands that you can always access and reuse. This makes it easier to reuse commands and even build scripts. After a while you may not need these lists of commands, but at first, it is a good way to experiment and once you find something that works, you can create a list and add it to a script. 
 
 ## Get-History
 
@@ -8,7 +8,7 @@ Get history retreives the commands that you entered at the PS-prompt for the cur
 
 ## Start-Transcript
 
-If you want to save all the commands and their output to use later, enter the Get-Transcript command it saves all commands and all output and saves it to a text file. 
+If you want to save all the commands and their output to use later, enter the Get-Transcript command it saves all commands and all output and saves it to a text file.
 
 ## Cool cmdlets
 
