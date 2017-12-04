@@ -65,7 +65,7 @@ As needed, comment the important parts of your script, you want to be able under
 
 ## Create help - part 2
 
-When you are done add the rest of the help that you think is important for using you script: especially the Examples.
+When you are done add the rest of the help that you think is important for using you script: especially polishing up your DESCRIPTION and adding EXAMPLES. 
 
 ## Section targets
 
