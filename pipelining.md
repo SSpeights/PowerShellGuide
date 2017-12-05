@@ -8,8 +8,6 @@ The difference between PS piping and Linux Shell piping is, that the PowerShell 
 * You process that data and "do" something with it.
 * You output the results of your processing
 
-
-
 And you can repeat this pattern mutiple times, using the output of the previous pipeline a the "Get" data for the next one, enabling real power from the command line!
 
 Example: Using the pipeline you get all the PS-Verbs, you filter the verbs - only showing the verbs in the security goup, and you output those groups to a file.
@@ -26,15 +24,11 @@ Get-Process | Out-Host -Paging | Format-List
 
 **Page content**
 
-Get-Command \| more
+`Get-Command | more`
 
 **Print to file**
 
 `Get-Process | Out-File -FilePath C:\temp\processlist.txt`
-
-
-
-
 
 ## Section Targets
 

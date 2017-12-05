@@ -4,7 +4,7 @@ What will you eventually want to be able to do. Before we take a look at some of
 
 ### Visual Studio Code with PS Add-On
 
-There are other options but VS Code has a very good powershell plugin. The plugin has a 4.5 star rating and has almost 2 million downloads. Microsoft makes great IDEs, and Visual Studio Code with the PS plugin and the  PS-terminal is a powerful development environment for PowerShell scripting: It has full intellisense support and you can run your script from the IDE. The great thing here is that not only can you develop PS-Scripts mega-fast in this lightweight environment, you can also develop everything else!
+There are other options but VS Code has a very good powershell plugin. The plugin has a 4.5 star rating and has almost 2 million downloads. Microsoft makes great IDEs, and Visual Studio Code with the PS plugin and the  PS-terminal is a powerful development environment for PowerShell scripting: It has full intellisense support and you can run your script from the IDE. The great thing here is that not only can you develop PS-Scripts mega-fast in this lightweight environment, you can also develop everything else! I have to admit this is my first choice, so I am biased.
 
 ### Visual Studio with PS Tools
 

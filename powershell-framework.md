@@ -9,6 +9,7 @@ Powershell cmdlets have a VERB-NOUN structure and are generally case insensitive
 * [Powershell Verbs](https://www.gitbook.com/book/sspeights/haufe-group-beginning-powershell-guide/edit#)
 * Powershell Nouns
 * [Aliases](https://msdn.microsoft.com/en-us/library/dd878329%28v=vs.85%29.aspx)
+* Autocomplete
 
 Achtung: We are providing links to web pages here but encourage you to use the Powershell console. To get a list of PS-verbs,open PowerShell and type `get-verb`.
 
@@ -30,18 +31,31 @@ The Verb-Noun pattern is good to get started and helps with intuitive discovery 
 
 Command alias is also included in the help of individual commands. By typing `help get-command`, you can see the alias "gcm" in the get-command help page.
 
-### Autocomplete
+## Autocomplete
 
-### Functionality - the big picture
+One of the nice things about powershell is that you can leverage the TAB autocomplete for ALL ASPECTS of PowerShell from the command line as well as from a good IDE. Not only can you autocomplete cmdlets, but also cmdlet parameters, enumerated values of these parameters and so on by using the TAB key. PowerShell just knows how to autocomplete - it's a little bit like people, who know you so well that they can finish your thought most of the time.
 
-### Feature discovery
+## Positional Parameters
+
+This is not in the list but another framework feature of PowerShell is "positional parameters". For these parameters, you only have to type the value, not the parameter name. PowerShell understands your argument implicitly, because of the postion of the parameter.
+
+## PowerShell returns objects
+
+PowerShell cmdlets return Objects and not Text. This makes it easier and faster to pipe output to the next cmdlet and process it. This is, by the way, not the case with some other scripting languages in other operating systems.
+
+## PowerShell uses a pipeline
+
+Finally, PowerShell passes these returned objects to the next cmdlet over the pipeline with the "\|" symbol. Using the pipeline enables you to create powerful workflows to process the data you need to perform your tasks.
+
+## Functionality - The big picture
+
+Using PowerShell, you have a scripting language that allows you to execute scripts without a compiler, that makes it easier for you to script via an intuitive verb-noun cmdlet pattern, that speeds you even more by providing aliases for these commands and by having robust autocomplete at the PS-prompt and in the IDE. And, if you need it you can also leverage Microsoft .NET and COM libraries to do even more. This structure and these features not only make it easier to type commands in at the command prompt, they also make it easier to discover what you can do with PowerShell, and create powerful scripts as you'll see in the next sections.
 
 ## Section targets
 
-* Know how to find great PS-resource online
 * Understand cmdlet structure and know features that allow to code cmdlets more comfortably
-* Understand the pipeline
 * Understand scripts and their purpose
+* Be primed to research cmdlets in the next section
 
 
 
