@@ -9,7 +9,7 @@ PowerShell has quite a few resources that can help you get up to speed with this
 * [The Powershell Gallery](https://www.powershellgallery.com/) - Official repository for PS-Module and PS-Scripts that you can download and use
 * [PowerShell Magazine](http://www.powershellmagazine.com/) \(PS-people like Keith Hill post articles here\)
 
-These resources are geared toward finding more tutorials and connecting with people to get anwers to questions. But the real star of the resource-show is the PowerShell CLI itself. 
+These resources are geared toward finding more tutorials and connecting with people to get anwers to questions. But the real star of the resource-show is the PowerShell CLI itself.
 
 ## OPP - Other People's Powershell
 
@@ -67,6 +67,14 @@ There are other help switches that are useful and they are:
 * `get-help stop-computer -detail`- displays the help page with detailed documentation for parameters
 
 * `get-help stop-computer -full`- displays everything
+
+## Find out what's inside the PowerShell Object
+
+Once you know which cmdlets you must use, you can discover what these commands output by piping the output to the `Get-Member` command. Remember Powershell shell always output objects and these objects contain methods and properties just like any other objects in the .NET framework. Get-Member is useful because maybe you only need to 1 or 2 pieces of information. With the Get-Member cmdlet you can look at the "internals" of PS-Objects and decide what you need. This makes your scripting more performant.
+
+In the following example, the output of Get-NetIPConfiguration is piped to Get-Member, which returns the properties
+
+Example: `Get-NetipConfiguration | Get-Member`
 
 ## Find-Script / Find-Module
 

@@ -1,6 +1,6 @@
 # Scripting basics in PowerShell
 
-Very simply, the reason why you want to learn how to create Powershell scripts is because a script can be automated. Even if you only save 5 minutes by automating a task, if you have to perform that task 5 times a day - you still save 25 minutes. These savings add up.
+Very simply, the reason why you want to learn how to create Powershell scripts is because a script can be automated. Even if you only save 5 minutes by automating a task, if you have to perform that task 5 times a day - you still save 25 minutes.
 
 PowerShell scripts have the .ps1 extension. If you have already selected an IDE for your scripting, you can go ahead and open it. Create a .ps1 script and name it "Hello.ps1"
 
@@ -22,7 +22,7 @@ Before I forget you can pipeline, directly into a PowerShell script. Try this. C
 
 `}`
 
-and from the PS-bash type - 1..20 \| .\&lt;FileName&gt;.ps1. The script should print numbers 1 - 20 to stdout - one number per line.
+and from the PS-bash type - `1..20 | .\<FileName>.ps1`. The script should print numbers 1 - 20 to stdout - one number per line.
 
 ## Syntax basics
 
@@ -34,17 +34,15 @@ Just like a shell script in Linux, you must type in a ".\" to run the script. In
 | Run a PS script | .\&lt;ScriptName.ext&gt; | From the PS-prompt use this sytax to tell PowerShell to run a script |
 | PS Script variable character | $ | To declare a variable prefix the variable name with a "$" |
 | PS Script escape character | \` | for speicial characters in a string use the "\`" to escape them. Example: "three\`$Horse". Escaped the "$" to character. Normall this means "var". |
-| PS Script pipeline character | \| | Pass the result of cmdlet 1 to the next cmdlet 2 and so on. Results are piped as objects. |
+| PS Script pipeline character | \| | Pass the result of cmdlet 1 to the next cmdlet 2 and so on. Results are piped as in-memory objects.  |
 | PS Script member enumeration | \(command -parameters\).property | This technique is used to retrieve single properties of a object result and |
-| PS Script optional arguments | \[\] |  |
-| PS Block Statement | {} | Used in cmdlets and in scripts Block statements can be seen as query filters |
+| PS Script optional arguments | \[ \] |  |
+| PS Block Statement | { } | Used in cmdlets and in scripts Block statements can be seen as query filters |
 | PS Script comment | \# | document your scripts... |
 
 ## Variables in scripting
 
 ## Parameters in scripting
-
-
 
 ## Section Targets
 

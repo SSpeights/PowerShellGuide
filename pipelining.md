@@ -14,7 +14,7 @@ Example: Using the pipeline you get all the PS-Verbs, you filter the verbs - onl
 
 `get-verb | where-object {$_.Group -eq "Security"} | Out-file Security-Verbs.txt`
 
-### Some uses cases for the pipe
+### Some basic uses cases for the pipe
 
 **Send output to stdout as a formatted list**
 

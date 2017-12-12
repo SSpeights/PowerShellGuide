@@ -11,5 +11,7 @@
 * [8. Prepare your script](prepare-your-script.md)
 * [9. Scripts: Files with a lot of PS commands](a-bunch-of-commands.md)
 * [10. Refining your script with loops](refining-with-loops.md)
+* Exploring the Powershell Gallery
+* Special Powershell Features
 * The Cookbook
 
