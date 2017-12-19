@@ -18,3 +18,7 @@ $\_ indicates the current object in the pipeline
 
 foreach { } the foreach with block means that for each objec the code in the block with be executed.
 
+
+
+foreach enumerator is a loop in a script and does not write to the pipeline returned vals must be added to a variable.
+
