@@ -22,3 +22,13 @@ cmdlet \| where {  } returns all the members of the object that meet the where c
 
 foreach enumerator is a loop in a script and does not write to the pipeline returned vals must be added to a variable.
 
+for cmdlets that don't write to the pipeline by default you can use -passthru attribute to write to pipeline.
+
+Write-Host does not output to pipeline - use a different color to differentiate. WH can be used for messages in a PS stdout routine. 
+
+Variable expansion works with double quotes but not single quotes. 
+
+Can use subexpressions in strings to display object values dynamically - will be treated as a variable.
+
+
+
