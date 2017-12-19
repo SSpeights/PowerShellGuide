@@ -16,9 +16,9 @@ This is useful for debugging- appending to file instead of stdout.
 
 $\_ indicates the current object in the pipeline
 
-foreach { } the foreach with block means that for each objec the code in the block with be executed.
+foreach {  } the foreach with block means that for each objec the code in the block with be executed.
 
-
+cmdlet \| where {  } returns all the members of the object that meet the where condition. get-service \| where {$\_.status $eq 'running'} - in plain text get all services and output each service that has the "running" status.
 
 foreach enumerator is a loop in a script and does not write to the pipeline returned vals must be added to a variable.
 
