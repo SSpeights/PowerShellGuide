@@ -16,7 +16,5 @@ This is useful for debugging- appending to file instead of stdout.
 
 $\_ indicates the current object in the pipeline
 
-
-
-foreach { } 
+foreach { } the foreach with block means that for each objec the code in the block with be executed.
 
