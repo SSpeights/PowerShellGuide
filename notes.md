@@ -14,7 +14,9 @@ Stream Redirection - all of the different pipelines are sent to different stream
 
 This is useful for debugging- appending to file instead of stdout.
 
-
-
 $\_ indicates the current object in the pipeline
+
+
+
+foreach { } 
 
