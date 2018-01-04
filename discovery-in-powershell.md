@@ -13,7 +13,7 @@ These resources are geared toward finding more tutorials and connecting with peo
 
 ## OPP - Other People's Powershell
 
-You won't need it right away but an important resource will be the Powershell Gallery. This is where curated PowerShell Modules and scripts get stored so others in the PS-Community can use them. Currently, there are over 2,500 modules and scripts in the Gallery. Hopefully, it can speed you up by exposing code that performs a function first. I mention this first, but in the discovery section, this will be mentioned last, because we have to learn a little about PowerShell first before we go and access other people's code.
+You won't need it right away but an important resource will be the Powershell Gallery. This is where curated PowerShell Modules and scripts get stored so others in the PS-Community can use them. Currently, there are over 2,500 modules and scripts in the Gallery. Hopefully, it can speed you up by exposing code that performs a function that you must have. I mention this first, but in the discovery section, this will be mentioned last, because we have to learn a little about PowerShell before we go and access other people's code.
 
 ## Make sure help is up to date
 
@@ -23,7 +23,7 @@ Before you do this though, you should be sure that you have all of the help on y
 
 To do this, type `update-help` at the PS command prompt.
 
-Achtung: you might want to try this at home, away from the proxy server.
+**Achtung:** you might want to try this at home, away from the proxy server.
 
 ## PowerShell search pattern
 
@@ -38,7 +38,7 @@ When you want to find a specific command, most of the PowerSehll gurus recommend
 
 Before we begin with this example, you can also google for PowerShell commands with pretty good success.
 
-let's say you have to keep yourself from working too much - otherwise you would work until midnight every night. To prevent yourself from overworking and experiencing burnout, you decide to automate computer shutdown at 18:00 Monday - Friday. PowerShell is your tool of choice.
+Let's say you have to keep yourself from working too much - otherwise you would work until midnight every night. To prevent yourself from overworking and experiencing burnout, you decide to automate computer shutdown at 18:00 Monday - Friday. PowerShell is your tool of choice.
 
 You know that "Shutdown" is not an official PowerShell verb, but you don't know what the actual verb is so, you type `get-verb` at the PS-prompt. You get a list of returned PS Verbs. There are a lot of verbs, but you see in the "Lifecycle" verb group there is a verb call stop.
 
@@ -46,7 +46,7 @@ To get more specific you type in a get-command with \*stop\* as the filter: `gcm
 
 To see if it's the right one you call the help for this command with: `get-help stop-computer`.  Sure enough, with stop-computer you can shutdown local and remote computers.
 
-This is the "broad to narrow" search way to find commands in powershell. If you are just beginning with PowerShell, it is probably a good idea to find at least some of your commands like this. Remember, you may be working on headless servers in the future, and there will be no browser with which to google.
+This is the "broad to narrow" search way to find commands in PowerShell. If you are just beginning with PowerShell, it is probably a good idea to find at least some of your commands like this. Remember, you may be working on headless servers in the future, and there will be no browser with which to google.
 
 **Achtung: Don't forget to google! **If this seems like a lot of work, I also found the "stop-computer" cmdlet by googling with "Powershell command to shut down computer": "stop-computer" was the first result; so in my opinion, googling is also a plausible alternative to discover PS-cmdlets. The good part is that you can enter what you want to do in plain text! Try googling for "Test network connection with PowerShell" and see what you get. Once you find the command though, you may want to move back to the console and use "Get-Help" to get the detailed usage information.
 
@@ -78,7 +78,9 @@ Example: `Get-NetipConfiguration | Get-Member`
 
 ## Find-Script / Find-Module
 
-Like other repositories - e.g. Docker Hub, Ruby Gems, NPM - PowerShell has an online repository with curated scripts.
+Like other repositories - e.g. Docker Hub, Ruby Gems, NPM - PowerShell has an online repository with curated scripts - the [PowerShell Gallery. ](https://www.powershellgallery.com/)
+
+From the command line, you can explore the Powershell gallery with the `find-module` and `find-script` commands. Downloading, installing, publishing and other actions are also possible and are documented on the PS Gallery web site.
 
 ## Section Targets
 
@@ -87,6 +89,7 @@ Like other repositories - e.g. Docker Hub, Ruby Gems, NPM - PowerShell has an on
 * Get the basic cmdlet find pattern for PS CLI
 * Know how to find cmdlets you need
 * Know how to access the different kinds of PS help
+* Know how to look at cmdlet members
 * Know how to find scripts and modules from the PS Gallery with the CLI
 
 
