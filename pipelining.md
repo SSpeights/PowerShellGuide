@@ -2,6 +2,8 @@
 
 The pipeline is one of the features that makes PowerShell such a powerful tool. If you have worked with Linux you probably already know how pipe works. Piping enables stringing commands together - using the pipe "\|" symbol - to pass the result of a command to the next command.
 
+## Basic processing in the pipeline
+
 The difference between PS piping and Linux Shell piping is, that the PowerShell is passing the result of a command as a .NET object and not as text, providing you more ways to use this returned result. That's not important right now. What's important is that you can chain single commands to implement the "Get \| Process \| Output" pipeline, which is a common powershell output where three things happen.
 
 * You get some data that you need
@@ -14,19 +16,39 @@ Example: Using the pipeline you get all the PS-Verbs, you filter the verbs - onl
 
 `get-verb | where-object {$_.Group -eq "Security"} | Out-file Security-Verbs.txt`
 
-### Some basic uses cases for the pipe
+## Controlling your pipeline
 
-**Send output to stdout as a formatted list**
+In the example above:
+
+cmdlets return  objects
+
+it is possible to manipulate the objects returned and the format of these object. Where statement and comparison operators
+
+Controlling formats
+
+Forcing to the streams -passthru
+
+looping - foreach statement
+
+It is also possible to designate "which" streams receive pipeline output. Different streams like debugging, error and so on. 
+
+## When not to output to the pipeline
+
+stdout messaging for routine
+
+## Some basic uses cases for the pipe
+
+### **Send output to stdout as a formatted list**
 
 ```
 Get-Process | Out-Host -Paging | Format-List
 ```
 
-**Page content**
+### **Page content**
 
 `Get-Command | more`
 
-**Print to file**
+### Output** to file**
 
 `Get-Process | Out-File -FilePath C:\temp\processlist.txt`
 
