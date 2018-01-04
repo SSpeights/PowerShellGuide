@@ -1,6 +1,6 @@
 # Powershell Framework
 
-Understanding a little bit about how PowerShell works goes a long way to helping you find the PS-Resources your need and code PS more efficiently and comfortably. You should now have an integrated development environment and you can use the IDE to take a look at how Powershell is semantically structured and get and the functions PowerShell has to help you to code faster. 
+Understanding a little bit about how PowerShell works goes a long way to helping you find the PS-Resources your need and code PS more efficiently and comfortably. You should now have an integrated development environment and you can use the IDE to take a look at how Powershell is semantically structured and get and the functions PowerShell has to help you to code faster.
 
 ## Powershell command structure
 
@@ -23,7 +23,7 @@ While command nouns are configurable, verbs are not. Verbs are curated by Micros
 
 Nouns can vary based on what the PS cmdlet is supposed to do. It is even possible to create your own cmdlets and Powershell modules that access various services. So if you leverage the APIs of powershell and another service to create something new the noun part of your powershell cmdlet would be completely unique like - `Get-NewlyIntegratedService.`
 
-**Achtung:** When you search for Powershell cmdlets or scripts you can use verbs or nouns or both
+**Achtung:** When you search for Powershell cmdlets or scripts you can use verbs or nouns or both. You can also use wildcard characters like \* to focus your search.
 
 ## Aliases
 
@@ -41,7 +41,7 @@ This is not in the list but another framework feature of PowerShell is "position
 
 ## PowerShell returns objects
 
-PowerShell cmdlets return Objects and not Text. This makes it easier and faster to pipe output to the next cmdlet and process it. This is, by the way, not the case with some other scripting languages in other operating systems.
+PowerShell cmdlets return objects and not text. This makes it easier and faster to pipe output to the next cmdlet and process it. This is, by the way, not the case with some other scripting languages in other operating systems.
 
 ## PowerShell uses a pipeline
 
@@ -49,7 +49,7 @@ Finally, PowerShell passes these returned objects to the next cmdlet over the pi
 
 ## Functionality - The big picture
 
-Using PowerShell, you have a scripting language that allows you to execute scripts without a compiler, that makes it easier for you to script via an intuitive verb-noun cmdlet pattern, that speeds you even more by providing aliases for these commands and by having robust autocomplete at the PS-prompt and in the IDE. And, if you need it you can also leverage Microsoft .NET and COM libraries to do even more. This structure and these features not only make it easier to type commands in at the command prompt, they also make it easier to discover what you can do with PowerShell, and create powerful scripts as you'll see in the next sections.
+Using PowerShell, you have a scripting language that allows you to execute scripts without a compiler, that makes it easier for you to script via an intuitive verb-noun cmdlet pattern, that speeds you even more by providing aliases for these commands and by having robust autocomplete at the PS-prompt and in the IDE. And, if you need it, you can also leverage Microsoft .NET and COM libraries to do even more. This structure and these features not only make it easier to type commands in at the command prompt, they also make it easier to discover what you can do with PowerShell, and create powerful scripts as you'll see in the next sections.
 
 ## Section targets
 

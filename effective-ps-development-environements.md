@@ -16,7 +16,7 @@ Another great editor is "Atom" from the folks at GitHub. Atom is another popular
 
 ### ISE
 
-ISE is the native PS IDE: it is installed on every newer Windows computer. Instead of openining PS console on your machine, you can choose to open PS-ISE, which is a mix of a console, a coding stage, and graphical interface similar to VS Code, but,, exclusively made for scripting in Powershell. 
+ISE is the native PS IDE: it is installed on every newer Windows computer. Instead of openining PS console on your machine, you can choose to open PS-ISE, which is a mix of a console, a coding stage, and graphical interface similar to VS Code, but,, exclusively made for scripting in Powershell.
 
 For Haufe Group, I don't recommend... It's simply not hard-core enough because it enables PS-scripters to replace the command line with GUI controls for tasks like command search, which, IMVHO, leads to bad working habits. Plus, it's been developed exclusively to create PowerShell scripts. Remember exclusively using the command line is in the long-run faster - mixing CLI and GUI will just slow you down and be confuse you. If you don't want to look for anything, this is already on your windows machines.
 
