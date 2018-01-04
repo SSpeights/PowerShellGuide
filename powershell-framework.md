@@ -1,6 +1,6 @@
 # Powershell Framework
 
-Understanding a little bit about how PowerShell works goes a long way to helping you find the PS-Resources your need and code PS more efficiently and comfortably. You should now have an integrated development environment and you can use the IDE to take a look at how Powershell is semantically structured and get and how PowerShell helps you to code faster. The IDE also helps you set up version control. We assume that you will use some kind of version control for your scripting, even if it is only local.
+Understanding a little bit about how PowerShell works goes a long way to helping you find the PS-Resources your need and code PS more efficiently and comfortably. You should now have an integrated development environment and you can use the IDE to take a look at how Powershell is semantically structured and get and the functions PowerShell has to help you to code faster. 
 
 ## Powershell command structure
 
