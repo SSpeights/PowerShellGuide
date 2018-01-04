@@ -22,7 +22,7 @@ In the example above:
 
 cmdlets return  objects
 
-it is possible to manipulate the objects returned and the format of these object. Where statement and comparison operators
+it is possible to manipulate the objects returned and the format of these object. Where-Object statement and comparison operators - $\_ means this.object
 
 Controlling formats
 
@@ -30,7 +30,7 @@ Forcing to the streams -passthru
 
 looping - foreach statement
 
-It is also possible to designate "which" streams receive pipeline output. Different streams like debugging, error and so on. 
+It is also possible to designate "which" streams receive pipeline output. Different streams like debugging, error and so on.
 
 ## When not to output to the pipeline
 

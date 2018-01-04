@@ -33,14 +33,16 @@ Just like a shell script in Linux, you must type in a ".\" to run the script. In
 | PS Script file extension | .ps1 | Use this extension to enable Windows to recognize that this is powershell. |
 | Run a PS script | .\&lt;ScriptName.ext&gt; | From the PS-prompt use this sytax to tell PowerShell to run a script |
 | PS Script variable character | $ | To declare a variable prefix the variable name with a "$" |
-| PS Script escape character | \` | for speicial characters in a string use the "\`" to escape them. Example: "three\`$Horse". Escaped the "$" to character. Normall this means "var". |
-| PS Script pipeline character | \| | Pass the result of cmdlet 1 to the next cmdlet 2 and so on. Results are piped as in-memory objects. |
+| PS Script escape character | \` | for special characters in a string use the "\`" to escape them. Example: "three\`$Horse". Escaped the "$" to character. Normall this means "var". |
+| PS Script pipeline character | \| | Pass the result of cmdlet 1 to the next cmdlet 2 and so on. Results are piped as objects. |
 | PS Script member enumeration | \(command -parameters\).property | This technique is used to retrieve single properties of a object result and |
 | PS Script optional arguments | \[ \] |  |
-| PS Block Statement | { } | Used in cmdlets and in scripts Block statements can be seen as query filters |
+| PS Block Statement | { } | Used in cmdlets and in scripts. Block statements can be seen as query filters |
 | PS Script comment | \# | document your scripts... |
 
 ## Variables in scripting
+
+The "$" symbol represents a variable in PowerShell 
 
 ## Parameters in scripting
 
