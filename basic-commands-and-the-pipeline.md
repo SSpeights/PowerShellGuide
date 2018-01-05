@@ -12,12 +12,13 @@ If you want to save all the commands and their output to use later, enter the Ge
 
 ## Cool cmdlets
 
-The best way to get to know which cmdlets are best for your use cases is to practice. Microsoft provides a great [cookbook for different kinds of cmdlets here](https://docs.microsoft.com/en-us/powershell/scripting/getting-started/basic-cookbooks?view=powershell-5.1). Go through these to get a feel for which ones are the most useful and output your Powershell session history to get a list of useful commands.
+The best way to get to know which cmdlets are best for your use cases is to practice. Microsoft provides a good [cookbook for different kinds of cmdlets here](https://docs.microsoft.com/en-us/powershell/scripting/getting-started/basic-cookbooks?view=powershell-5.1). Go through these to get a feel for which ones are the most useful and output your Powershell session history to get a list of useful commands.
 
 ## Section Targets
 
 * Record a list of cmdlets for reuse 
 * Record eveything that happens in the entire PS-session to reuse cmdlets and results
+* Be able to find and start using the Microsoft Cookbook for PS development
 
 
 
