@@ -46,15 +46,11 @@ Where-Object enables you to create a conditianal statement \(like an "if" statem
 
 Seelect-Object is different from Where-Object because it enable you to create brand new objects based on the filter you set. In essence, it has the function of making objects in your pipeline event skinnier by selecting only the properties and creating brand new objects, containing only the data that you need to have, which then speeds up processing further down the pipeline.
 
-[Online information for Select-Object is here.](https://docs.microsoft.com/en-us/powershell/module/Microsoft.PowerShell.Utility/Select-Object?view=powershell-5.1) Remember though, you can also get help from the PS-console with `help select-object.`
+[Online information for Select-Object is here](https://docs.microsoft.com/en-us/powershell/module/Microsoft.PowerShell.Utility/Select-Object?view=powershell-5.1) or you can type`help select-object`from the PS-console
 
 ### Foreach-Object {...} TODO
 
-Controlling formats
-
-looping - foreach statement
-
-It is also possible to designate "which" streams receive pipeline output. Different streams like debugging, error and so on.
+The Foreach-Object cmdlet performs processing on each object in a collection of objects
 
 ### Making comparsions in PS
 
@@ -68,14 +64,14 @@ Microsoft has extensive documentation on using operators, [how to make compariso
 | Not equals | -ne | 3 -ne 1+1 \(Returns $true\) |
 | Greater than or equal to | -ge | 3 -ge 1+1 \(Returns $true\) |
 | Less than or equal to | -le | 2 -le 1+1 \(Returns $true\) |
-| Substring search | -match |  |
-| Wildcard searches | -like |  |
-| Array content search - includes | -in |  |
-| Array content search - does not include | -notin |  |
-| Array content search - includes | -contains |  |
-| Array content search - does not include | -notcontains |  |
+| Substring search | -match | $\_.ServiceName -match "^netlog.\*" \(retreturns NetLogon service\) |
+| Wildcard searches | -like | $\_.ServiceName -like "netlog\*" \(Returns NetLogon service\) |
+| Array content search - includes | -in | 3 -in \(2,3,4,5\) \(returns true\) |
+| Array content search - does not include | -notin | 7 -notin \(2,3,4,5\) \(returns true\) |
+| Array content search - includes | -contains | \(2, 3, 4, 5\) -contains 3 \(returns true\) |
+| Array content search - does not include | -notcontains | \(2, 3, 4, 5\) -contains 7 \(returns true\) |
 
-[Microsoft's documentation for PS-comparison operators is here.](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comparison_operators?view=powershell-5.1)
+There is more and [Microsoft's documentation for PS-comparison operators is here.](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comparison_operators?view=powershell-5.1)
 
 Syntax for multiple pipeline conditions looks like -
 
@@ -91,13 +87,13 @@ And of course, you can always take a look at the example help for where-object c
 
 ## When not to output to the pipeline
 
-Sometimes you will want to output informational text to standard out that does not neet to be processed in anyway. This is actually the exception, since normally, you want to use the pipeline to get things done in PowerShell. At the same time, letting people know what's going on in your PowerShell routine can be useful. To output text without writing to the pipeline you use the `Write-Host` command. 
+Sometimes you will want to output informational text to standard out that does not neet to be processed in anyway. This is actually the exception, since normally, you want to use the pipeline to get things done in PowerShell. At the same time, letting people know what's going on in your PowerShell routine can be useful. To output text without writing to the pipeline you use the `Write-Host` command.
 
-When using `Write-Host` it is recommended to use different colors to offset this kind of information, making it clear that people should read this text. 
+When using `Write-Host` it is recommended to use different colors to offset this kind of information, making it clear that people should read this text.
 
 Example: `Write-Host (2,4,6,8,10,12) -Separator ", -> " -ForegroundColor DarkGreen -BackgroundColor White`
 
-In this example `Write-Host` outputs the numbers in the array, separated by a "-&gt;" with a while background and green text. 
+In this example `Write-Host` outputs the numbers in the array, separated by a "-&gt;" with a while background and green text.
 
 ## Further pipeline reading
 
@@ -108,7 +104,7 @@ Microsoft has good docuementation for powershell and we recommend that you also 
 ### **Send output to stdout as a formatted list**
 
 ```
-Get-Process | Out-Host -Paging | Format-List
+Get-Process | Out-Host -Paging | Format-Table -Property ProcessName, Description
 ```
 
 ### **Page content**
