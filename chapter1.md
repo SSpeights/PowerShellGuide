@@ -19,7 +19,7 @@ In general, before we get into doing PowerShell, it is good to understand what i
 * Which dev environments \(IDEs\) are good for working with PowerShell 
 * How PowerShell is structured
 * How to find your way around PowerShell
-* Basic PowerShell commands that everyone needs
+* Basic PowerShell commands that everyone, who uses Powershell, needs
 * Basic scripting, how to structure scripts and configuring cron jobs
 * A list of PowerShell features that may be interesting for you as a member of Haufe Group
 

@@ -40,7 +40,13 @@ Where-Object enables you to create a conditianal statement \(like an "if" statem
 * "-eq" is the comparison operator for "==" 
 * "Security" is the value you are looking for
 
-**Achtung**: Important to remember is that by using where-object {...} - you create a new object that can be piped to the next cmdlet.By making objects "skinnier" with where-object, you can also reduce the amount of processing needed by creating objects that only return the data you need to process.
+**Achtung**: Important to remember is that by using where-object {...} - you select objects from a collection returned by the previous cmdlet that can be piped to the next cmdlet.By filtering objects with where-object, you can also reduce the amount of processing needed by reducing the number objects you return only objects you need to process.
+
+### Select-Object
+
+Seelect-Object is different from Where-Object because it enable you to create brand new objects based on the filter you set. In essence, it has the function of making objects in your pipeline event skinnier by selecting only the properties and creating brand new objects, containing only the data that you need to have, which then speeds up processing further down the pipeline.
+
+[Online information for Select-Object is here.](https://docs.microsoft.com/en-us/powershell/module/Microsoft.PowerShell.Utility/Select-Object?view=powershell-5.1) Remember though, you can also get help from the PS-console with `help select-object.`
 
 ### Foreach-Object {...} TODO
 
@@ -61,7 +67,7 @@ Microsoft has extensive documentation on using operators, [how to make compariso
 | Equals | -eq | 2 -eq 1+1 \(Returns $true\) |
 | Not equals | -ne | 3 -ne 1+1 \(Returns $true\) |
 | Greater than or equal to | -ge | 3 -ge 1+1 \(Returns $true\) |
-| Less than or equal to  | -le | 2 -le 1+1 \(Returns $true\) |
+| Less than or equal to | -le | 2 -le 1+1 \(Returns $true\) |
 | Substring search | -match |  |
 | Wildcard searches | -like |  |
 | Array content search - includes | -in |  |
@@ -71,7 +77,7 @@ Microsoft has extensive documentation on using operators, [how to make compariso
 
 [Microsoft's documentation for PS-comparison operators is here.](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comparison_operators?view=powershell-5.1)
 
-Syntax for multiple pipeline conditions looks like - 
+Syntax for multiple pipeline conditions looks like -
 
 `get-verb | where-object {$_.Group -eq "Security" -or $_.Group -eq "Communications"}`
 
@@ -81,7 +87,7 @@ Syntax for multiple pipeline conditions looks like -
 
 [Microsoft's documentation for logical operators is here.](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_logical_operators?view=powershell-5.1)
 
-And of course, you can always take a look at the example help for where-object cmdlet, here there are also examples for how to filter for multiple syntaxes. Just type`help where-object -example`. 
+And of course, you can always take a look at the example help for where-object cmdlet, here there are also examples for how to filter for multiple syntaxes. Just type`help where-object -example`.
 
 ## When not to output to the pipeline
 
@@ -110,7 +116,8 @@ Get-Process | Out-Host -Paging | Format-List
 ## Section Targets
 
 * Using pipelines to execute the get data \| process data \| output result pattern
-* Filter objects with the pipeline with Where-Object
+* Filter collections of objects with the pipeline with Where-Object
+* Create skinnier objects with Select-Object
 * Individually process objects with Foreach-Object 
 * Learning some useful examples for important use cases
 
