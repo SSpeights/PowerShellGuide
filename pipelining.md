@@ -91,7 +91,13 @@ And of course, you can always take a look at the example help for where-object c
 
 ## When not to output to the pipeline
 
-stdout messaging for routine
+Sometimes you will want to output informational text to standard out that does not neet to be processed in anyway. This is actually the exception, since normally, you want to use the pipeline to get things done in PowerShell. At the same time, letting people know what's going on in your PowerShell routine can be useful. To output text without writing to the pipeline you use the `Write-Host` command. 
+
+When using `Write-Host` it is recommended to use different colors to offset this kind of information, making it clear that people should read this text. 
+
+Example: `Write-Host (2,4,6,8,10,12) -Separator ", -> " -ForegroundColor DarkGreen -BackgroundColor White`
+
+In this example `Write-Host` outputs the numbers in the array, separated by a "-&gt;" with a while background and green text. 
 
 ## Further pipeline reading
 
