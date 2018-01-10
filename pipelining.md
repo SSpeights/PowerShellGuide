@@ -37,10 +37,10 @@ Where-Object enables you to create a conditianal statement \(like an "if" statem
 
 * "$\_" stands for "this.object" - the result being piped into where object
 * .Group is the property being filtered \(you can look at the properties and methods with `get-verb | get-member`\)
-* "-eq" is the comparison operator for "==" 
+* "-eq" is the comparison operator for "=" 
 * "Security" is the value you are looking for
 
-**Achtung**: Important to remember is that by using where-object {...} - you select objects from a collection returned by the previous cmdlet that can be piped to the next cmdlet.By filtering objects with where-object, you can also reduce the amount of processing needed by reducing the number objects you return only objects you need to process.
+**Achtung**: Important to remember is that by using where-object {...} - you select objects from a collection returned by the previous cmdlet that can be piped to the next cmdlet. By filtering objects with where-object, you can also reduce the amount of processing needed by reducing the number objects you return only objects you need to process.
 
 ### Select-Object
 
@@ -50,7 +50,11 @@ Seelect-Object is different from Where-Object because it enables you to create b
 
 ### Foreach-Object {...} TODO
 
-The Foreach-Object cmdlet performs processing on each object in a collection of objects
+The Foreach-Object cmdlet performs processing on each object in a collection of objects. One example for this outlet is changing registry key values:
+
+Example: `Get-ItemProperty -Path HKCU:\Network\* | ForEach-Object {Set-ItemProperty -Path $_.PSPath -Name RemotePath -Value $_.RemotePath.ToUpper();}`
+
+
 
 ### Making comparsions in PS
 
