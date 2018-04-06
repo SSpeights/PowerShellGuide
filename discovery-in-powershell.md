@@ -9,11 +9,11 @@ PowerShell has quite a few resources that can help you get up to speed with this
 * [The Powershell Gallery](https://www.powershellgallery.com/) - Official repository for PS-Module and PS-Scripts that you can download and use
 * [PowerShell Magazine](http://www.powershellmagazine.com/) \(PS-people like Keith Hill post articles here\)
 
-These resources are geared toward finding more tutorials and connecting with people to get anwers to questions. But the real star of the resource-show is the PowerShell CLI itself.
+These resources are geared toward finding more tutorials and connecting with people to get answers to questions. But the real star of the resource-show is the PowerShell CLI itself.
 
 ## OPP - Other People's Powershell
 
-You won't need it right away but an important resource will be the Powershell Gallery. This is where curated PowerShell Modules and scripts get stored so others in the PS-Community can use them. Currently, there are over 2,500 modules and scripts in the Gallery. Hopefully, it can speed you up by exposing code that performs a function that you must have. I mention this first, but in the discovery section, this will be mentioned last, because we have to learn a little about PowerShell before we go and access other people's code.
+You won't need it right away but an important resource will be the Powershell Gallery. This is where curated PowerShell Modules and scripts get stored so others in the PS-Community can use them. Currently, there are over 2,500 modules and scripts in the Gallery. Hopefully, it can speed you up by exposing code that performs a function that you must have. I mention this first, but in the this section, this will be addressed last, because we have to learn a little about PowerShell before we go and access other people's code.
 
 ## Make sure help is up to date
 
@@ -36,8 +36,6 @@ When you want to find a specific command, most of the PowerSehll gurus recommend
 
 ## Finding useful commands
 
-Before we begin with this example, you can also google for PowerShell commands with pretty good success.
-
 Let's say you have to keep yourself from working too much - otherwise you would work until midnight every night. To prevent yourself from overworking and experiencing burnout, you decide to automate computer shutdown at 18:00 Monday - Friday. PowerShell is your tool of choice.
 
 You know that "Shutdown" is not an official PowerShell verb, but you don't know what the actual verb is so, you type `get-verb` at the PS-prompt. You get a list of returned PS Verbs. There are a lot of verbs, but you see in the "Lifecycle" verb group there is a verb call stop.
@@ -46,17 +44,17 @@ To get more specific you type in a get-command with \*stop\* as the filter: `gcm
 
 To see if it's the right one you call the help for this command with: `get-help stop-computer`.  Sure enough, with stop-computer you can shutdown local and remote computers.
 
-This is the "broad to narrow" search way to find commands in PowerShell. If you are just beginning with PowerShell, it is probably a good idea to find at least some of your commands like this. Remember, you may be working on headless servers in the future, and there will be no browser with which to google.
+This is the "broad to narrow" search way to find commands in PowerShell. If you are just beginning with PowerShell, it is probably a good idea to find at least some of your commands like this. Remember, you may be working on headless servers in the future, and there will be no browser with which to google. But...
 
-**Achtung: Don't forget to google! **If this seems like a lot of work, I also found the "stop-computer" cmdlet by googling with "Powershell command to shut down computer": "stop-computer" was the first result; so in my opinion, googling is also a plausible alternative to discover PS-cmdlets. The good part is that you can enter what you want to do in plain text! Try googling for "Test network connection with PowerShell" and see what you get. Once you find the command though, you may want to move back to the console and use "Get-Help" to get the detailed usage information.
+**Achtung: Don't forget to google! **If this seems like a lot of work, I also found the "stop-computer" cmdlet by googling with "Powershell command to shut down computer": "stop-computer" was the first result; so in my opinion, googling is also a plausible alternative to discover PS-cmdlets. The good part is that you can enter what you want to do in plain text! Try googling for "Test network connection with PowerShell" and see what you get. Once you find the command though, you may want to move back to the console and use "Get-Help" to get the detailed usage information. It will go faster.
 
 ## Exemplary help
 
 Not only does Powershell offer useful help pages from the console, you can also call actual examples, and often, these examples can speed up your scripting.
 
-Let's say you decide to not only save yourself from burnout but also save the company some money, by automating shutdown for your test and production remote systems - also at 18:00 every day - and you need a report of the results. To retrieve cmdlet examples, you add an "example" switch to your help cmdlet: `get-help stop-computer -example`.
+Let's say you decide to not only save yourself from burnout but also save the company some money, by automating shutdown for your test and production remote systems in the cloud - also at 18:00 every day - and you need a report of the results. To retrieve cmdlet examples, you add an "example" switch to your help cmdlet: `get-help stop-computer -example`.
 
-Examples are displayed in the console. Example number 2 fits your use case nicely and so you can copy and add it to a powershell script, make some small modifications and schedule it to run at 18:00.
+Examples are displayed in the console. Example number 2 - "Shut down two remote computers and the local computer" fits your use case nicely and so you can copy and add it to a powershell script, make some small modifications and schedule it to run at 18:00.
 
 There are other help switches that are useful and they are:
 
@@ -70,7 +68,7 @@ There are other help switches that are useful and they are:
 
 ## Find out what's inside the PowerShell Object
 
-Once you know which cmdlets you must use, you can discover what these commands output by piping the output to the `Get-Member` command. Remember Powershell shell always output objects and these objects contain methods and properties just like any other objects in the .NET framework. Get-Member is useful because maybe you only need to 1 or 2 pieces of information. With the Get-Member cmdlet you can look at the "internals" of PS-Objects and decide what you need. This makes your scripting more performant.
+Once you know which cmdlets you must use, you can discover what these commands output by piping the output to the `Get-Member` command. Remember, Powershell shell always outputs objects and these objects contain methods and properties just like any other objects in the .NET framework. Get-Member is useful because maybe you only need to 1 or 2 pieces of information. With the Get-Member cmdlet you can look at the guts of PS-Objects and decide what you need. This makes your scripting more performant.
 
 In the following example, the output of Get-NetIPConfiguration is piped to Get-Member, which returns the properties
 
