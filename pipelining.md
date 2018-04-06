@@ -1,10 +1,10 @@
 # The Pipeline
 
-The pipeline is one of the features that makes PowerShell such a powerful tool. If you have worked with Linux you probably already know how pipe works. Piping enables stringing commands together - using the pipe "\|" symbol - to pass the result of a command to the next command. Piping objects is the most powerful feature of PowerShell. It is important to note that we are only going to treat the "\|" way to pipe objects in this section, but there are other ways to pipeline that produce different results. Liks to more information are in "Further pipeline reading" at the end of this section.
+The pipeline is one of the features that makes PowerShell such a powerful tool. If you have worked with Linux you probably already know how pipe works. Piping enables stringing commands together - using the pipe "\|" symbol - to pass the result of a command to the next command. Piping objects is the most powerful feature of PowerShell. It is important to note that we are only going to talk about the "\|" way to pipe objects in this section, but there are other ways to pipeline that produce different results. Links to more information are in "Further pipeline reading" at the end of this section.
 
 ## Basic processing in the pipeline
 
-The difference between PS piping and Linux Shell piping is, that the PowerShell is passing the result of a command as a .NET object and not as text, providing you more ways to use this returned result. That's not important right now. What's important is that you can chain single commands to implement the "Get \| Process \| Output" pipeline, which is a common powershell output where three things happen.
+The difference between PS piping and Linux Shell piping is, that the PowerShell is passing the result of a command as a .NET object and not as text, providing you more ways to use this returned result and sparing you the effort of parsing text. That's not important right now. What's important is that you can chain single commands to implement the "Get \| Process \| Output" pattern, where three things happen.
 
 * You get some data that you need
 * You process that data and "do" something with it.
@@ -26,7 +26,7 @@ In the example above the following happens
 * Where-object result is piped, as an object, to the out-file cmdlet
 * Out file cmdlet outputs this result to the "Securty-Verbs.txt" file
 
-The pipeline enables fine control of the get, process, output pattern by passing objects that allow the next object to process this output. Cmdlets that allow for filtering for conditionals or for looping through output are:
+The pipeline enables fine control of the get, process, output pattern by passing objects that allow the next cmdlet to process this output. Cmdlets that allow for filtering for conditionals or for looping through output are:
 
 * Where-Object
 * Foreach-Object
@@ -40,11 +40,11 @@ Where-Object enables you to create a conditianal statement \(like an "if" statem
 * "-eq" is the comparison operator for "=" 
 * "Security" is the value you are looking for
 
-**Achtung**: Important to remember is that by using where-object {...} - you select objects from a collection returned by the previous cmdlet that can be piped to the next cmdlet. By filtering objects with where-object, you can also reduce the amount of processing needed by reducing the number objects you return only objects you need to process.
+**Achtung**: Important to remember is that by using where-object {...} - you select objects from a collection returned by the previous cmdlet that can be piped to the next cmdlet. By filtering objects with where-object, you can also reduce the amount of processing needed - i.e. reducing the number objects you return to only the objects you need to process.
 
 ### Select-Object
 
-Seelect-Object is different from Where-Object because it enables you to create brand new objects based on the filter you set. In essence, it has the function of making objects in your pipeline event skinnier by selecting only the properties and creating brand new objects that contain only the data that you need to have, which then speeds up processing further down the pipeline.
+Select-Object is different from Where-Object because it enables you to create brand new objects based on the filter you set. In essence, it has the function of making objects in your pipeline  skinnier by selecting only needed properties, creating brand new objects that contain only the data , which then speeds up processing further down the pipeline.
 
 [Online information for Select-Object is here](https://docs.microsoft.com/en-us/powershell/module/Microsoft.PowerShell.Utility/Select-Object?view=powershell-5.1) or you can type`help select-object`from the PS-console
 
@@ -53,8 +53,6 @@ Seelect-Object is different from Where-Object because it enables you to create b
 The Foreach-Object cmdlet performs processing on each object in a collection of objects. One example for this outlet is changing registry key values:
 
 Example: `Get-ItemProperty -Path HKCU:\Network\* | ForEach-Object {Set-ItemProperty -Path $_.PSPath -Name RemotePath -Value $_.RemotePath.ToUpper();}`
-
-
 
 ### Making comparsions in PS
 
