@@ -33,13 +33,13 @@ Command alias is also included in the help of individual commands. By typing `he
 
 ## Autocomplete
 
-One of the nice things about powershell is that you can leverage the TAB autocomplete for ALL ASPECTS of PowerShell from the command line as well as from a good IDE. 
+One of the nice things about powershell is that you can leverage the TAB autocomplete for ALL ASPECTS of PowerShell from the command line as well as from a good IDE.
 
 Not only can you autocomplete cmdlets, but also cmdlet parameters, enumerated values of these parameters and so on by using the TAB key. PowerShell just knows how to autocomplete - it's a little bit like people, who know you so well that they can finish your thought most of the time.
 
 ## Positional Parameters
 
-This is not in the list but another framework feature of PowerShell is "positional parameters". For these parameters, you only have to type the value, not the parameter name. PowerShell understands your argument implicitly, because of the postion of the parameter.
+This is not in the list but another framework feature of PowerShell is "positional parameters". For these parameters, you only have to type the value, not the parameter name. PowerShell understands your argument implicitly, because of the position of the parameter.
 
 ## PowerShell returns objects
 
@@ -51,7 +51,9 @@ Finally, PowerShell passes these returned objects to the next cmdlet over the pi
 
 ## Functionality - The big picture
 
-Using PowerShell, you have a scripting language that allows you to execute scripts without a compiler, that makes it easier for you to script via an intuitive verb-noun cmdlet pattern, that speeds you even more by providing aliases for these commands and by having robust autocomplete at the PS-prompt and in the IDE. And, if you need it, you can also leverage Microsoft .NET and COM libraries to do even more. This structure and these features not only make it easier to type commands in at the command prompt, they also make it easier to discover what you can do with PowerShell, and create powerful scripts as you'll see in the next sections.
+Using PowerShell, you have a scripting language that allows you to execute scripts without a compiler, that makes it easier for you to script via an intuitive verb-noun cmdlet pattern, and you are speeded even more with aliases for these commands and by having robust autocomplete at the PS-prompt and in the IDE. 
+
+And, if you need it, you can also leverage Microsoft .NET and COM libraries to do even more. This structure and these features not only make it easier to type commands in at the command prompt, they also make it easier to discover what you can do with PowerShell, and create powerful scripts as you'll see in the next sections.
 
 ## Section targets
 
