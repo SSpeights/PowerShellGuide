@@ -1,6 +1,6 @@
 # Powershell Framework
 
-Understanding a little bit about how PowerShell works goes a long way to helping you find the PS-Resources your need and code PS more efficiently and comfortably. You should now have an integrated development environment and you can use the IDE to take a look at how Powershell is semantically structured and get and the functions PowerShell has to help you to code faster.
+Understanding a little bit about how PowerShell works goes a long way to helping you find the PS-Resources you need and code PS more efficiently and comfortably. You should now have an integrated development environment \(or an editor you feel comfortable with\) and you can use the IDE to take a look at how Powershell is semantically structured and get and the functions PowerShell has to help you to code faster.
 
 ## Powershell command structure
 
@@ -17,7 +17,7 @@ Achtung: We are providing links to web pages here but encourage you to use the P
 
 While command nouns are configurable, verbs are not. Verbs are curated by Microsoft, and you can find the official list by clicking the link in the list above. Even better though, you can get a list of verbs by typing `get-verb` from the command prompt in the PS-Console
 
-**Verbs are grouped logically,** and it is a good idea get acquainted with, which verbs belong to which groups. Knowing verb grouping helps you to search more intuitively for cmdlets. You can also filter verbs by group. Example: To print all verbse that belong to the "Security" group you type`get-verb | where-object {$_.Group -eq "Security"}`.
+**Verbs are grouped logically,** and it is a good idea get acquainted with, which verbs belong to which groups. Knowing verb grouping helps you to search more intuitively for cmdlets. You can also filter verbs by group. Example: To print all verbs that belong to the "Security" group you type:`get-verb | where-object {$_.Group -eq "Security"}`.
 
 ## Powershell Nouns
 
@@ -27,13 +27,15 @@ Nouns can vary based on what the PS cmdlet is supposed to do. It is even possibl
 
 ## Aliases
 
-The Verb-Noun pattern is good to get started and helps with intuitive discovery of cmdlets - so you can find and use fast. Once you get to know the cmdlets, you can use the alias to script cmdlets more quickly. For example, `get-command` cmdlet alias is `gcm`. You can get the complete list of PS-aliases by type `get-alias` or its alias, `gal`, in the PS-console.
+The Verb-Noun pattern is good to get started and helps with intuitive discovery of cmdlets - so you can find and use them fast. Once you get to know the cmdlets, you can use the alias to script cmdlets more quickly. For example, `get-command` cmdlet alias is `gcm`. You can get the complete list of PS-aliases by type `get-alias` or its alias, `gal`, in the PS-console.
 
 Command alias is also included in the help of individual commands. By typing `help get-command`, you can see the alias "gcm" in the get-command help page.
 
 ## Autocomplete
 
-One of the nice things about powershell is that you can leverage the TAB autocomplete for ALL ASPECTS of PowerShell from the command line as well as from a good IDE. Not only can you autocomplete cmdlets, but also cmdlet parameters, enumerated values of these parameters and so on by using the TAB key. PowerShell just knows how to autocomplete - it's a little bit like people, who know you so well that they can finish your thought most of the time.
+One of the nice things about powershell is that you can leverage the TAB autocomplete for ALL ASPECTS of PowerShell from the command line as well as from a good IDE. 
+
+Not only can you autocomplete cmdlets, but also cmdlet parameters, enumerated values of these parameters and so on by using the TAB key. PowerShell just knows how to autocomplete - it's a little bit like people, who know you so well that they can finish your thought most of the time.
 
 ## Positional Parameters
 
