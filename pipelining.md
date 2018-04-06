@@ -44,15 +44,17 @@ Where-Object enables you to create a conditianal statement \(like an "if" statem
 
 ### Select-Object
 
-Select-Object is different from Where-Object because it enables you to create brand new objects based on the filter you set. In essence, it has the function of making objects in your pipeline  skinnier by selecting only needed properties, creating brand new objects that contain only the data , which then speeds up processing further down the pipeline.
+Select-Object is different from Where-Object because it enables you to create brand new objects based on the filter you set. In essence, it has the function of making objects in your pipeline  skinnier by selecting specific properties and creating brand new objects that contain only the data.
 
-[Online information for Select-Object is here](https://docs.microsoft.com/en-us/powershell/module/Microsoft.PowerShell.Utility/Select-Object?view=powershell-5.1) or you can type`help select-object`from the PS-console
+[Online information for Select-Object is here](https://docs.microsoft.com/en-us/powershell/module/Microsoft.PowerShell.Utility/Select-Object?view=powershell-5.1) or you can type`help select-object`from the PS-console.
 
 ### Foreach-Object {...} TODO
 
 The Foreach-Object cmdlet performs processing on each object in a collection of objects. One example for this outlet is changing registry key values:
 
 Example: `Get-ItemProperty -Path HKCU:\Network\* | ForEach-Object {Set-ItemProperty -Path $_.PSPath -Name RemotePath -Value $_.RemotePath.ToUpper();}`
+
+This example converts all valued of the registry keys under network with the name RemotePath to uppercase letters.
 
 ### Making comparsions in PS
 
@@ -89,7 +91,7 @@ And of course, you can always take a look at the example help for where-object c
 
 ## When not to output to the pipeline
 
-Sometimes you will want to output informational text to standard out that does not neet to be processed in anyway. This is actually the exception, since normally, you want to use the pipeline to get things done in PowerShell. At the same time, letting people know what's going on in your PowerShell routine can be useful. To output text without writing to the pipeline you use the `Write-Host` command.
+Sometimes you will want to output informational text to standard out that does not need to be processed. This is actually the exception, since normally, you want to use the pipeline to get things done in PowerShell. At the same time, letting people know what's going on in your PowerShell routine can be useful. To output text without writing to the pipeline you use the `Write-Host` command.
 
 When using `Write-Host` it is recommended to use different colors to offset this kind of information, making it clear that people should read this text.
 
@@ -99,7 +101,7 @@ In this example `Write-Host` outputs the numbers in the array, separated by a "-
 
 ## Further pipeline reading
 
-Microsoft has good docuementation for powershell and we recommend that you also [take a look at their documentaiton about pipelines](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_pipelines?view=powershell-5.1) to get more details on how to use the pipeline and alternative ways to pipeline objects for your PowerShell tasks.
+Microsoft has good documentation for powershell and we recommend that you also [take a look at their documentation about pipelines](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_pipelines?view=powershell-5.1) to get more details on how to use the pipeline and alternative ways to pipeline objects for your PowerShell tasks.
 
 ## Some basic uses cases for the pipe
 
