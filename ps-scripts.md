@@ -4,7 +4,7 @@ Very simply, the reason why you want to learn how to create Powershell scripts i
 
 PowerShell scripts have the .ps1 extension. If you have already selected an IDE for your scripting, you can go ahead and open it. Create a .ps1 script and name it "Hello.ps1".
 
-in the script add - `write-output "Hello"`. 
+in the script add - `write-output "Hello"`.
 
 ## PS Execution Policy
 
