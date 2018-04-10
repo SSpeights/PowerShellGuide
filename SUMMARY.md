@@ -10,6 +10,6 @@
 * [7. PS Script basics](ps-scripts.md)
 * [8. Prepare your script](prepare-your-script.md)
 * [9. Scripts: Files with a lot of PS commands](a-bunch-of-commands.md)
-* [10. Refining your script with loops](refining-with-loops.md)
+* [10. Refining your script](refining-with-loops.md)
 * [Notes](notes.md)
 
