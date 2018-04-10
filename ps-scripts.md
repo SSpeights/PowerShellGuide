@@ -34,7 +34,7 @@ Just like a shell script in Linux, you must type in a ".\" to run the script. In
 | Run a PS script | .\&lt;ScriptName.ps1&gt; | From the PS-prompt use this sytax to tell PowerShell to run a script |
 | PS Script variable character | $ | To declare a variable prefix the variable name with a "$" |
 | PS Script escape character | \` | for special characters in a string use the "\`" to escape them. Example: "three\`$Horse". Escaped the "$" to text. Normally this would be a variable. |
-| PS Script pipeline character | \| | to pipe output to the next cmdlet just like in the console. |
+| PS Script pipeline character | \| | to pipe output to the next cmdlet just like in the console | 
 | PS Script member enumeration | \(command -parameters\).property | This technique is used to retrieve single properties of an object result |
 | PS Script optional arguments | \[ \] |  |
 | PS Block Statement | { } | Used in cmdlets and in scripts. Block statements can be seen as query filters |
