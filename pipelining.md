@@ -56,6 +56,16 @@ Example: `Get-ItemProperty -Path HKCU:\Network\* | ForEach-Object {Set-ItemPrope
 
 This example converts all valued of the registry keys under network with the name RemotePath to uppercase letters.
 
+Before I forget you can pipeline, directly into a PowerShell script. Try this. Create a .ps1 file with this code
+
+`foreach ($i in $input) {`
+
+`$i`
+
+`}`
+
+and from the PS-bash type - `1..20 | .\<FileName>.ps1`. The script should print numbers 1 - 20 to stdout - one number per line.
+
 ### Making comparsions in PS
 
 Microsoft has extensive documentation on using operators, [how to make comparisons and how to filter objects to make them more efficient, and you should take a look at this documentation](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_operators?view=powershell-5.1). For practical purposes though, you can use the following comparison operators to filter your PS objects:
