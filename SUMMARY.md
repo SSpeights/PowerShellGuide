@@ -12,4 +12,5 @@
 * [9. Scripts: Files with a lot of PS commands](a-bunch-of-commands.md)
 * [10. Refining your script](refining-with-loops.md)
 * [Notes](notes.md)
+* [Resources](resources.md)
 
