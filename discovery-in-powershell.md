@@ -1,6 +1,6 @@
 # Getting savvy with PowerShell
 
-PowerShell feature set is huge, and one of the major tasks, when you decide to use PowerShell, is to figure out which commands you need to get your task done. Once you get started - realize that PowerShell is very big and that leveraging the "Find" resources both in the CLI and on the web will be important to working effectively.
+The PowerShell feature set is huge, and one of the major tasks, when you decide to use PowerShell, is to figure out which commands you need to get your task done. Once you get started - realize that leveraging the "Find" resources both in the CLI and on the web will be important to working effectively.
 
 PowerShell has quite a few resources that can help you get up to speed with this technology. There are many cmdlets in PowerShell so it is important to find out what they do and how you can used them. In addition, there is a large Powershell community and you can get help using the normal channels. Major outlets for PowerShell ideas are -
 
@@ -23,13 +23,13 @@ Before you do this though, you should be sure that you have all of the help on y
 
 To do this, type `update-help` at the PS command prompt.
 
-**Achtung:** you might want to try this at home, away from the proxy server.
+**Achtung:** You might want to try this at home, away from the proxy server.
 
 ## PowerShell search pattern
 
 When you want to find a specific command, most of the PowerSehll gurus recommend the following steps.
 
-* Use your intuition and knowledge of Microsoft technologies 
+* Use your intuition and knowledge of Microsoft technologies \(Or linux, or Mac\)
 * Filter your get-command for plausible command names - so if your looking for IP configuration filter for \*IP\* \(you can also use a verb as a filter!\)
 * Scan the results and select the best looking command
 * Use "get-help + CommandName" to get detailed help
