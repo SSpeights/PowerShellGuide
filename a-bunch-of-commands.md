@@ -18,13 +18,13 @@ To get this information for your local computer you can type the following comma
 * Get-WmiObject -Class Win32\_BIOS -ComputerName . \| Select-Object -Property \[a-z\]\*
 * Get-WmiObject -Class Win32\_Processor -ComputerName . \| Select-Object -Property \[a-z\]\*
 
-These cmdlets gets the desired information for this computer and sorts each property in ascending order.
+These cmdlets get all of the OS, BIOS, and Processor information for this computer and sorts each property in ascending order.
 
 To get a list of these cmdlets, enter `Get-History` at the PS-prompt and copy the output
 
 ## Add cmdlets
 
-Paste the cmdlets into your .ps1 script. Go to the PS-prompt and type in .\SystemInformationReporter.ps1. The script runs and the three reports output to the PowerShall console as stdout. Don't forget to document \( a little \) what you plan to do.
+Paste the cmdlets into your .ps1 script. Go to the PS-prompt and type in .\SystemInformationReporter.ps1. The script runs and the three reports output to the PowerShell console as stdout. Don't forget to document \( a little \) what you plan to do.
 
 **Achtung:** You don't need to type the whole thing if your script name is somewhat unique you just have to type the first letters of the script name and then the TAB key to autocomplete. You don't even have to type ".\". Autocomplete will recognize that this is a PS-script and add this in front of the file name.
 
