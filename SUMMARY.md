@@ -9,7 +9,7 @@
 * [6. Pipelining](pipelining.md)
 * [7. PS Script basics](ps-scripts.md)
 * [8. Prepare your script](prepare-your-script.md)
-* [9. Scripts: Files with a lot of PS commands](a-bunch-of-commands.md)
+* [9. Create a script from cmdlets](a-bunch-of-commands.md)
 * [10. Refining your script](refining-with-loops.md)
 * [Resources](resources.md)
 
