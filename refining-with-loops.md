@@ -25,17 +25,29 @@ Example: `Write-Host "OS report finished" -ForegroundColor Red -BackgroundColor 
 
 ## Adding Variables
 
-You might want to use this script for something else and to get data for multiple computers besides this one report. Variables can save lines of code and you decide to add a variable for the different computer data reports you want to generate and also for the names of different systems you manage that you want to check. So you add these variables, some "foreach" loops and a little condition just in case the string array for the computer name is empty.
+You decide you want to use this script To check different data and to get data for multiple computers besides this one report. 
+
+Variables can save lines of code and you decide to add a variable for the different computer data reports you want to generate and also for the names of different systems you manage that you want to check. 
+
+[So you add these variables, some "foreach" loops and a little condition just in case the string array for the computer name is empty.](/Examples/AddVariable_ComputerData.ps1)
 
 ## Adding a Parameter
 
-After thinking about it a little bit, it doesn't make sense to enter a your systems in the script because powershell can read them in from a file very easily. This has the added advantage that you can read different lists of systems into your script. So, you change your ComputerName variable to a String array parameter that can be read into the script by adding a parameter to the command line. parameter is optional and you can also add computer names via the "if" statement in the script
+After thinking about it a little bit, it doesn't make sense to enter a your systems in the script because powershell can read them in from a file very easily. This has the added advantage that you can read different lists of systems into your script. So, you change your ComputerName variable to a String array parameter that can be read into the script by adding a parameter to the command line. 
+
+[The parameter is optional and you can also add computer names via the "if" statement in the script, if there is no input file.](/Examples/AddParameter1_ComputerInformation.ps1)
 
 ## Creating a Custom Object and Outputting to file
 
-So the script is now pretty elegant and compact but it still is producing too much data. You only need the six information pieces above. You decide using variables in your commands is not the right way to build this script.
+So the script is now pretty elegant and compact but it still is producing too much data. You only need the six pieces of information  above. You decide using variables in your commands is not the right way to build this script.
 
-Here you take away the variable and loop for ComputerInfo, select only the information you need, add this to a new object and, finally, output to a csv file that you can use for your checking logic script.
+Here you take away the variable and loop for ComputerInfo, select only the information you need, add this to a new object and, finally, output to a csv file that you can use for your checking logic script. [The script now looks like this.](/Examples/CreateObject-OutputToFile_ComputerData.ps1)
+
+## Making it easier to read in data
+
+As a final step, you decide to make entering the parameter easier so you only have to enter a file path / file name instead of "Get-Content", you also decide to that you want to be able to set the list of system name from inside the script for automation. 
+
+
 
 That's it. now you can get information about the computers your are managing, write them to a report and use the report to check and see which kind of software you can install on these computers. If you plan to automate this process, you might want to also create a another script to delete all reports to make way for new reports in the next scheduled run. Or, you might not want to mess around with files at all and but the checking logic in this script \(or pass objects to another scripts\). There are lots of options.
 
