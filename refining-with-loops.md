@@ -1,8 +1,8 @@
 # Refining your script
 
-**Achtung**: documentation for what's going on in code is in the code example on github feel free to download from the examples and use them for other scripts.
+**Achtung**: documentation for what's going on in code is in the code examples. Feel free to [download the examples from GitHub](https://github.com/SSpeights/PowerShellGuide) and use them for other scripts.
 
-After running the script you realize that you don't need all of this information and that you can't really see where the reports begin and end. The only information you need to run your check is:
+After running the script you realize that you don't need all of this information to validate your computer state and that you can't really see where the reports begin and end. The only data you need to run your check is:
 
 * OS Status
 * OS Name and version
@@ -11,13 +11,17 @@ After running the script you realize that you don't need all of this information
 * Processor Name
 * Number of Cores on your machine.
 
+You decide to deal with this part last because first you have to find out the property names for this data.
+
 ## Separating reports
 
-First though we have to find this information and since you want to find out which properties you need you decide to split up the reports in stdout with the PowerShell "echo" command - Write-Host. Remember Write-Host doesn't write to the pipeline so for things like data labels or information for folks running the script, this is a good choice.
+Since you have to find this information, you decide to split up the reports in stdout with the PowerShell "echo" command - Write-Host. Remember Write-Host doesn't write to the pipeline so for things like data labels or information for folks running the script, this is a good choice.
 
-So add, Write-Host statements underneath each report to separate them.
+So you add, Write-Host statements underneath each report to separate them.
 
 Example: `Write-Host "OS report finished" -ForegroundColor Red -BackgroundColor White`
+
+[Here's what this looks like in your script.](/Examples/SplitReports-ComputerIData.ps1)
 
 ## Adding Variables
 

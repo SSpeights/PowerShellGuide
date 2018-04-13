@@ -20,7 +20,7 @@ To get this information for your local computer you can type the following comma
 
 These cmdlets get all of the OS, BIOS, and Processor information for this computer and sorts each property value in ascending order.
 
-To get a list of these cmdlets, enter `Get-History` at the PS-prompt. Copy the output
+To get a list of these cmdlets, enter `Get-History` at the PS-prompt. Copy the output.
 
 ## Add cmdlets
 
@@ -28,5 +28,5 @@ Paste the cmdlets into your .ps1 script. Go to the PS-prompt and type in .\Compu
 
 **Achtung:** You don't need to type the whole thing if your script name is somewhat unique you just have to type the first letters of the script name and then the TAB key to autocomplete. You don't even have to type ".\". Autocomplete will recognize that this is a PS-script and add this in front of the file name.
 
-Voila. You just made a powershell script file. You can now run the script on demand or schedule this in task manager, cron job or whatever other cron manager you are using. But, we are not done with this script yet...
+Voila. You just made a powershell script file. You can now run the script on demand or schedule this in task manager, cron job or whatever other cron manager you are using. But, we are not done with this script yet because we can make it better.
 
