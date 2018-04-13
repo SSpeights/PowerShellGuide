@@ -4,7 +4,7 @@ No. you don't have to do like this if you don't want to. But, scripts are in a s
 
 ## Create a template
 
-In this case the template is already created for you. [Our template example is here](https://github.com/SSpeights/PowerShellGuide/blob/master/Examples/8_BaseTemplate.ps1 "Base PS Script Template"). Snag it, add it to the "templates" folder in your PS-project, and open it in your favorite PS-IDE.
+In this case the template is already created for you. [Our template example is here](/Examples/Template/BaseTemplate.ps1). Snag it, add it to the "templates" folder in your PS-project, and open it in your favorite PS-IDE.
 
 ## Create help - part 1
 

@@ -6,11 +6,13 @@ PowerShell scripts have the .ps1 extension. If you have already selected an IDE 
 
 in the script add - `write-output "Hello"`.
 
+**To run the script go down to the powershell command line and type in .\Hello.ps1.**
+
 ## PS Execution Policy
 
 **Achtung**: if you get an "unauthorized access warning" in red text and your script doesn't run. It means that you need to change your execution policy so you can execute PS scripts on your system. You do this with the `Set-ExecutionPolicy` comand. To get the information you need to do this, [please visit this Microsoft technet page](https://technet.microsoft.com/en-us/library/ee176961.aspx). You must have an overview of the different Execution-Policies before you set a policy and talk to ICT first. Setting the policy to "unrestricted" might not be the best choice...
 
-**To run the script go down to the console bash and type in .\Hello.ps1.**
+
 
 **Another Example:** You persist PS-cmdlets in .ps1 files.
 
