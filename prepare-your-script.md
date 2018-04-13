@@ -1,6 +1,6 @@
 # Document what you are going to do before coding \(a little\)
 
-No. you don't have to do like this if you don't want to. But, scripts are in a sense just like code and it is good when other people can understand what a script is for - maybe they can use it too. Also, if you take the time to elaborate the tasks that your script should perform, i.e. if you think about if first and make a plan, you'll probably write a better script. Not only will other folks understand your script better - you will too. This is a good way to plan your script, especially if you're are just getting started with PS.
+No. you don't have to do like this if you don't want to. But, scripts are just like code in other languages and it is good when other people can understand what a script is for - maybe they can use it too. Also, if you take the time to elaborate the tasks that your script should perform, i.e. if you think about if first and make a plan, you'll probably write a better script. Not only will other folks understand your script better - you will too. This is a good way to plan your script, especially if you're are just getting started with PS.
 
 ## Create a template
 
@@ -8,7 +8,9 @@ In this case the template is already created for you. [Our template example is h
 
 ## Create help - part 1
 
-Amazon starts their feature development with a press release. This is thier way for "working back from the objective". With a PowerShell script it makes sense to start **by creating a description of what your script should do**. PowerShell supports adding help documentation directly to the your script. You can then call the help directly from the command line, just like for all the standard cmdlets and scripts in the PS-gallery. You want to do this because if you have to go away from your script for a long time, you will need this documentation to refresh your memory when you come back.
+Amazon starts their feature development with a press release. This is their way for "working back from the objective". With a PowerShell script it makes sense to start **by creating a description of what your script should do**. 
+
+PowerShell supports adding help documentation directly to the your script. You can then call the help directly from the command line, just like for all the standard cmdlets and scripts in the PS-gallery. You want to do this because if you have to go away from your script for a long time, you will need this documentation to refresh your memory when you come back.
 
 To create CLI help you must have this section in your script.
 
