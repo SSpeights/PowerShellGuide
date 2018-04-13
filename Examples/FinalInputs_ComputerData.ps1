@@ -72,11 +72,12 @@ foreach ($name in $ComputerName)
     $CRO = New-Object PSObject -Property $Props # Add table values as property to object.
     $Today = (Get-Date -UFormat %Y-%m-%d).ToString() #Get date and convert to string.
     $SystemReport = ( $name  + '_' + $Today  + '_CurrentState4Test.csv') # Create a path/filename for report.
-    If ($OS.Status-eq "OK")
+     If ($OS.Status-eq "OK") # if OS is OK write file
     {
         $CRO | Export-Csv -Path "$SystemReport" #output to CSV file.
     }
-    else {
+    else #if not, write message.
+    {
         Write-Host ($name + " Check system name. OS status doesn't have a value, you can't connect, or there is something wrong with this system.") -ForegroundColor Red -BackgroundColor White
     }
 }
