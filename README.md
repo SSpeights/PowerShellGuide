@@ -37,8 +37,8 @@ Like other "Haufe Guides" this book does not profess to contain all of the infor
 * [6. Pipelining](pipelining.md)
 * [7. PS Script basics](ps-scripts.md)
 * [8. Prepare your script](prepare-your-script.md)
-* [10. Refining your script](refining-with-loops.md)
 * [9. Create a script from cmdlets](a-bunch-of-commands.md)
+* [10. Refining your script](refining-with-loops.md)
 * [Resources](resources.md)
 
 
