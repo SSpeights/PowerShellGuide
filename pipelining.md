@@ -4,7 +4,7 @@ The pipeline is one of the features that makes PowerShell such a powerful tool. 
 
 ## Basic processing in the pipeline
 
-The difference between PS piping and Linux Shell piping is, that the PowerShell is passing the result of a command as a .NET object and not as text, providing you more ways to use this returned result and sparing you the effort of parsing text. That's not important right now. What's important is that you can chain single commands to implement the "Get \| Process \| Output" pattern, where three things happen.
+The difference between PS piping and Linux Shell piping is, that the PowerShell is passing the result as a .NET object and not as text, providing you more ways to use this returned result and sparing you the effort of parsing text. That's not important right now. What's important is that you can chain single commands to implement the "Get \| Process \| Output" pattern, where three things happen.
 
 * You get some data that you need
 * You process that data and "do" something with it.
@@ -33,7 +33,7 @@ The pipeline enables fine control of the get, process, output pattern by passing
 
 ### Where-Object {...}
 
-Where-Object enables you to create a conditianal statement \(like an "if" statement\) to filter the output being piped to the where-object cmdlet. The filter itself is enclosed in {}. So if we take a look at the where object part of the example above -  `where-object {$_.Group -eq "Security"}`- we see that.
+Where-Object enables you to create a conditional statement \(like an "if" statement\) to filter the output being piped to the where-object cmdlet. The filter itself is enclosed in {}. So if we take a look at the where object part of the example above -  `where-object {$_.Group -eq "Security"}`- we see that.
 
 * "$\_" stands for "this.object" - the result being piped into where object
 * .Group is the property being filtered \(you can look at the properties and methods with `get-verb | get-member`\)
@@ -48,13 +48,13 @@ Select-Object is different from Where-Object because it enables you to create br
 
 [Online information for Select-Object is here](https://docs.microsoft.com/en-us/powershell/module/Microsoft.PowerShell.Utility/Select-Object?view=powershell-5.1) or you can type`help select-object`from the PS-console.
 
-### Foreach-Object {...} TODO
+### Foreach-Object {...}
 
 The Foreach-Object cmdlet performs processing on each object in a collection of objects. One example for this outlet is changing registry key values:
 
 Example: `Get-ItemProperty -Path HKCU:\Network\* | ForEach-Object {Set-ItemProperty -Path $_.PSPath -Name RemotePath -Value $_.RemotePath.ToUpper();}`
 
-This example converts all valued of the registry keys under network with the name RemotePath to uppercase letters.
+This example converts all values of the registry keys under network with the name RemotePath to uppercase letters.
 
 Before I forget you can pipeline, directly into a PowerShell script. Try this. Create a .ps1 file with this code
 
@@ -113,7 +113,7 @@ In this example `Write-Host` outputs the numbers in the array, separated by a "-
 
 Microsoft has good documentation for powershell and we recommend that you also [take a look at their documentation about pipelines](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_pipelines?view=powershell-5.1) to get more details on how to use the pipeline and alternative ways to pipeline objects for your PowerShell tasks.
 
-## Some basic uses cases for the pipe
+## Some basic content formatting uses cases for the pipe
 
 ### **Send output to stdout as a formatted list**
 
@@ -135,7 +135,7 @@ Get-Process | Out-Host -Paging | Format-Table -Property ProcessName, Description
 * Filter collections of objects with the pipeline with Where-Object
 * Create skinnier objects with Select-Object
 * Individually process objects with Foreach-Object 
-* Learning some useful examples for important use cases
+* Learning some useful use cases
 
 
 
