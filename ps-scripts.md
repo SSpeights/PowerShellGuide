@@ -24,7 +24,7 @@ Just like a shell script in Linux, you must type in a ".\" to run the script. In
 | PS Script escape character | \` | for special characters in a string use the "\`" to escape them. Example: "three \`$Horses" escapes the "$" to text. Normally this would be the value of the variable $Horses. |
 | PS Script pipeline character | \| | to pipe output to the next cmdlet just like in the console |
 | PS Script member enumeration | \(command -parameters\).property | This technique is used to retrieve single properties of an object. |
-| PS Script optional arguments | \[ \] | Access members of an array. Set DataType..  |
+| PS Script optional arguments | \[ \] | Access members of an array. Set DataType.. |
 | PS Block Statement | { } | Used in cmdlets and in scripts. Block statements can be seen as query filters. Like in the where-object statements in earlier chapters. |
 | PS Grouping | \(\) | Groups statements together that need to execute first. see member enumeration. Also, for loops and conditional statements \(\) is used just like in most code. |
 | PS Script comment | \# | document your scripts... |
@@ -34,6 +34,8 @@ Just like a shell script in Linux, you must type in a ".\" to run the script. In
 The "$" symbol represents a variable in PowerShell
 
 ## Parameters in scripting
+
+Paramater
 
 ## Section Targets
 
