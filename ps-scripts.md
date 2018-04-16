@@ -12,10 +12,6 @@ in the script add - `write-output "Hello"`.
 
 **Achtung**: if you get an "unauthorized access warning" in red text and your script doesn't run. It means that you need to change your execution policy so you can execute PS scripts on your system. You do this with the `Set-ExecutionPolicy` comand. To get the information you need to do this, [please visit this Microsoft technet page](https://technet.microsoft.com/en-us/library/ee176961.aspx). You must have an overview of the different Execution-Policies before you set a policy and talk to ICT first. Setting the policy to "unrestricted" might not be the best choice...
 
-
-
-**Another Example:** You persist PS-cmdlets in .ps1 files.
-
 ## Syntax basics
 
 Just like a shell script in Linux, you must type in a ".\" to run the script. In this script, we just added a command, unlike the typing in write-output at the command line, you can schedule this script to run whenever and as often as you like. Here are some of the basics you need to know about scripting -
@@ -28,9 +24,9 @@ Just like a shell script in Linux, you must type in a ".\" to run the script. In
 | PS Script escape character | \` | for special characters in a string use the "\`" to escape them. Example: "three \`$Horses" escapes the "$" to text. Normally this would be the value of the variable $Horses. |
 | PS Script pipeline character | \| | to pipe output to the next cmdlet just like in the console |
 | PS Script member enumeration | \(command -parameters\).property | This technique is used to retrieve single properties of an object. |
-| PS Script optional arguments | \[ \] | Access members of an array. Set DataType |
-| PS Block Statement | { } | Used in cmdlets and in scripts. Block statements can be seen as query filters |
-| PS Grouping | \(\) | Groups statements together. see member enumeration. |
+| PS Script optional arguments | \[ \] | Access members of an array. Set DataType..  |
+| PS Block Statement | { } | Used in cmdlets and in scripts. Block statements can be seen as query filters. Like in the where-object statements in earlier chapters. |
+| PS Grouping | \(\) | Groups statements together that need to execute first. see member enumeration. Also, for loops and conditional statements \(\) is used just like in most code. |
 | PS Script comment | \# | document your scripts... |
 
 ## Variables in scripting
