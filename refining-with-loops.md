@@ -45,7 +45,9 @@ Here you take away the variable and loop for ComputerInfo, select only the infor
 
 ## Making it easier to read in data
 
-As a final step, you decide to make entering the parameter easier so you only have to enter a file path / file name instead of "Get-Content" at the command line. You also decide to that you want to be able to set the list of system name from inside the script for automation. You also add a little fallback statement if the file is empty - just in case. And, you add an error handling, if the status isn't "OK" no file will be written and you get a message telling you that you need to troubleshoot system name, network connection or the system itself.
+As a final step, you decide to make entering the parameter easier so you only have to enter a file name\(s\) instead of "Get-Content" at the command line. You also decide to that you want to be able to set the list of system names from inside the script for automation purposes. 
+
+You also add a little fallback statement if the file is empty - just in case. And, you add an error handling, if the status isn't "OK" no file will be written and you get a message telling you that you need to troubleshoot system name, network connection or the system itself.
 
 [Your final script is here](/Examples/FinalInputs_ComputerData.ps1). You also have full help for this script from the CLI. Simply type in`help .\FinalInputs_ComputerData.ps1`.
 

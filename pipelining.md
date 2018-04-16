@@ -135,6 +135,7 @@ Get-Process | Out-Host -Paging | Format-Table -Property ProcessName, Description
 * Filter collections of objects with the pipeline with Where-Object
 * Create skinnier objects with Select-Object
 * Individually process objects with Foreach-Object 
+* Get Reference for comparison operators
 * Learning some useful use cases
 
 
