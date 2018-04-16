@@ -8,7 +8,7 @@ In this case the template is already created for you. [Our template example is h
 
 ## Create help - part 1
 
-Amazon starts their feature development with a press release. This is their way for "working back from the objective". With a PowerShell script it makes sense to start **by creating a description of what your script should do**. 
+Amazon starts their feature development with a press release. This is their way for "working back from the objective". With a PowerShell script it makes sense to start **by creating a description of what your script should do**.
 
 PowerShell supports adding help documentation directly to the your script. You can then call the help directly from the command line, just like for all the standard cmdlets and scripts in the PS-gallery. You want to do this because if you have to go away from your script for a long time, you will need this documentation to refresh your memory when you come back.
 

@@ -2,11 +2,11 @@
 
 One way to look at a powershell script is to see it as a grouping of cmdlets that run sequentially. A script can be much more elaborate than just a set of commands but, like this book, a set of cmdlets is the basis for creating a powershell script.
 
-Our scenario here is that you need to create report about the computers you manage and you need to gather information about the Desktop, the BIOS, and the Processor on a scheduled basis. Maybe you need to check and see if the computer has a desired state before you perform some action.
+Our scenario here is that you need to create a report about the computers you manage and you need to gather information about the Desktop, the BIOS, and the Processor on a scheduled basis. Maybe you need to check and see if the computer has a desired state before you perform some action.
 
 ## Create a .ps1 file
 
-Create a .ps1 file with a name like ComputerInformation.ps1. This is where the commands go.
+Create a .ps1 file with a name like ComputerData.ps1. This is where the commands go.
 
 ## Create and grab your history
 
@@ -24,9 +24,17 @@ To get a list of these cmdlets, enter `Get-History` at the PS-prompt. Copy the o
 
 ## Add cmdlets
 
-Paste the cmdlets into your .ps1 script. Go to the PS-prompt and type in .\ComputerInformation.ps1. The script runs and the three reports output to the PowerShell console as stdout. Don't forget to document \( a little \) what you plan to do.
+Paste the cmdlets into your .ps1 script. Go to the PS-prompt and type in .\ComputerData.ps1. The script runs and the three reports output to the PowerShell console as stdout. Don't forget to document \( a little \) what you plan to do.
 
 **Achtung:** You don't need to type the whole thing if your script name is somewhat unique you just have to type the first letters of the script name and then the TAB key to autocomplete. You don't even have to type ".\". Autocomplete will recognize that this is a PS-script and add this in front of the file name.
 
 Voila. You just made a powershell script file. You can now run the script on demand or schedule this in task manager, cron job or whatever other cron manager you are using. But, we are not done with this script yet because we can make it better.
+
+## Section targets
+
+* Use Get-History to capture commands
+* Create a script with these commands
+* Run the script
+
+
 
