@@ -35,14 +35,14 @@ The "$" symbol represents a variable in PowerShell
 
 ## Parameters in scripting
 
-Paramater
+Parameters are useful for taking input and reading them into your script. They are like arguments for methods. In Powershell, you add parameters to your script with the `param` keyword. You can also set all kinds of attributes for instance if a parameter is required or optional. [These attributes are described here](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_parameters?view=powershell-6#parameter-attribute-table). 
 
 ## Section Targets
 
-* Learn how to enable running scripts
-* Learn the usage for PS operators and operands
-* Write some PS-Scripts
-* Write some more advanced scripts using variables, escaping special characters, retrieving individual properties
+* Learn how to enable running scripts.
+* Learn the usage for PS operators and operands.
+* Write and run the "Hello World" ps script.
+* Get a reference for the functions of syntax in scripts
 
 
 
