@@ -29,7 +29,7 @@ To do this, type `update-help` at the PS command prompt.
 
 When you want to find a specific command, most of the PowerSehll gurus recommend the following steps.
 
-* Use your intuition and knowledge of Microsoft technologies \(Or linux, or Mac\)
+* Use your intuition and knowledge of Microsoft technologies \(Or Linux, or Mac\)
 * Filter your get-command for plausible command names - so if your looking for IP configuration filter for \*IP\* \(you can also use a verb as a filter!\)
 * Scan the results and select the best looking command
 * Use "get-help + CommandName" to get detailed help
@@ -44,13 +44,15 @@ To get more specific you type in a get-command with \*stop\* as the filter: `gcm
 
 To see if it's the right one you call the help for this command with: `get-help stop-computer`.  Sure enough, with stop-computer you can shutdown local and remote computers.
 
-This is the "broad to narrow" search way to find commands in PowerShell. If you are just beginning with PowerShell, it is probably a good idea to find at least some of your commands like this. Remember, you may be working on headless servers in the future, and there will be no browser with which to google. But...
+This is the "broad to narrow" search pattern to find commands in PowerShell. 
+
+If you are just beginning with PowerShell, it is probably a good idea to find at least some of your commands like this. Remember, you may be working on headless servers in the future, and there will be no browser with which to google. But...
 
 **Achtung: Don't forget to google! **If this seems like a lot of work, I also found the "stop-computer" cmdlet by googling with "Powershell command to shut down computer": "stop-computer" was the first result; so in my opinion, googling is also a plausible alternative to discover PS-cmdlets. The good part is that you can enter what you want to do in plain text! Try googling for "Test network connection with PowerShell" and see what you get. Once you find the command though, you may want to move back to the console and use "Get-Help" to get the detailed usage information. It will go faster.
 
 ## Exemplary help
 
-Not only does Powershell offer useful help pages from the console, you can also call actual examples, and often, these examples can speed up your scripting.
+Not only does Powershell offer useful help pages from the console, you can also call actual examples, and often, these examples are exactly what your are looking for.
 
 Let's say you decide to not only save yourself from burnout but also save the company some money, by automating shutdown for your test and production remote systems in the cloud - also at 18:00 every day - and you need a report of the results. To retrieve cmdlet examples, you add an "example" switch to your help cmdlet: `get-help stop-computer -example`.
 
