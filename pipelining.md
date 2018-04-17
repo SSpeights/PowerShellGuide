@@ -103,7 +103,7 @@ And of course, you can always take a look at the example help for where-object c
 
 ## When not to output to the pipeline
 
-Sometimes you will want to output informational text to standard out that does not need to be processed. This is actually the exception, since normally, you want to use the pipeline to get things done in PowerShell. At the same time, letting people know what's going on in your PowerShell routine can be useful. To output text without writing to the pipeline you use the `Write-Host` command.
+Sometimes you will want to output informational text to STDOUT that does not need to be processed. This is actually the exception, since normally, you want to use the pipeline to get things done in PowerShell. At the same time, letting people know what's going on in your PowerShell routine can be useful. To output text without writing to the pipeline you use the `Write-Host` command.
 
 When using `Write-Host` it is recommended to use different colors to offset this kind of information, making it clear that people should read this text.
 

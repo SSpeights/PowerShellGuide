@@ -31,11 +31,26 @@ Just like a shell script in Linux, you must type in a ".\" to run the script. In
 
 ## Variables in scripting
 
-The "$" symbol represents a variable in PowerShell
+The "$" symbol represents a variable in PowerShell both at command line and in scripts.
+
+Example: 
+
+`$secondsPerDay = 24 * 60 * 60`
+
+`$weeksPerYear = 365 / 7`
 
 ## Parameters in scripting
 
-Parameters are useful for taking input and reading them into your script. They are like arguments for methods. In Powershell, you add parameters to your script with the `param` keyword. You can also set all kinds of attributes for instance if a parameter is required or optional. [These attributes are described here](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_parameters?view=powershell-6#parameter-attribute-table). 
+Parameters are useful for taking input and reading them into your script. They are like arguments for methods. In Powershell, you add parameters to your script with the `param` keyword. You can also set all kinds of attributes for instance if a parameter is required or optional. [These attributes are described here](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_parameters?view=powershell-6#parameter-attribute-table).
+
+Example: 
+
+```
+Param( 
+[string]$computerName,
+[string]$filePath
+)
+```
 
 ## Section Targets
 
