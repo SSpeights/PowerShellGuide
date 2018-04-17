@@ -4,9 +4,9 @@ Once you have discovered cmdlets that can help you, it is a good idea to build u
 
 ## Get-History
 
-Get history retreives the commands that you entered at the PS-prompt for the current session. This is a great way to get a list of commands by outputting them to a file. You can use the list to seed a PowerShell script or save a command repository that you can use. After a useful sequence of powershell commands type `get-history` and the commands you typed in the current session will be output as a numbered list in the console. `get-history | out-file history.csv` outputs to a csv file in the working directory.
+Get history retreives the commands that you entered at the PS-prompt for the current session. This is a great way to get a list of commands by outputting them to a file. You can use the list to seed a PowerShell script or save a command repository that you can use. After a useful sequence of powershell commands type `get-history` and the commands you typed in the current session will be output as a numbered list to the console. `get-history | out-file history.csv` outputs to a csv file in the working directory.
 
-You can also retrieve past sessions, if you absolutely need to.
+You can also retrieve past sessions, if you absolutely need to get to older stuff. We don't get into that here: Pls use get-help to find out how.
 
 ## Start-Transcript
 
