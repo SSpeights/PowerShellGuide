@@ -10,7 +10,7 @@ There are other options but VS Code has a very good powershell plugin. The plugi
 
 ### Visual Studio with PS Tools
 
-The big brother of VS Code. If you develop with Microsoft technologies chances are that you have Visual Studio on your dev machine. Visual Studio also has a plugin for Powershell that provides full intellisense support. You can find and install this plugin directly from the IDE. Visual Studio is also a fantastic IDE - just a little bit too heavyweight for my needs.
+The big brother of VS Code. If you develop with Microsoft technologies chances are that you have Visual Studio on your dev machine. Visual Studio also has a plugin for Powershell that provides full intellisense support. You can find and install this plugin directly from the IDE. Visual Studio is also a fantastic IDE.
 
 ### Atom with PS Add-On
 
@@ -26,7 +26,7 @@ For Haufe Group, I don't recommend... It's simply not hard-core enough because i
 
 It may be a requirement to run your scripts from other IDEs because you have dependencies that may only be accessed via this environment. To be honest, I don't know what exactly these requirements are. One example though is that, for some products, QA folks must run scripts in the UFT test automation environment to call UFT functionality for creating reports in UFT or for running tests that are located in the UFT repository. Or, it may just be that you like another editor better. If there is good powershell support, more power to you.
 
-In any case, specific dependencies for development and testing are out of scope for this book. We are only going to be looking at PowerShell. Maybe you will decide that PowerShell provides a better alternative for some or all of your use cases and enables you to get rid of some of those annoying dependencies. 
+In any case, specific dependencies for development and testing are out of scope for this book. We are only going to be looking at PowerShell. Maybe you will decide that PowerShell provides a better alternative for some or all of your use cases and enables you to get rid of some of those annoying dependencies.
 
 In the next section, we will prime you a little bit more by showing you the how powershell is set up. Once you've scanned "PowerShell Framework", you will be ready to start locating useful PowerShell resources that can help you do your work.
 
