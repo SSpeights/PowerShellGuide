@@ -20,7 +20,7 @@ Another great editor is "Atom" from the folks at GitHub. Atom is another popular
 
 ISE is the native PS IDE: it is installed on every newer Windows computer. Instead of openining PS console on your machine, you can choose to open PS-ISE, which is a mix of a console, a coding stage, and graphical interface similar to VS Code, but, exclusively made for scripting in Powershell.
 
-For Haufe Group, I don't recommend... It's simply not hard-core enough because it enables PS-scripters to replace the command line with GUI controls for tasks like command search, which, IMVHO, leads to bad working habits. Plus, it's been developed exclusively to create PowerShell scripts. Remember exclusively using the command line is in the long-run faster - mixing CLI and GUI will just slow you down and be confusing. If you don't want to look for anything, this is already on your windows machine though.
+For Haufe Group, I don't recommend... It's simply not hard-core enough because it enables PS-scripters to replace the command line with GUI controls for tasks like command search, which, IMVHO, leads to bad working habits. Plus, it's been developed exclusively to create PowerShell scripts. Remember exclusively using the command line is in the long-run faster - mixing CLI and GUI will just slow you down and be confusing. If you don't want to look for anything, this is already on your windows machine though. ISE is not, however, on Linux or Mac machines.
 
 ### Other IDEs
 
@@ -30,7 +30,7 @@ In any case, specific dependencies for development and testing are out of scope 
 
 In the next section, we will prime you a little bit more by showing you the how powershell is set up. Once you've scanned "PowerShell Framework", you will be ready to start locating useful PowerShell resources that can help you do your work.
 
-## Section Targets:
+## Section targets:
 
 * Have some choices for your PowerShell Dev Environment
 
