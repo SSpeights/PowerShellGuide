@@ -27,9 +27,9 @@ Nouns can vary based on what the PS cmdlet is supposed to do. It is even possibl
 
 **Achtung:** When you search for Powershell cmdlets or scripts you can use verbs or nouns or both. You can also use wildcard characters like \* for your search.
 
-## Aliases
+## Cmdlet aliases
 
-The Verb-Noun pattern is good to get started and helps with intuitive discovery of cmdlets - so you can find and use them fast. Once you get to know the cmdlets, you can use the alias to script cmdlets more quickly. For example, `get-command` cmdlet alias is `gcm`. You can get the complete list of PS-aliases by type `get-alias` or its alias, `gal`, in the PS-console.
+The Verb-Noun pattern is good to get started and helps with intuitive discovery of cmdlets - so you can find and use them fast. Once you get to know the cmdlets though, you can use the alias to script cmdlets more quickly. For example, `get-command` cmdlet alias is `gcm`. You can get the complete list of PS-aliases by type `get-alias` or its alias, `gal`, in the PS-console.
 
 Command alias is also included in the help of individual commands. By typing `help get-command`, you can see the alias "gcm" in the get-command help page.
 
