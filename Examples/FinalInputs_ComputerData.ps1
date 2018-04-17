@@ -9,15 +9,20 @@
    - BIOS information
    - Processor information
 
-.PARAMETER ComputerName
+.PARAMETER Path
     List of system names (Array of String). Usually, read in from a file. Retrieve data from these systems.
     If reading from a file and using Get-Content cmdlet, the file must have one system name per line.
+    If no parameter is provided, the script falls back to handling logic in the script.
 
 .EXAMPLE
-   FinalInputs_ComputerData.ps1 MyComputerNames.txt
-   
+    FinalInputs_ComputerData.ps1 MyComputerNames.txt
+    In this example, uses the path parameter to input system names from a text file
+
+
 .EXAMPLE
-   FinalInputs_ComputerData.ps1
+    FinalInputs_ComputerData.ps1
+    In this example, the system names are input from inside of the script by setting the system names in the ComputerName string array variable.
+    If there is an empty array, the script retrieves local system information.
 
 .INPUTS
     A text file with managed system names. One system name per line.
@@ -44,7 +49,8 @@ if ($ComputerName.Length-eq 0)#handling logic for an empty parameter.
 {
 $ComputerName = (Get-Content .\MyComputerNames.txt)
 }
-if ($ComputerName.Length-eq 0)
+if ($ComputerName.Length-eq 0) #handling logic for an empty array
+
 {
     $ComputerName = "."
 }
@@ -72,7 +78,7 @@ foreach ($name in $ComputerName)
     $CRO = New-Object PSObject -Property $Props # Add table values as property to object.
     $Today = (Get-Date -UFormat %Y-%m-%d).ToString() #Get date and convert to string.
     $SystemReport = ( $name  + '_' + $Today  + '_CurrentState4Test.csv') # Create a path/filename for report.
-     If ($OS.Status-eq "OK") # if OS is OK write file
+    If ($OS.Status-eq "OK") # if OS is OK write file
     {
         $CRO | Export-Csv -Path "$SystemReport" #output to CSV file.
     }
@@ -81,7 +87,4 @@ foreach ($name in $ComputerName)
         Write-Host ($name + " Check system name. OS status doesn't have a value, you can't connect, or there is something wrong with this system.") -ForegroundColor Red -BackgroundColor White
     }
 }
-
-
-
 
