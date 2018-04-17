@@ -12,7 +12,7 @@ Create a .ps1 file with a name like ComputerData.ps1. This is where the commands
 
 ## Create and grab your history
 
-If you created a get-history command list as described in chapter 5, you can open that up. Hopefully, you experimented long enough to create a series of commands that fit "get data \| process data \| output data" - maybe event a couple iterations of this pattern that outputs something useful for you.
+If you created a get-history command list as described in chapter 5, you know how this works. 
 
 To get this information for your local computer you can type the following commands at the PS-prompt:
 
