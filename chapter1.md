@@ -23,5 +23,5 @@ In general, before we get into doing PowerShell, it is good to understand what i
 * Basic scripting, how to structure scripts and how to script \( a little \)
 * A list of PowerShell resources that may be interesting for your PowerShell scripting
 
-The book is being hosted on GitHub and so if you would like to contribute to it, feel free to fork the repository and create pull requests. We love all contributions.
+The book is being hosted on [GitHub](https://github.com/SSpeights/PowerShellGuide.git) and so if you would like to contribute to it, feel free to fork the repository and create pull requests. We love all contributions.
 
