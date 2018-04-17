@@ -4,7 +4,7 @@ One way to look at a powershell script is to see it as a grouping of cmdlets tha
 
 Our scenario here is that you need to create a report about the computers you manage and you need to gather information about the Desktop, the BIOS, and the Processor on a scheduled basis. Maybe you need to check and see if the computer has a desired state before you perform some action.
 
-It is a good ideas to create a directory to store your project. Example scripts are available from GitHub at : [https://github.com/SSpeights/PowerShellGuide.git](https://github.com/SSpeights/PowerShellGuide.git)
+It is a good idea to create a directory for this your project. Example scripts are available from GitHub at : [https://github.com/SSpeights/PowerShellGuide.git](https://github.com/SSpeights/PowerShellGuide.git)
 
 ## Create a .ps1 file
 
