@@ -26,7 +26,7 @@
 #>
 
 #Enter Tasks Below as Remarks - Describe what each task in your script should perform.
-#Task Retrieving all OS, BIOS and Processor data for this system. Sort properties alphabetically in ascending order
+#Task Retrieving all OS, BIOS and Processor data for this system. Create new object with properties sorted alphabetically in ascending order
 Get-WmiObject -Class Win32_OperatingSystem -ComputerName . | Select-Object -Property [a-z]*
 Get-WmiObject -Class Win32_BIOS -ComputerName . | Select-Object -Property [a-z]*
 Get-WmiObject -Class Win32_Processor -ComputerName . | Select-Object -Property [a-z]*
