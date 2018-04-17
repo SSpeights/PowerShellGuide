@@ -44,7 +44,7 @@ To get more specific you type in a get-command with \*stop\* as the filter: `gcm
 
 To see if it's the right one you call the help for this command with: `get-help stop-computer`.  Sure enough, with stop-computer you can shutdown local and remote computers.
 
-This is the "broad to narrow" search pattern to find commands in PowerShell. 
+This is the "broad to narrow" search pattern to find commands in PowerShell.
 
 If you are just beginning with PowerShell, it is probably a good idea to find at least some of your commands like this. Remember, you may be working on headless servers in the future, and there will be no browser with which to google. But...
 
