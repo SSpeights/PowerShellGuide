@@ -1,6 +1,6 @@
 # The Pipeline
 
-The pipeline is one of the features that makes PowerShell such a powerful tool. If you have worked with Linux you probably already know how pipe works. Piping enables stringing commands together - using the pipe "\|" symbol - to pass the result of a command to the next command. 
+The pipeline is one of the features that makes PowerShell such a powerful tool. If you have worked with Linux you probably already know how pipe works. Piping enables stringing commands together - using the pipe "\|" symbol - to pass the result of a command to the next command.
 
 Piping objects is the most powerful feature of PowerShell. It is important to note that we are only going to talk about the "\|" way to pipe objects in this section, but there are other ways to pipeline that produce different results. Links to more information are in "Further pipeline reading" at the end of this section.
 
@@ -26,7 +26,7 @@ In the example above the following happens
 * The result of get-verb cmdlet is piped to the where-object cmdlet. 
 * Where-object filters for all of the verbs that are found in the  "Security" group, selects only these verbs
 * Where-object result is piped, as an object, to the out-file cmdlet
-* Out file cmdlet outputs this result to the "Securty-Verbs.txt" file
+* Out file cmdlet outputs this result to the "Security-Verbs.txt" file
 
 The pipeline enables fine control of the get, process, output pattern by passing objects that allow the next cmdlet to process this output. Cmdlets that allow for filtering for conditionals or for looping through output are:
 
