@@ -13,15 +13,15 @@ Powershell cmdlets have a VERB-NOUN structure and are generally case insensitive
 
 **Achtung**: We are providing links to web pages here but encourage you to use the Powershell console. To get a list of PS-verbs,open PowerShell and type `get-verb`.
 
-## Powershell Verbs
+## Powershell verbs
 
 While command nouns are configurable, verbs are not. Verbs are curated by Microsoft, and you can find the official list by clicking the link above. Even better though, you can get a list of verbs by typing `get-verb` from the command prompt in the PS-Console
 
-**Verbs are grouped logically,** and it is a good idea get acquainted with, which verbs belong to which groups. Knowing verb grouping helps you to search more intuitively for cmdlets. You can also filter verbs by group. 
+**Verbs are grouped logically,** and it is a good idea get acquainted with, which verbs belong to which groups. Knowing verb grouping helps you to search more intuitively for cmdlets. You can also filter verbs by group.
 
 Example: To print all verbs that belong to the "Security" group you type:`get-verb | where-object {$_.Group -eq "Security"}`.
 
-## Powershell Nouns
+## Powershell nouns
 
 Nouns can vary based on what the PS cmdlet is supposed to do. It is even possible to create your own cmdlets and Powershell modules that access various services. If you leverage the APIs of powershell and another service to create something new, the noun part of your powershell cmdlet would be completely unique like - `Get-NewlyIntegratedService.`
 
@@ -39,7 +39,7 @@ One of the nice things about powershell is that you can leverage the TAB autocom
 
 Not only can you autocomplete cmdlets, but also cmdlet parameters, enumerated values of these parameters, and so on by using the TAB key. PowerShell just knows how to autocomplete - it's a little bit like people, who know you so well that they can finish your thought most of the time.
 
-## Positional Parameters
+## Positional parameters
 
 This is not in the list but another framework feature of PowerShell is "positional parameters". For these parameters, you only have to type the value, not the parameter name. PowerShell understands your argument implicitly, because of the position of the parameter.
 
@@ -53,7 +53,7 @@ Finally, PowerShell passes these returned objects to the next cmdlet over the pi
 
 ## Functionality - The big picture
 
-In PowerShell, you have a scripting language that allows you to execute scripts without a compiler, that makes it easier for you to script via an intuitive verb-noun cmdlet pattern. You are speeded even more with aliases for these commands and by having robust autocomplete at the PS-prompt and in the IDE. Finally, if you need it, you can also leverage Microsoft .NET and COM libraries to do even more. 
+In PowerShell, you have a scripting language that allows you to execute scripts without a compiler, that makes it easier for you to script via an intuitive verb-noun cmdlet pattern. You are speeded even more with aliases for these commands and by having robust autocomplete at the PS-prompt and in the IDE. Finally, if you need it, you can also leverage Microsoft .NET and COM libraries to do even more.
 
 This structure and these features not only make it easier to script, they also make it easier to discover what you can do with PowerShell, and create powerful scripts as you'll see in the next sections.
 
