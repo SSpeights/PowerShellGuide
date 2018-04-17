@@ -47,7 +47,7 @@ The good news is that the help section is already included in the template. You 
 | .NOTES | Special notes for your script like contact information. .NOTES is only displayed when the "-full" switch is used. |
 | .LINK | Link to online help or other online resource. You can go directly to the online resource with the get-help "-online" switch. |
 
-To see what we mean, go to the template folder in the PowerShell console and enter -  get-help .\8\_BaseTemplate.ps1. You should see the help information displayed in the console. These are the basics but there are more and, [the full list can be found here](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comment_based_help?view=powershell-5.1&viewFallbackFrom=powershell-Microsoft.PowerShell.Core). Addtionally, you can also use an XML syntax to create help documentation.
+To see what we mean, go to the template folder in the PowerShell console and enter -  get-help .\Template.ps1. You should see the help information displayed in the console. These are the basics but there are more and, [the full list can be found here](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comment_based_help?view=powershell-5.1&viewFallbackFrom=powershell-Microsoft.PowerShell.Core). Additionally, you can also use an XML syntax to create help documentation.
 
 **Achtung:** In general, you don't want to add a date unless you have to deliver this script to someone outside the company. In addtion to an IDE I assume that you are also using version control - Git or something else. Let your version control do the datetime-stamping for creation date and updates.
 
@@ -59,7 +59,7 @@ Add variables and parameters as needed.
 
 ## Code / Test / Code more
 
-Now you script, testing it and scripting some more as needed. In this part you add any needed variable and parameter to your script. This is also where I would spike and stabilize. If I write something good then I would atabilize by refactoring hacked code into nice structures like variables, parameters, objects and so on. You can add your variables and parameters to the "\#Variable" section and the "\#Parameter" section, if you like.
+Now you script, testing it and scripting some more as needed. In this part you add any needed variable and parameter to your script. This is also where I would spike and stabilize. If I write something good then I would stabilize by refactoring hacked code into nice structures like variables, parameters, objects and so on. You can add your variables and parameters to the "\#Variable" section and the "\#Parameter" section, if you like.
 
 ## Comment your script
 
