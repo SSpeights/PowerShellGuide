@@ -1,6 +1,8 @@
 # The Pipeline
 
-The pipeline is one of the features that makes PowerShell such a powerful tool. If you have worked with Linux you probably already know how pipe works. Piping enables stringing commands together - using the pipe "\|" symbol - to pass the result of a command to the next command. Piping objects is the most powerful feature of PowerShell. It is important to note that we are only going to talk about the "\|" way to pipe objects in this section, but there are other ways to pipeline that produce different results. Links to more information are in "Further pipeline reading" at the end of this section.
+The pipeline is one of the features that makes PowerShell such a powerful tool. If you have worked with Linux you probably already know how pipe works. Piping enables stringing commands together - using the pipe "\|" symbol - to pass the result of a command to the next command. 
+
+Piping objects is the most powerful feature of PowerShell. It is important to note that we are only going to talk about the "\|" way to pipe objects in this section, but there are other ways to pipeline that produce different results. Links to more information are in "Further pipeline reading" at the end of this section.
 
 ## Basic processing in the pipeline
 
@@ -10,7 +12,7 @@ The difference between PS piping and Linux Shell piping is, that the PowerShell 
 * You process that data and "do" something with it.
 * You output the results of your processing
 
-And you can repeat this pattern mutiple times, using the output of the previous pipeline a the "Get" data for the next one, enabling real power from the command line!
+And you can repeat this pattern multiple times at different scales, using the output of the previous pipeline as the "Get" data for the next one, enabling real power from the command line!
 
 Example: Using the pipeline you get all the PS-Verbs, you filter the verbs - only showing the verbs in the security goup, and you output those groups to a file.
 
