@@ -13,13 +13,17 @@ What is a PowerShell module
 
 ## Creating a Powershell profile
 
-## Defining a Function
-
 ## Writing a function
 
 ## Using functions
 
 ## Section targets
+
+* Define PowerShell functions
+* Understand what PS-Profile and PS-Modules have to do with functions
+* Create a profile
+* Create a function 
+* Call functions in different ways. 
 
 ## 
 
