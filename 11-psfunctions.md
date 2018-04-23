@@ -9,7 +9,7 @@ There is much more information about functions online and you should definitely 
 
 It is also possible to enter functions at the command prompt, but these functions cannot be used after you close your PowerShell session. For you functions to persist you must create a PowerShell Profile.
 
-## PowerShell Profile
+## PowerShell profile
 
 PowerShell Profile is a script that allows you to configure your Powershell environments with custom configurations that persist for every PowerShell session. The Profile script runs at session-start and you can configure commands, aliases, variables, modules and, yes, functions in this file that you want to be able to access from PowerShell. For an in-depth look at PowerShell Profiles, [take a look at the Microsoft reference documentation](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-6). Pay special attention the different profile scopes. The different scopes are:
 
@@ -46,7 +46,7 @@ You already wrote some code in the form of a script file in the last chapter. Le
 
 ## Running your function from command prompt
 
-Now, let's try to run the script. Change your drive to a completely different drive than your C: drive - it can even be a mapped network drive. Run the cmdlet from the prompt with the -Path parameter: Here you need to put the path to the MyComputerNames.txt file. It should look something like:
+Now, let's try to run the script. Change your drive to a completely different drive than your C:\ drive - it can even be a mapped network drive. Run the cmdlet from the prompt with the -Path parameter: Here you need to put the path to the MyComputerNames.txt file. It should look something like:
 
 `Get-HostReport -Path C:\Users\speightss\Source\PS\MyComputerNames.txt`
 
