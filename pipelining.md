@@ -46,7 +46,7 @@ Where-Object enables you to create a conditional statement \(like an "if" statem
 
 ### Select-Object
 
-Select-Object is different from Where-Object because it enables you to create brand new objects based on the filter you set. In essence, it has the function of making objects in your pipeline  skinnier by selecting specific properties and creating brand new objects that contain only the data.
+Select-Object is different from Where-Object because it enables you to create brand new objects based on the filter you set. In essence, it has the function of making objects in your pipeline  skinnier by selecting specific properties and creating brand new objects that contain only the data you want.
 
 [Online information for Select-Object is here](https://docs.microsoft.com/en-us/powershell/module/Microsoft.PowerShell.Utility/Select-Object?view=powershell-5.1) or you can type`help select-object`from the PS-console.
 
