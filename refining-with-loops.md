@@ -51,3 +51,15 @@ You also add a little fallback statement if the file is empty - just in case. An
 
 [Your final script is here](/Examples/FinalInputs_ComputerData.ps1). You also have full help for this script from the CLI. Simply type in`help .\FinalInputs_ComputerData.ps1`.
 
+## Validating your script
+
+Maybe your script works but there are still some improvements you can make. One tool that enables you to validate your scripts is the [Powershell module PSScriptAnalyzer ](https://www.powershellgallery.com/packages/PSScriptAnalyzer/). We don't go into modules in this guide, but installing and using the analyzer is relatively straightforward. And by using the `Invoke-ScriptAnalyzer` cmdlet, you can validate the errors and find how this script can still be better. 
+
+## Section targets
+
+* Refine your script based on your problems and targets.
+* Learn to use variables, parameters and loops in your script.
+* Learn how to validate your script with the PSScriptAnalyzer module.
+
+
+
