@@ -39,7 +39,7 @@ After thinking about it a little bit, it doesn't make sense to enter a your syst
 
 ## Creating a Custom Object and Outputting to file
 
-So the script is now pretty elegant and compact but it still is producing too much data. You only need the six pieces of information  above. You decide using variables in your commands is not the right way to build this script.
+So the script is now pretty elegant and compact but it still produces too much data. You only need the six pieces of information . You decide using variables in your commands is not the right way to build this script.
 
 Here you take away the variable and loop for ComputerInfo, select only the information you need, add this to a new object and, finally, output to a csv file that you can use for your checking logic script. [The script now looks like this.](/Examples/CreateObject-OutputToFile_ComputerData.ps1)
 
@@ -53,7 +53,7 @@ You also add a little fallback statement if the file is empty - just in case. An
 
 ## Validating your script
 
-Maybe your script works but there are still some improvements you can make. One tool that enables you to validate your scripts is the [Powershell module PSScriptAnalyzer ](https://www.powershellgallery.com/packages/PSScriptAnalyzer/). We don't go into modules in this guide, but installing and using the analyzer is relatively straightforward. And by using the `Invoke-ScriptAnalyzer` cmdlet, you can validate the errors and find how this script can still be better. 
+Maybe your script works but there are still some improvements you can make. One tool that enables you to validate your scripts is the [Powershell module PSScriptAnalyzer ](https://www.powershellgallery.com/packages/PSScriptAnalyzer/). We don't go into modules in this guide, but installing and using the analyzer is relatively straightforward. And by using the `Invoke-ScriptAnalyzer` cmdlet, you can validate the errors and find how this script can still be better \(Although you can ignore the "Write-Host" warning, since "Write-Host" now wraps "Write-Information"\).
 
 ## Section targets
 
