@@ -47,13 +47,13 @@ The good news is that the help section is already included in the template. You 
 | .NOTES | Special notes for your script like contact information. .NOTES is only displayed when the "-full" switch is used. |
 | .LINK | Link to online help or other online resource. You can go directly to the online resource with the get-help "-online" switch. |
 
-To see what we mean, go to the template folder in the PowerShell console and enter -  get-help .\Template.ps1. You should see the help information displayed in the console. These are the basics but there are more and, [the full list can be found here](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comment_based_help?view=powershell-5.1&viewFallbackFrom=powershell-Microsoft.PowerShell.Core). Additionally, you can also use an XML syntax to create help documentation.
+To see what we mean, go to the template folder in the PowerShell console and enter -  get-help .\BaseTemplate.ps1. You should see the help information displayed in the console. These are the basics but there are more and, [the full list can be found here](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comment_based_help?view=powershell-5.1&viewFallbackFrom=powershell-Microsoft.PowerShell.Core). Additionally, you can also use an XML syntax to create help documentation.
 
-**Achtung:** In general, you don't want to add a date unless you have to deliver this script to someone outside the company. In addtion to an IDE I assume that you are also using version control - Git or something else. Let your version control do the datetime-stamping for creation date and updates.
+**Achtung:** In general, you don't want to add a date unless you have to deliver this script to someone outside the company. In addition to an IDE, it is assumed that you are also using version control - Git or something else. Let your version control do the datetime-stamping for creation date and updates.
 
 ## Write out your tasks
 
-The "main" PS-Script is procedural and holds all of the routines in your script together and, in most cases, sequences them. For each routine in your script, you can have a task comment - \#Task1 - \#TaskX in the template. Here you write what each routine performs and maybe what it returns and passes to the next routine... Remember the basic pattern is Get data \| Process Data \| Output result.
+The "main" PS-Script is procedural, holds all of the routines in your script together and, in most cases, sequences them. For each routine in your script, you can have a task comment - \#Task1 - \#TaskX in the template. Here you write what each routine performs and maybe what it returns and passes to the next routine... Remember the basic pattern is Get data \| Process Data \| Output result.
 
 Add variables and parameters as needed.
 
