@@ -9,7 +9,7 @@ PowerShell has quite a few resources that can help you get up to speed with this
 * [The Powershell Gallery](https://www.powershellgallery.com/) - Official repository for PS-Module and PS-Scripts that you can download and use
 * [PowerShell Magazine](http://www.powershellmagazine.com/) \(PS-people like Keith Hill post articles here\)
 
-These resources are geared toward finding more tutorials and connecting with people to get answers to questions. But the real star of the resource-show is the PowerShell CLI itself.
+These resources are geared toward finding more tutorials and connecting with people to get answers to questions. But the real star of the resource-show is the PowerShell console itself.
 
 ## OPP - Other People's Powershell
 
