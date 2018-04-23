@@ -46,7 +46,7 @@ You already wrote some code in the form of a script file in the last chapter. Le
 
 ## Running your function from command prompt
 
-Now, let's try to run the script. Change your drive to a completely different drive than your C drive - it can even be a mapped network drive. Run the cmdlet from the prompt with the -Path parameter: Here you need to put the path to the MyComputerNames.txt file. It should look something like:
+Now, let's try to run the script. Change your drive to a completely different drive than your C drive - it can even be a mapped network drive. Run the cmdlet from the prompt with the "-Path" parameter: Here you need to put the path to the MyComputerNames.txt file. It should look something like:
 
 `Get-HostReport -Path C:\Users\speightss\Source\PS\MyComputerNames.txt`
 
@@ -57,7 +57,7 @@ Now you can run this code from anywhere, also on remote computers if you have pu
 
 You can fix both by changing the path in the code to an absolute path. Who knows, maybe you don't need this handling logic. Maybe you want to make "-Path" a required parameter or add a default value as a fallback or add a file output path as a second parameter.
 
-Documenting works just like with your script in the last chapter and you can look at your function help by entering
+Documenting works just like with your script in the last chapter and you can look at your function help by entering -
 
 `Get-Help Get-HostReport`
 
