@@ -20,7 +20,7 @@ PowerShell Profile is a script that allows you to configure your Powershell envi
 | All Users, Current Host | $profile.AllUsersCurrentHost | $PsHome\Microsoft.PowerShell\_profile.ps1 |
 | All Users, All Hosts | $profile.AllUsersAllHosts | $PsHome\Profile.ps1 |
 
-**Achtung: **Your PowerShell Profile can be set for different scopes and you will want to understand what these are. Take a look at the four different profiles in the online documentation. You definitely also want to know more about the full capabilities of PowerShell profile. 
+**Achtung: **Your PowerShell Profile can be set for different scopes and you will want to understand what these are. Take a look at the four different profiles in the online documentation. You definitely also want to know more about the full capabilities of PowerShell profile.
 
 ## Create a PowerShell Profile
 
@@ -84,7 +84,7 @@ Additionally, you can also embed functions in PowerShell Modules. When you do th
 
 That's it for the beginners guide. now you can get information about the computers your are managing, write them to a report and use the report to check and see which kind of software you can install on these computers. If you plan to automate this process, you might want to also create a another script to delete all reports to make way for new reports in the next scheduled run. Or, you might not want to mess around with files at all and but the checking logic in this script \(or pass objects to another scripts\). There are lots of options.
 
-The final section in this booklet is a list of all resources that we could think of to help you go further with PowerShell scripting. There is certainly a lot more you can do but hopefully this helped to get started!
+The final section in this booklet is a list of all resources that we could think of to help you go further with PowerShell scripting. Certainly if you are looking for some more practices to become more sophisticated with scripting the POSH StyleGuide There is certainly a lot more you can do but hopefully this helped to get started!
 
 ## 
 
