@@ -9,7 +9,14 @@ Important concepts
 * Persisting functions
 * Calling functions
 
-What you also need to read
+## PowerShell Profile
+
+PowerShell Profile is a script that allows you to configure your Powershell environments with custom configurations that persist for every PowerShell session. The Profile script runs at session-start and, in this way, it is a little bit like 
+
+Microsoft documentation on functions
+
+* [Basic function documentation](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_functions?view=powershell-6)
+* [Advance function documentation](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_functions_advanced?view=powershell-6)
 
 ## Writing a function
 
