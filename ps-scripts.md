@@ -19,7 +19,7 @@ Just like a shell script in Linux, you must type in a ".\" to run the script. In
 | PowerShell Script Basic Property | Value | Description |
 | :--- | :--- | :--- |
 | PS Script file extension | .ps1 | Use this extension to enable Windows to recognize that this is powershell. |
-| Run a PS script | .\&lt;ScriptName.ps1&gt; | From the PS-prompt use this sytax to tell PowerShell to run a script |
+| Run a PS script | .\&lt;ScriptName&gt;.ps1 | From the PS-prompt use this sytax to tell PowerShell to run a script |
 | PS Script variable character | $ | To declare a variable prefix the variable name with a "$" |
 | PS Script escape character | \` | for special characters in a string use the "\`" to escape them. Example: "three \`$Horses" escapes the "$" to text. Normally this would be the value of the variable $Horses. |
 | PS Script pipeline character | \| | to pipe output to the next cmdlet just like in the console |
