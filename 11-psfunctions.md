@@ -46,7 +46,7 @@ You already wrote some code in the form of a script file in the last chapter. Le
 
 ## Running your function from command prompt
 
-Now, let's try to run the script. Change your drive to a completely different drive than your C:\ drive - it can even be a mapped network drive. Run the cmdlet from the prompt with the -Path parameter: Here you need to put the path to the MyComputerNames.txt file. It should look something like:
+Now, let's try to run the script. Change your drive to a completely different drive than your C drive - it can even be a mapped network drive. Run the cmdlet from the prompt with the -Path parameter: Here you need to put the path to the MyComputerNames.txt file. It should look something like:
 
 `Get-HostReport -Path C:\Users\speightss\Source\PS\MyComputerNames.txt`
 
