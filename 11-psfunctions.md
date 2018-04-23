@@ -19,13 +19,17 @@ What you also need to read
 
 Examples
 
-From the command line 
+From the command line
 
 From a script
 
 Called from inside a script
 
+## Section targets
 
+* Understand functions and how they can be used
+* Understand the primary concepts and PS-features to support functions
+* Understand how to write a fun
 
 
 
