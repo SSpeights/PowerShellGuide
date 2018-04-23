@@ -10,7 +10,7 @@ in the script add - `write-output "Hello"`.
 
 ## PS Execution Policy
 
-**Achtung**: if you get an "unauthorized access warning" in red text and your script doesn't run. It means that you need to change your execution policy so you can execute PS scripts on your system. You do this with the `Set-ExecutionPolicy` comand. To get the information you need to do this, [please visit this Microsoft technet page](https://technet.microsoft.com/en-us/library/ee176961.aspx). You must have an overview of the different Execution-Policies before you set a policy and talk to ICT first. Setting the policy to "unrestricted" might not be the best choice...
+**Achtung**: if you get an "unauthorized access warning" in red text and your script doesn't run. It means that you need to change your execution policy so you can execute PS scripts on your system. You do this with the `Set-ExecutionPolicy` command. To get the information you need to do this, [please visit this Microsoft technet page](https://technet.microsoft.com/en-us/library/ee176961.aspx). You must have an overview of the different Execution-Policies before you set a policy and talk to ICT first. Setting the policy to "unrestricted" might not be the best choice...
 
 ## Syntax basics
 
@@ -33,7 +33,7 @@ Just like a shell script in Linux, you must type in a ".\" to run the script. In
 
 The "$" symbol represents a variable in PowerShell both at command line and in scripts.
 
-Example: 
+Example:
 
 `$secondsPerDay = 24 * 60 * 60`
 
@@ -43,7 +43,7 @@ Example:
 
 Parameters are useful for taking input and reading them into your script. They are like arguments for methods. In Powershell, you add parameters to your script with the `param` keyword. You can also set all kinds of attributes for instance if a parameter is required or optional. [These attributes are described here](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_parameters?view=powershell-6#parameter-attribute-table).
 
-Example: 
+Example:
 
 ```
 Param( 

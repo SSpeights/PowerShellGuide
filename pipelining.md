@@ -85,7 +85,7 @@ Microsoft has extensive documentation on using operators, [how to make compariso
 | Array content search - includes | -in | 3 -in \(2,3,4,5\) \(returns true\) |
 | Array content search - does not include | -notin | 7 -notin \(2,3,4,5\) \(returns true\) |
 | Array content search - includes | -contains | \(2, 3, 4, 5\) -contains 3 \(returns true\) |
-| Array content search - does not include | -notcontains | \(2, 3, 4, 5\) -contains 7 \(returns true\) |
+| Array content search - does not include | -notcontains | \(2, 3, 4, 5\) -notcontains 7 \(returns true\) |
 
 There is more and [Microsoft's documentation for PS-comparison operators is here.](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comparison_operators?view=powershell-5.1)
 
