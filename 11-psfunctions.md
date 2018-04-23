@@ -1,6 +1,6 @@
 # PowerShell Functions
 
-Functions are reusable pieces of PowerShell code. Major advantage of storing PowerShell code in functions over .ps1 scripts is that they can be called in PowerShell from any location in your file structure without entering a path to file. In this section we are going to take a short look at functions - how to create them, how to use them and how to persist them for reuse
+Functions are reusable pieces of PowerShell code. The major advantage of storing PowerShell code in functions over .ps1 scripts is that they can be called in PowerShell from any location in your file structure without entering a path to file. In this section we are going to take a short look at functions - how to create them, how to use them and how to persist them for reuse
 
 There is much more information about functions online and you should definitely take a look at the Microsoft documentation -
 
@@ -24,7 +24,7 @@ PowerShell Profile is a script that allows you to configure your Powershell envi
 
 ## Create a PowerShell Profile
 
-So Let's create a PowerShell profile - to do this type or copy the following in the PowerShell console -
+So let's create a PowerShell profile - to do this type or copy the following in the PowerShell console -
 
 `if (!(Test-Path -Path $profile))`
 
