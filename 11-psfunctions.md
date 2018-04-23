@@ -1,6 +1,6 @@
 # PowerShell Functions
 
-What are Powershell functions and why are they handy: Major advantage of storing PowerShell code in functions as opposed to scripts is that they can be called in PowerShell from any location in your file structure without entering a path.
+Functions are reusable pieces of PowerShell code. Major advantage of storing PowerShell code in functions over .ps1 scripts is that they can be called in PowerShell from any location in your file structure without entering a path.
 
 There is much more information about functions online and you should definitely take a look at the Microsoft documentation -
 
@@ -9,7 +9,7 @@ There is much more information about functions online and you should definitely 
 
 ## PowerShell Profile
 
-PowerShell Profile is a script that allows you to configure your Powershell environments with custom configurations that persist for every PowerShell session. The Profile script runs at session-start and you can configure commands, aliases, variables, modules and, yes, functions in this file that you want to be able to access from PowerShell. For an in-depth look at PowerShell Profiles, [take a look at the Microsoft reference documentation](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-6). Pay special attention the different profiel scopes. The different scopes are: 
+PowerShell Profile is a script that allows you to configure your Powershell environments with custom configurations that persist for every PowerShell session. The Profile script runs at session-start and you can configure commands, aliases, variables, modules and, yes, functions in this file that you want to be able to access from PowerShell. For an in-depth look at PowerShell Profiles, [take a look at the Microsoft reference documentation](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-6). Pay special attention the different profile scopes. The different scopes are:
 
 | Description | Reference | Path |
 | :--- | :--- | :--- |
@@ -22,9 +22,9 @@ PowerShell Profile is a script that allows you to configure your Powershell envi
 
 ## Create a PowerShell Profile
 
-So Let's create a PowerShell profile - to do this type or copy the following in the PowerShell console - 
+So Let's create a PowerShell profile - to do this type or copy the following in the PowerShell console -
 
-`if (!(Test-Path -Path $profile))`
+`if (!(Test-Path -Path $profile))`
 
 `{New-Item -ItemType File -Path $profile -Force}`
 
@@ -53,13 +53,13 @@ Now you can run this code from anywhere, also on remote computers if you have pu
 * The report is always written to "working directory". Probably you want to save this to a dedicated folder. 
 * If you enter the function without the "-Path" parameter, it doesn't work because the  hardcoded fallback path in your function is also based on the file structure of the folder where you saved your scripts \(It assumes the your calling from the working directory.\).
 
-You can fix both by changing the path in the code to an absolute path. Who knows, maybe you don't need this handling logic. Maybe you want to make "-Path" a required parameter or add a default value as a fallback or add a file output path as a second parameter. 
+You can fix both by changing the path in the code to an absolute path. Who knows, maybe you don't need this handling logic. Maybe you want to make "-Path" a required parameter or add a default value as a fallback or add a file output path as a second parameter.
 
-Documenting works just like with your script in the last chapter and you can look at your function help by entering 
+Documenting works just like with your script in the last chapter and you can look at your function help by entering
 
 `Get-Help Get-HostReport`
 
-**Achtung:** If you just tried running this from a different environment like in your IDE and it didn't work, your profile probably doesn't have the right scope, and you may want to take a look where you saved the "profile.ps1" script. Try moving it the "Current User / All Hosts" folder or creating 
+**Achtung:** If you just tried running this from a different environment like in your IDE and it didn't work, your profile probably doesn't have the right scope, and you may want to take a look where you saved the "profile.ps1" script. Try moving it the "Current User / All Hosts" folder or creating
 
 ## Running a function - more choices
 
@@ -69,7 +69,7 @@ Go to any directory on your computer and create a PowerShell script called `Func
 
 Run the script. The script should run and give you the same result as before.
 
-Additionally, you can also embed functions in PowerShell Modules. When you do this you can share your functions with other people who can benefit from the code that you have written but keep in mind that if you are going to share your code should be usable and that you must maintain it both the code and the documentation. 
+Additionally, you can also embed functions in PowerShell Modules. When you do this you can share your functions with other people who can benefit from the code that you have written but keep in mind that if you are going to share your code should be usable and that you must maintain it both the code and the documentation.
 
 ## Section targets
 
