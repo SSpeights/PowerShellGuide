@@ -1,11 +1,13 @@
 # PowerShell Functions
 
-Functions are reusable pieces of PowerShell code. Major advantage of storing PowerShell code in functions over .ps1 scripts is that they can be called in PowerShell from any location in your file structure without entering a path.
+Functions are reusable pieces of PowerShell code. Major advantage of storing PowerShell code in functions over .ps1 scripts is that they can be called in PowerShell from any location in your file structure without entering a path to file. In this section we are going to take a short look at functions - how to create them, how to use them and how to persist them for reuse
 
 There is much more information about functions online and you should definitely take a look at the Microsoft documentation -
 
 * [Basic function documentation](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_functions?view=powershell-6)
 * [Advanced function documentation](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_functions_advanced?view=powershell-6)
+
+It is also possible to enter functions at the command prompt, but these functions cannot be used after you close your PowerShell session. For you functions to persist you must create a PowerShell Profile.
 
 ## PowerShell Profile
 
@@ -18,7 +20,7 @@ PowerShell Profile is a script that allows you to configure your Powershell envi
 | All Users, Current Host | $profile.AllUsersCurrentHost | $PsHome\Microsoft.PowerShell\_profile.ps1 |
 | All Users, All Hosts | $profile.AllUsersAllHosts | $PsHome\Profile.ps1 |
 
-**Achtung: **Your PowerShell Profile can be set for different scopes and you will want to understand what these are because you can call each of these scopes for different purposes. Take a look at the four different profiles in the online documentation.
+**Achtung: **Your PowerShell Profile can be set for different scopes and you will want to understand what these are. Take a look at the four different profiles in the online documentation.
 
 ## Create a PowerShell Profile
 
