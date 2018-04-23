@@ -51,5 +51,3 @@ You also add a little fallback statement if the file is empty - just in case. An
 
 [Your final script is here](/Examples/FinalInputs_ComputerData.ps1). You also have full help for this script from the CLI. Simply type in`help .\FinalInputs_ComputerData.ps1`.
 
-
-
