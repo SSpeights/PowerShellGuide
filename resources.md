@@ -1,6 +1,6 @@
 # Resource Reference
 
-Here you can find a complete list of PowerShell resources recommended by me and our residit PS-Guru, Nicholas Dille.
+Here you can find a complete list of PowerShell resources recommended by me and our resident PS-Guru, Nicholas Dille.
 
 * The PowerShell Best Practices and Style Guide: [https://poshcode.gitbooks.io/powershell-practice-and-style/](https://poshcode.gitbooks.io/powershell-practice-and-style/)
 * Professional PowerShell \(by myself\): [http://dille.name/professional-powershell](http://dille.name/professional-powershell)
