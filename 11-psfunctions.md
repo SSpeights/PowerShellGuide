@@ -26,7 +26,7 @@ PowerShell Profile is a script that allows you to configure your Powershell envi
 
 So let's create a PowerShell profile - to do this type or copy the following in the PowerShell console -
 
-`if (!(Test-Path -Path $profile))      
+`if (!(Test-Path -Path $profile))        
 {New-Item -ItemType File -Path $profile -Force}`
 
 Now you have a PowerShell profile for "Current User / Current Host". With a profile you're ready to write your first function.
@@ -35,9 +35,9 @@ Now you have a PowerShell profile for "Current User / Current Host". With a prof
 
 You already wrote some code as a script file in the last chapter. Let's just turn this code into a function. You can make needed changes later. To do this open up your profile by entering`notepad $profile` and create a function \(we'll call it "Get-HostReport".\). Paste the code from the FinalInputs\_ComputerData.ps1 script including the documentation into the function:
 
-`function Get-HostReport      
-{      
-&lt; Paste Code Here including documentation &gt; 
+`function Get-HostReport        
+{        
+( Paste Code Here including documentation )  
 }`
 
 You now have a working PowerShell function that you can call from all Powershell sessions from the PowerShell command line.
