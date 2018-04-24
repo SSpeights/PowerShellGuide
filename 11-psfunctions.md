@@ -37,7 +37,7 @@ You already wrote some code as a script file in the last chapter. Let's just tur
 
 `function Get-HostReport    
 {    
-<Paste Code Here including documentation>  
+&ltPaste Code Here including documentation%gt  
 }`
 
 You now have a working PowerShell function that you can call from all Powershell sessions from the PowerShell command line.
