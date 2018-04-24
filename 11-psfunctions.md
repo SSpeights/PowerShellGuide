@@ -84,7 +84,7 @@ Additionally, you can also embed functions in PowerShell Modules. When you do th
 
 That's it for the beginners guide. now you can get information about the computers your are managing, write them to a report and use the report to check and see which kind of software you can install on these computers. If you plan to automate this process, you might want to also create a another script to delete all reports to make way for new reports in the next scheduled run. Or, you might not want to mess around with files at all and but the checking logic in this script \(or pass objects to another scripts\). There are lots of options.
 
-The final section in this booklet is a list of all resources that we could think of to help you go further with PowerShell scripting. Certainly if you are looking for some more practices to become more sophisticated with scripting the [PoshCode StyleGuide](https://poshcode.gitbooks.io/powershell-practice-and-style/content/) is a good place to keep going. And, You can always ask questions at StackOverflow. 
+The final section in this booklet is a list of all resources that we could think of to help you go further with PowerShell scripting. Certainly if you are looking for some more practices to become more sophisticated with scripting the [PoshCode StyleGuide](https://poshcode.gitbooks.io/powershell-practice-and-style/content/) is a good place to keep going.
 
 There is a lot more you can learn but hopefully this helped to get started!
 

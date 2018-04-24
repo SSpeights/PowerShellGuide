@@ -22,7 +22,7 @@ Here are some of the things you can do with PowerShell:
 
 As IT-professionals move toward full-stack knowledge at Haufe Group, throwing a software solution over the wall to the IT-operations unit is happening less and less. More and more, whether you are a developer, a tester, or part of IT-operations, you find yourself working in teams and needing skills and tools that make managing your Dev and Ops tasks more effective. PowerShell is a tool that can help to reuse and automate tasks in-line with the principles and practices of DevOps and lean working, on Windows and now, also on Mac and Linux.
 
-Hopefully PS already sounds like a convincing tool that can help you do your job. There are certainly alternatives to creating Powershell solutions but for operating in a Windows DevOps ecosystem, PowerShell is perhaps the best solution. 
+Hopefully PS already sounds like a convincing tool that can help you do your job. There are certainly alternatives to creating Powershell solutions but for operating in a Windows DevOps ecosystem, PowerShell is perhaps the best solution.
 
 Like other "Haufe Guides" this book does not profess to contain all of the information. The purpose is to provide a good narrative and structure to help you on your PS-journey and get started with PowerShell. That being said, the book itself will lean towards "getting-started" and tasks that must be performed at Haufe Group. There will be many contextually-placed links that will take you to articles, tutorials, github repos and so on to help you continue the journey, but this is just the beginning.
 
