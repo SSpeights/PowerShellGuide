@@ -42,7 +42,7 @@ You already wrote some code as a script file in the last chapter. Let's just tur
 
 `}`
 
-You now have a working PowerShell function that you can call from all Powershell session from the PowerShell command line.
+You now have a working PowerShell function that you can call from all Powershell session from the PowerShell command line. 
 
 ## Running your function from command prompt
 
@@ -57,9 +57,11 @@ Now you can run this code from anywhere, also on remote computers, if you have p
 
 You can fix both by changing the path in the code to an absolute path. Who knows, maybe you don't need this handling logic. Maybe you want to [make "-Path" a required parameter](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_functions_advanced_parameters?view=powershell-6#static-parameters) or [add a default value as a fallback](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_parameters_default_values?view=powershell-6) or add a file output path as a second parameter.
 
-Documenting works just like with your script in the last chapter and you can look at your function help by entering -
+Calling documentation works just like with your script in the last chapter and you can look at your function help by entering -
 
 `Get-Help Get-HostReport`
+
+Hopefully you remembered to change your examples because you are no longer calling a script. 
 
 **Achtung:** If you just tried running this from a different environment like in your IDE and it didn't work, your profile probably doesn't have the right scope, and you may want to take a look where you saved the "profile.ps1" script. Try moving it the "Current User / All Hosts" folder or creating.
 
@@ -69,7 +71,9 @@ It is not only possible to run your function at the command line you can also ca
 
 Go to any directory on your computer and create a PowerShell script called `FunctionTest.ps1`. In `FunctionTest.ps1`, add the cmdlet you just typed at your command prompt with a few small changes - `Get-HostReport -Path "C:\Users\speightss\Source\PS\MyComputerNames.txt"`
 
-Run the script. The script should run and give you the same result as before.
+Now, run the script. The script should run and give you the same result as before.
+
+
 
 Additionally, you can also embed functions in PowerShell Modules. When you do this you can share your functions with other people who can benefit from the code that you have written but keep in mind that if you are going to share your code, it should be usable and that you must maintain it both the code and the documentation.
 
