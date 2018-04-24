@@ -26,7 +26,7 @@ PowerShell Profile is a script that allows you to configure your Powershell envi
 
 So let's create a PowerShell profile - to do this type or copy the following in the PowerShell console -
 
-`if (!(Test-Path -Path $profile))        
+`if (!(Test-Path -Path $profile))          
 {New-Item -ItemType File -Path $profile -Force}`
 
 Now you have a PowerShell profile for "Current User / Current Host". With a profile you're ready to write your first function.
@@ -35,9 +35,9 @@ Now you have a PowerShell profile for "Current User / Current Host". With a prof
 
 You already wrote some code as a script file in the last chapter. Let's just turn this code into a function. You can make needed changes later. To do this open up your profile by entering`notepad $profile` and create a function \(we'll call it "Get-HostReport".\). Paste the code from the FinalInputs\_ComputerData.ps1 script including the documentation into the function:
 
-`function Get-HostReport        
-{        
-( Paste Code Here including documentation )  
+`function Get-HostReport          
+{          
+( Paste Code Here including documentation )    
 }`
 
 You now have a working PowerShell function that you can call from all Powershell sessions from the PowerShell command line.
@@ -69,7 +69,11 @@ It is not only possible to run your function at the command line you can also ca
 
 Go to any directory on your computer and create a PowerShell script called `FunctionTest.ps1`. In `FunctionTest.ps1`, add the cmdlet you just typed at your command prompt with a few small changes - `Get-HostReport -Path "C:\Users\speightss\Source\PS\MyComputerNames.txt"`
 
-Now, run the script. The script should run and give you the same result as before.
+Now, run the script. 
+
+`.\FunctionTest.ps1`
+
+The script should run and give you the same result as before.
 
 Additionally, you can also embed functions in PowerShell Modules. When you do this you can share your functions with other people but keep in mind that if you are going to share your code, it should be usable and that you must maintain both the code and the documentation.
 
@@ -82,7 +86,7 @@ Additionally, you can also embed functions in PowerShell Modules. When you do th
 
 ## That's all folks
 
-That's it for the beginners guide. now you can get information about the computers your are managing, write them to a report and use the report to check and see which kind of software you can install on these computers. If you plan to automate this process, you might want to also create a another script to delete all reports to make way for new reports in the next scheduled run. Or, you might not want to mess around with files at all and but the checking logic in this script \(or pass objects to another scripts\). There are lots of options.
+That's it for the beginners guide. now you can get information about the computers your are managing, write them to a report and use the report to check and see which kind of software you can install on these computers. If you plan to automate this process, you might want to also create a another script to delete all reports to make way for new reports in the before scheduled run. Or, you might not want to mess around with files at all and include the checking logic in this script \(or pass objects to another scripts\). There are lots of options.
 
 The final section in this booklet is a list of all resources that we could think of to help you go further with PowerShell scripting. Certainly if you are looking for some more practices to become more sophisticated with scripting the [PoshCode StyleGuide](https://poshcode.gitbooks.io/powershell-practice-and-style/content/) is a good place to keep going.
 
