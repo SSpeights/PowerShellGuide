@@ -7,7 +7,7 @@ There is much more information about functions online and you should definitely 
 * [Basic function documentation](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_functions?view=powershell-6)
 * [Advanced function documentation](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_functions_advanced?view=powershell-6)
 
-It is also possible to enter functions at the command prompt, but these functions cannot be used again after you close your PowerShell session. For functions to persist you must create a PowerShell Profile.
+It is also possible to enter functions at the command prompt, but these functions cannot be used again after you close your PowerShell session. For functions to persist, you must create a PowerShell Profile.
 
 ## PowerShell profile
 
@@ -20,7 +20,7 @@ PowerShell Profile is a script that allows you to configure your Powershell envi
 | All Users, Current Host | $profile.AllUsersCurrentHost | $PsHome\Microsoft.PowerShell\_profile.ps1 |
 | All Users, All Hosts | $profile.AllUsersAllHosts | $PsHome\Profile.ps1 |
 
-**Achtung: **Your PowerShell Profile can be set for different scopes and you will want to understand what these are. Take a look at the four different profiles in the online documentation. You definitely also want to know more about the full capabilities of PowerShell profile.
+**Achtung:**Your PowerShell Profile can be set for different scopes and you will want to understand what these are. Take a look at the four different profiles in the online documentation. You definitely also want to know more about the full capabilities of PowerShell profile.
 
 ## Create a PowerShell Profile
 
@@ -59,7 +59,7 @@ Calling documentation works just like with your script in the last chapter and y
 
 `Get-Help Get-HostReport`
 
-Hopefully you remembered to change your examples because you are no longer calling a script.
+Hopefully, you remembered to change your examples because you are no longer calling a script.
 
 **Achtung:** If you just tried running this from a different environment like in your IDE and it didn't work, your profile probably doesn't have the right scope, and you may want to take a look where you saved the "profile.ps1" script. Try moving it the "Current User / All Hosts" folder or creating.
 
@@ -71,7 +71,7 @@ Go to any directory on your computer and create a PowerShell script called `Func
 
 Now, run the script. The script should run and give you the same result as before.
 
-Additionally, you can also embed functions in PowerShell Modules. When you do this you can share your functions with other people who can benefit from the code that you have written but keep in mind that if you are going to share your code, it should be usable and that you must maintain it both the code and the documentation.
+Additionally, you can also embed functions in PowerShell Modules. When you do this you can share your functions with other people but keep in mind that if you are going to share your code, it should be usable and that you must maintain both the code and the documentation.
 
 ## Section targets
 
