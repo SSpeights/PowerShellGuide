@@ -37,6 +37,7 @@ Like other "Haufe Guides" this book does not profess to contain all of the infor
 * [8. Prepare your script](prepare-your-script.md)
 * [9. Create a script from cmdlets](a-bunch-of-commands.md)
 * [10. Refining your script](refining-with-loops.md)
+* [11. Powershell Functions](11-psfunctions.md)
 * [Resources](resources.md)
 
 
