@@ -1,4 +1,4 @@
-# Scripting basics in PowerShell
+# Scripting Basics in PowerShell
 
 Very simply, the reason why you want to learn how to create Powershell scripts is because a script can be automated. Even if you only save 5 minutes by automating a task, if you have to perform that task 5 times a day - you still save 25 minutes.
 
