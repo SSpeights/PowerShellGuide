@@ -13,5 +13,5 @@
 * [Create a script from cmdlets](a-bunch-of-commands.md)
 * [Refining your script](refining-with-loops.md)
 * [Powershell Functions](11-psfunctions.md)
-* [Get Powershell](get-powershell.md)
+* [Resources](resources.md)
 

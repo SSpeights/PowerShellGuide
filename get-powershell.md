@@ -8,9 +8,9 @@ Up to version 5, Powershell was automatically installed on Windows, but the newe
 
 You can get the latest Powershel Binary here - [https://github.com/PowerShell/PowerShell](https://github.com/PowerShell/PowerShell). Be sure to click on the link the installer you want in "Downloads" - and not the link to the "Supported Platform" in the first column.
 
-## Powershell Documentation one more time
+## Powershell documentation - first mention
 
-Here you can find a complete list of PowerShell resources recommended by me and our resident PS-Guru, Nicholas Dille. This is also in resources and specific resources are explained in the "Discovery" section. Don't be afraid to use the documentation or to get help! 
+Here you can find a complete list of PowerShell resources recommended by me and our resident PS-Guru, Nicholas Dille. This is also in resources and specific resources are explained in the "Discovery" section. Don't be afraid to use the documentation or to get help!
 
 * The PowerShell Best Practices and Style Guide: [https://poshcode.gitbooks.io/powershell-practice-and-style/](https://poshcode.gitbooks.io/powershell-practice-and-style/)
 * Professional PowerShell \(by myself\): [http://dille.name/professional-powershell](http://dille.name/professional-powershell)
@@ -25,6 +25,4 @@ And, last but never least
 * [The stack overflow PowerShell domain](https://stackoverflow.com/tags/powershell/info)
 
 It's also important to mention that much help can be accessed from the command line!
-
-
 
