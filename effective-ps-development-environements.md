@@ -2,7 +2,9 @@
 
 Before we take a look at some of the IDEs out there, remember, when we develop at work - at least in Freiburg - we have to take our corporate proxy server into account. If ICT has not given you a proxy exemption or a special script that helps your system to know when you're behind the proxy and when you're not, please ask them if they can help.
 
-Otherwise, if you insist on doing it yourself, use "[http://proxy.haufemg.com:8083/](http://proxy.haufemg.com:8083/)" to resolve the proxy server. This is useful for things like pushing to remote git repository or downloading dependencies from your favorite package repo. This may not be so critical for some powershell tasks but if you are doing something like managing a cloud environment remotely, you will need to be able to "get out".
+Otherwise, if you insist on doing it yourself, use "[http://proxy.haufemg.com:8083/](http://proxy.haufemg.com:8083/)" to resolve the proxy server. This is useful for things like pushing to remote git repository or downloading dependencies from your favorite package repo. This may not be so critical for some powershell tasks but if you are doing something like managing a cloud environment remotely, you will need to be able to "get out". 
+
+Also important to mention - if you are using an editor like VS Code you will probably have to configure the editor to use the latest PowerShell as the integrated console. So for example, on my Windows machine, I had to configure my VS Code to use Powershell 6 instead of the pre-installed PowerShell 5.x in the user settings. 
 
 ### Visual Studio Code with PS Add-On
 
