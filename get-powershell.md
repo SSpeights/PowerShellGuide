@@ -1,4 +1,4 @@
-# Get Powershell
+# Get PowerShell
 
 Powershell is evolving and one of the PS "adaptations" is that it is now interoperable with Windows, macOS, and Linux.
 
