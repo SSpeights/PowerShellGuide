@@ -1,4 +1,4 @@
-# Configure your PS  environment
+# Configure your PS-environment
 
 The next step after getting Powershell is to configure how Powershell should function on your system and what resources you would like to have. You can configure PS environment behavior in your PowerShell profile\(s\). There are different profile configurations with different scopes in PowerShell.
 
