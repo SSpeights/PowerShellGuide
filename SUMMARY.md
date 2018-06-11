@@ -13,4 +13,5 @@
 * [10. Refining your script](refining-with-loops.md)
 * [11. Powershell Functions](11-psfunctions.md)
 * [Resources](resources.md)
+* [Get Powershell](get-powershell.md)
 

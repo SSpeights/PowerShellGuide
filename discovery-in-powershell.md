@@ -13,7 +13,7 @@ These resources are geared toward finding more tutorials and connecting with peo
 
 ## OPP - Other People's Powershell
 
-You won't need it right away but an important resource will be the Powershell Gallery. This is where curated PowerShell Modules and scripts get stored so others in the PS-Community can use them. Currently, there are over 2,500 modules and scripts in the Gallery. Hopefully, it can speed you up by exposing code that performs a function that you must have. I mention this first, but in the this section, this will be addressed last, because we have to learn a little about PowerShell before we go and access other people's code.
+You won't need it right away but an important resource will be the Powershell Gallery. This is where curated PowerShell modules and scripts get stored so others in the PS-Community can use them. Currently, there are over 2,500 modules and scripts in the Gallery. Hopefully, it can speed you up by exposing code that performs a function that you must have. I mention this first, but in the this section, this will be addressed last, because we have to learn a little about PowerShell before we go and access other people's code.
 
 ## Make sure help is up to date
 
