@@ -17,9 +17,7 @@ PowerShell Profile is a script that allows you to configure your Powershell envi
 
 ## Persisting Resources
 
-It is possible to do useful stuff like setting the default home directory or not so useful stuff like setting the background color of your PS-console, but PowerShell profiles most useful feature is allowing you to store resources that you need to reuse on a regular basis and not just for your machine but also for all hosts that you need to manage. The following are some links that show, which resources can go into a profile and how to persist them. 
+It is possible to do useful stuff like setting the default home directory or not so useful stuff like setting the background color of your PS-console, but PowerShell profiles most useful feature is allowing you to store resources that you need to reuse on a regular basis and not just for your machine but also for all hosts that you need to manage. The following are some links that show, which resources can go into a profile and how to persist them.
 
-**Achtung:** As of Powershell 3.0 you don't have to load PS-Modules into your profile to manage them. After installed, modules are available at every session. That being said, it still makes sense to add variables, console configurations, special, state-based prompts and to load functions to your profile that you wish to have in your PS-environment.
-
-
+**Achtung:** As of Powershell 3.0 you don't have to load PS-Modules into your profile to manage them. After installed, modules are available at every session. That being said, it still makes sense to add variables, console configurations, and special, state-based prompts to your profile that you wish to have in your PS-environment.
 

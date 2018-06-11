@@ -9,24 +9,19 @@ There is much more information about functions online and you should definitely 
 
 It is also possible to enter functions at the command prompt, but these functions cannot be used again after you close your PowerShell session. For functions to persist, you must create a PowerShell Profile.
 
-## PowerShell profile
+## Persisting functions
 
-PowerShell Profile is a script that allows you to configure your Powershell environments with custom configurations that persist for every PowerShell session. The Profile script runs at session-start and you can configure commands, aliases, variables, modules and, yes, functions that you want to be able to access from PowerShell in this file. For an in-depth look at PowerShell Profiles, [take a look at the Microsoft reference documentation](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-6). Pay special attention to the different profile scopes. The different scopes are:
+You can persist your self-written functions across all Powershell sessions by adding these functions or loading them into your Powershell profile. Profiles are described in "Configure your PowerShell environment". 
 
-| Description | Reference | Path |
-| :--- | :--- | :--- |
-| Current user, Current Host | $profile | $Home\\[My \]Documents\WindowsPowerShell\Profile.ps1 |
-| Current User, All Hosts | $profile.CurrentUserAllHosts | $Home\\[My \]Documents\Profile.ps1 |
-| All Users, Current Host | $profile.AllUsersCurrentHost | $PsHome\Microsoft.PowerShell\_profile.ps1 |
-| All Users, All Hosts | $profile.AllUsersAllHosts | $PsHome\Profile.ps1 |
+You can also create a Powershell module and install the module on your system. Modules are persisted across PS-sessions.
 
-**Achtung:**Your PowerShell Profile can be set for different scopes and you will want to understand what these are. Take a look at the four different profiles in the online documentation. You definitely also want to know more about the full capabilities of PowerShell profile.
+**Achtung:** If you don't want to persist functions to call them directly from the command prompt, you can dot-source functions to call them from .ps1 scripts. An example of how this is done is here - [https://stackoverflow.com/questions/18764312/loading-custom-functions-in-powershell](https://stackoverflow.com/questions/18764312/loading-custom-functions-in-powershell)
 
 ## Create a PowerShell Profile
 
 So let's create a PowerShell profile - to do this type or copy the following in the PowerShell console -
 
-`if (!(Test-Path -Path $profile))          
+`if (!(Test-Path -Path $profile))            
 {New-Item -ItemType File -Path $profile -Force}`
 
 Now you have a PowerShell profile for "Current User / Current Host". With a profile you're ready to write your first function.
@@ -35,9 +30,9 @@ Now you have a PowerShell profile for "Current User / Current Host". With a prof
 
 You already wrote some code as a script file in the last chapter. Let's just turn this code into a function. You can make needed changes later. To do this open up your profile by entering`notepad $profile` and create a function \(we'll call it "Get-HostReport".\). Paste the code from the FinalInputs\_ComputerData.ps1 script including the documentation into the function:
 
-`function Get-HostReport          
-{          
-( Paste Code Here including documentation )    
+`function Get-HostReport            
+{            
+( Paste Code Here including documentation )      
 }`
 
 You now have a working PowerShell function that you can call from all Powershell sessions from the PowerShell command line.
@@ -69,7 +64,7 @@ It is not only possible to run your function at the command line you can also ca
 
 Go to any directory on your computer and create a PowerShell script called `FunctionTest.ps1`. In `FunctionTest.ps1`, add the cmdlet you just typed at your command prompt with a few small changes - `Get-HostReport -Path "C:\Users\speightss\Source\PS\MyComputerNames.txt"`
 
-Now, run the script. 
+Now, run the script.
 
 `.\FunctionTest.ps1`
 

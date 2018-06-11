@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 * [PS - The Basics](chapter1.md)
 * [Get Powershell](get-powershell.md)
+* [Configure your PowerShellEnvironment](configure-your-powershellenvironment.md)
 * [PS development environments](effective-ps-development-environements.md)
 * [PowerShell Framework](powershell-framework.md)
 * [Discovery in Powershell](discovery-in-powershell.md)
@@ -13,6 +14,5 @@
 * [Create a script from cmdlets](a-bunch-of-commands.md)
 * [Refining your script](refining-with-loops.md)
 * [Powershell Functions](11-psfunctions.md)
-* [Resources](resources.md)
 * [Configure your PowerShellEnvironment](configure-your-powershellenvironment.md)
 
