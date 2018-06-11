@@ -1,4 +1,4 @@
-# Refining your script
+# Refining Your Script
 
 **Achtung**: documentation for what's going on in code is in the code examples. Feel free to [download the examples from GitHub](https://github.com/SSpeights/PowerShellGuide) and use them for other scripts.
 
@@ -53,7 +53,7 @@ You also add a little fallback statement if the file is empty - just in case. An
 
 ## Validating your script
 
-Maybe your script works but there are still some improvements you can make. One tool that enables you to validate and write better scripts is the [Powershell module PSScriptAnalyzer ](https://www.powershellgallery.com/packages/PSScriptAnalyzer/). 
+Maybe your script works but there are still some improvements you can make. One tool that enables you to validate and write better scripts is the [Powershell module PSScriptAnalyzer ](https://www.powershellgallery.com/packages/PSScriptAnalyzer/).
 
 We don't go into modules in this guide, but installing and using the analyzer is relatively straightforward. And by using the `Invoke-ScriptAnalyzer` cmdlet, you can validate the errors and find how this script can still be better \(Although you can ignore the "Write-Host" warning, since "Write-Host" now wraps "Write-Information"\).
 
