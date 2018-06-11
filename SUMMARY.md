@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [1. PS - The Basics](chapter1.md)
+* [PS - The Basics](chapter1.md)
 * [Get Powershell](get-powershell.md)
 * [PS development environments](effective-ps-development-environements.md)
 * [PowerShell Framework](powershell-framework.md)
