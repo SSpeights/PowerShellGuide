@@ -14,4 +14,5 @@
 * [Refining your script](refining-with-loops.md)
 * [Powershell Functions](11-psfunctions.md)
 * [Resources](resources.md)
+* [Configure your PowerShellEnvironment](configure-your-powershellenvironment.md)
 
