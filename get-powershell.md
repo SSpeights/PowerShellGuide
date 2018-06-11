@@ -2,7 +2,7 @@
 
 Powershell is evolving and one of the PS "adaptations" is that it is now interoperable with Windows, macOS, and Linux.
 
-Up to version 5, Powershell was automatically installed on Windows, but the newest version is available as a binary on GitHub. That's right PS has become another Microsoft open source project. It's generally a good idea to work with the newest version of Powershell because with the newest version, you get the newest features and, generally, you don't have to worry aobut backwards compatibility
+Up to version 5, Powershell was automatically installed on Windows, but the newest version is available as a binary on GitHub. That's right PS has become another Microsoft open source project. It's generally a good idea to work with the newest version of Powershell because with the newest version, you get the newest features and, generally, you don't have to worry aobut backwards compatibility.
 
 ## Download PowerShell
 

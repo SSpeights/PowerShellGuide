@@ -16,6 +16,7 @@ DevOps computing environments must have a specific configuration to run correctl
 
 In general, before we get into doing PowerShell, it is good to understand what is going to be in this book and how you can best get up to speed with PowerShell. PowerShell has many features that make figuring things out easier for you, and, since this is just a starting point, this Gitbook is laid out like this -
 
+* How to get Powershell
 * Which dev environments \(IDEs\) are good for working with PowerShell 
 * How PowerShell is structured
 * How to find your way around PowerShell
