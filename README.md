@@ -40,7 +40,10 @@ Like other "Haufe Guides" this book does not profess to contain all of the infor
 * [Create a script from cmdlets](a-bunch-of-commands.md)
 * [Refining your script](refining-with-loops.md)
 * [Powershell Functions](11-psfunctions.md)
+* [PowerShell Modules](powershell-modules.md)
 * [Resources](resources.md)
+
+
 
 
 
