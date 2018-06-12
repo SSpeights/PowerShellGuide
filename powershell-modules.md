@@ -1,6 +1,6 @@
 # PowerShell Modules
 
-Finally, we take a look at Powershell modules. Modules are essentially PowerShell libraries where you can store functions and, by installing these modules, persist them across PowerShell Sessions. Modules can be used to store and manage, and organize functions that you write to make managing your systems easier. Even better, these modules can be shared with other people to help them operate their systems too. [Microsoft Reference documentation for PowerShell Modules is here](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_modules?view=powershell-6). 
+Finally, we take a look at Powershell modules. Modules are essentially PowerShell libraries where you can store functions and, by installing these modules, persist them across PowerShell Sessions. Modules can be used to store and manage, and organize functions that you write to make managing your systems easier. Even better, these modules can be shared with other people to help them operate their systems too. [Microsoft Reference documentation for PowerShell Modules is here](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_modules?view=powershell-6).
 
 [A good definition for all of the components of a module is here](https://msdn.microsoft.com/en-us/library/dd878324%28v=vs.85%29.aspx).
 
@@ -14,11 +14,13 @@ PowerShell modules are stored in files with the .psm1 extension, and the general
 
 ## Save your functions to a module file
 
-Take one of the functions you have written and add it to a .psm1 file, and save your psm1 file to a central location. You can discover module repo paths by typing in `$env:PSModulePath`: i.e. you can store .psm1 files anywhere, but maybe it's not a bad idea to store them here since these folders are designed to store modules...
+Take the function you copied in your PS-Profile, cut it out, add it to a .psm1 file, and save your psm1 file to a central location. 
+
+**Achtung**: You can discover module repo paths by typing in `$env:PSModulePath`: i.e. you can store .psm1 files anywhere, but maybe it's not a bad idea to store them here since these folders are designed to store modules...
 
 Powershell recognizes the .psm1 extension and authorizes use of the PowerShell "Module" commands on these files.
 
-[Supporting documentation for writing a script module is here.](https://msdn.microsoft.com/en-us/library/dd878340%28v=vs.85%29.aspx) 
+[Supporting documentation for writing a script module is here.](https://msdn.microsoft.com/en-us/library/dd878340%28v=vs.85%29.aspx)
 
 ## Import your module in your PS-Profile
 
@@ -30,7 +32,7 @@ PowerShell also automatically recognizes modules stored in a folder structure wh
 
 ## Use module resources
 
-Test it out. Open up a new console or application with an integrated powershell terminal, start typing in the function name and use autocomplete, run the function a couple of times. If it works, you've successfully added module to your profile. If you need to see which commands, you can use in your module, type in: 
+Test it out. Open up a new console or application with an integrated powershell terminal, start typing in the function name and use autocomplete, run the function a couple of times. If it works, you've successfully added module to your profile. If you need to see which commands, you can use in your module, type in:
 
 `Get-Command -Module <YourModuleName>`
 
