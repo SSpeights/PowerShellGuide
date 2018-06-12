@@ -1,10 +1,10 @@
 # Scripting cmdlets
 
-One way to look at a powershell script is to see it as a grouping of cmdlets that run sequentially. A script can be much more elaborate than just a set of commands but, like this book, a set of cmdlets is the basis for creating a powershell script.
+One way to look at a PowerShell script is to see it as a grouping of cmdlets that run sequentially. A script can be much more elaborate than just a set of commands, but cmdlets are the basis of a powershell script.
 
 Our scenario here is that you need to create a report about the computers you manage and you need to gather information about the Desktop, the BIOS, and the Processor on a scheduled basis. Maybe you need to check and see if the computer has a desired state before you perform some action.
 
-It is a good idea to create a directory for this your project. Example scripts and all docs are available from GitHub at : [https://github.com/SSpeights/PowerShellGuide.git](https://github.com/SSpeights/PowerShellGuide.git)
+Example scripts and all docs are available from GitHub at : [https://github.com/SSpeights/PowerShellGuide.git](https://github.com/SSpeights/PowerShellGuide.git)
 
 ## Create a .ps1 file
 
