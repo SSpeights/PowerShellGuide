@@ -17,7 +17,7 @@ PowerShell Profile is a script that allows you to configure your Powershell envi
 
 **Achtung: **Your PowerShell Profile can be set for different scopes and you will want to understand what these are. Take a look at the four different profiles in the online documentation. You definitely also want to know more about the full capabilities of PowerShell profile.
 
-Also remember, you can leverage all Powershell commands in the profile script.
+Also remember, you can leverage all PowerShell commands in the profile script.
 
 ## Persisting resources in your PS-environment
 
