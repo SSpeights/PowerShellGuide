@@ -123,7 +123,7 @@ Microsoft has good documentation for powershell and we recommend that you also [
 Get-Process | Out-Host -Paging | Format-Table -Property ProcessName, Description
 ```
 
-### **Page content**
+### **Paging content**
 
 `Get-Command | more`
 
