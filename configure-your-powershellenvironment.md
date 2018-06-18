@@ -2,8 +2,6 @@
 
 The next step after getting Powershell is to configure how Powershell should function on your system and what resources you would like to have. You can configure PS environment behavior in your PowerShell profile\(s\). There are different profile configurations with different scopes in PowerShell.
 
-## PowerShell environment
-
 ## PowerShell profile
 
 PowerShell Profile is a script that allows you to configure your Powershell environments with custom configurations that persist for every PowerShell session. A little bit like the entrypoint script in shell scripting, the profile script runs at session-start and you can configure commands, aliases, variables and, yes, also functions that you want to be able to access from PowerShell in this file. For an in-depth look at PowerShell Profiles, [take a look at the Microsoft reference documentation](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-6). Pay special attention to the different profile scopes. The different scopes are:
