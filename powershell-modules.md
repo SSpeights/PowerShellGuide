@@ -46,13 +46,13 @@ If you are writing modules that need to the well-labeled, you may want to look i
 
 Using a Powershell Module from the PowerShell Gallery is also quite easy - the hardest part is perhaps finding the module that you are looking for. This can speed your work, if you find a module that does exactly what you are looking for.
 
-It is not only possible to find and use modules, but also scripts from the PowerShell Gallery. 
+It is not only possible to find and use modules, but also scripts from the PowerShell Gallery.
 
-Here the basic workflow is - find a Module, Download a Module, Import the Module. 
+Here the basic workflow is - find a Module, Download a Module, Import the Module.
 
 ## Find a module
 
-The PS Find-Module command has some parameters to narrow your search, but I still get the impression that the best way to find out is to ask in StackOverflow or some other PS-Community. 
+The PS Find-Module command has some parameters to narrow your search, but I still get the impression that the best way to find out is to ask in StackOverflow or some other PS-Community.
 
 Use `find-module` , or Google, or a recommendation from someone in the PowerShell community to find a powershell module like "Desired State Configuration" to help you do your work. Once you have found a good candidate, you can download your module to see if it is what you really need.
 
@@ -62,9 +62,11 @@ Entering `Save-Module <ModuleName> -LiteralPath <PathToModuleFolder>` saves the 
 
 Remember, you can view these paths by entering `$env:PSModulePath`at the PowerShell command line.
 
+You have to download a module before your can import it into your PowerShell Session.
+
 ## Import your Module
 
-Import-Module
+To load the module and use it you have to enter Import-Module &lt;ModuelName&gt; this loads it into you session. By calling a command from an imported module 
 
 Persisting the module
 
