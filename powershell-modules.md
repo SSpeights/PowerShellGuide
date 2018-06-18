@@ -14,7 +14,7 @@ PowerShell modules are stored in files with the .psm1 extension, and the general
 
 ## Save your functions to a module file
 
-Take the function you copied in your PS-Profile, cut it out, add it to a .psm1 file, and save your psm1 file to a central location. 
+Take the function you copied in your PS-Profile, cut it out, add it to a .psm1 file, and save your psm1 file to a central location.
 
 **Achtung**: You can discover module repo paths by typing in `$env:PSModulePath`: i.e. you can store .psm1 files anywhere, but maybe it's not a bad idea to store them here since these folders are designed to store modules...
 
@@ -44,13 +44,31 @@ If you are writing modules that need to the well-labeled, you may want to look i
 
 # Finding and Importing Modules from the PS-Gallery
 
-Workflow
+Using a Powershell Module from the PowerShell Gallery is also quite easy - the hardest part is perhaps finding the module that you are looking for. This can speed your work, if you find a module that does exactly what you are looking for.
 
-Finding modules
+It is not only possible to find and use modules, but also scripts from the PowerShell Gallery. 
 
-Inspecting Modules
+Here the basic workflow is - find a Module, Download a Module, Import the Module. 
 
-Installing Modules
+## Find a module
 
-Module Discovery
+The PS Find-Module command has some parameters to narrow your search, but I still get the impression that the best way to find out is to ask in StackOverflow or some other PS-Community. 
+
+Use `find-module` , or Google, or a recommendation from someone in the PowerShell community to find a powershell module like "Desired State Configuration" to help you do your work. Once you have found a good candidate, you can download your module to see if it is what you really need.
+
+## Download a module
+
+Entering `Save-Module <ModuleName> -LiteralPath <PathToModuleFolder>` saves the moduleSaves the module to a valid module path on your system.
+
+Remember, you can view these paths by entering `$env:PSModulePath`at the PowerShell command line.
+
+## Import your Module
+
+Import-Module
+
+Persisting the module
+
+## Remove a module
+
+Remove-Module
 
