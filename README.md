@@ -1,8 +1,8 @@
 # Why Powershell?
 
-You may have already asked yourself this question. To many, Powershell \(PS\) may seem like an obscure command line tool that is the next generation cmd / DOS from Microsoft. Fact is though, after many years of trying, Microsoft has developed a powerful scripting environment and language that combines both OS scripting and advanced software programming capabilities that can help you operate many computer systems at once. So, what are the advantages?
+You may have already asked yourself this question. To many, Powershell \(PS\) may seem like an obscure command line tool that is the next generation cmd / DOS from Microsoft. Fact is though, after many years of trying, Microsoft has developed a powerful scripting environment and language that combines both OS scripting and advanced software programming capabilities. So, what are the advantages?
 
-PowerShell provides better performance because it does not require a GUI. CLI management allows you to use "headless" servers that also provides higher computing performance because the overhead of a GUI is not there. PowerShell can call all of the features exposed by the Windows operating system and by the .NET framework.
+PowerShell provides better performance because it does not require a GUI. CLI management allows you to use "headless" servers that also provides higher computing performance because the overhead of a GUI is not there. PowerShell can call all of the features exposed by the Windows \(and other\) operating system\(s\) and by the .NET framework.
 
 PowerShell passes data across the pipeline from one command to the next using objects, allowing for easier manipulation of data and enabling a more powerful feature set.
 
@@ -42,8 +42,6 @@ Like other "Haufe Guides" this book does not profess to contain all of the infor
 * [Powershell Functions](11-psfunctions.md)
 * [PowerShell Modules](powershell-modules.md)
 * [Resources](resources.md)
-
-
 
 
 
