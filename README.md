@@ -2,7 +2,7 @@
 
 You may have already asked yourself this question. To many, Powershell \(PS\) may seem like an obscure command line tool that is the next generation cmd / DOS from Microsoft. Fact is though, after many years of trying, Microsoft has developed a powerful scripting environment and language that combines both OS scripting and advanced software programming capabilities. So, what are the advantages?
 
-PowerShell provides better performance because it does not require a GUI. CLI management allows you to use "headless" servers that also provides higher computing performance because the overhead of a GUI is not there. PowerShell can call all of the features exposed by the Windows \(and other\) operating system\(s\) and by the .NET framework.
+For one, PowerShell provides better performance because it does not require a GUI. CLI management allows you to use "headless" servers that also provides higher computing performance because the overhead of a GUI is not there. PowerShell can call all of the features exposed by the Windows \(and other\) operating system\(s\) and by the .NET framework.
 
 PowerShell passes data across the pipeline from one command to the next using objects, allowing for easier manipulation of data and enabling a more powerful feature set.
 
@@ -20,7 +20,9 @@ Here are some of the things you can do with PowerShell:
 * Add and manage Active Directory users
 * Structure and pipeline complex tasks
 
-As IT-professionals move toward full-stack knowledge at Haufe Group, throwing a software solution over the wall to the IT-operations unit is happening less and less. More and more, whether you are a developer, a tester, or part of IT-operations, you find yourself working in teams and needing skills and tools that make managing your Dev and Ops tasks more effective. PowerShell is a tool that can help to reuse and automate tasks in-line with the principles and practices of DevOps and lean working, on Windows and now, also on Mac and Linux.
+As IT-professionals move toward full-stack knowledge at Haufe Group, throwing a software solution over the wall to the IT-operations unit is happening less and less. 
+
+More and more, whether you are a developer, a tester, or part of IT-operations, you find yourself working in teams and needing skills and tools that make managing your Dev and Ops tasks more effective. PowerShell is a tool that can help to reuse and automate tasks in-line with the principles and practices of DevOps and lean working, on Windows and now, also on Mac and Linux.
 
 Hopefully PS already sounds like a convincing tool that can help you do your job. There are certainly alternatives to creating Powershell solutions but for operating in a Windows DevOps ecosystem, PowerShell is perhaps the best solution.
 
