@@ -1,6 +1,6 @@
 # Beginning Powershell Book Layout
 
-What are the basic tasks that our DevOps community peforms?
+What are the basic tasks that our DevOps community performs?
 
 Some principles of DevOps
 
