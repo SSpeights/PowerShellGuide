@@ -42,35 +42,7 @@ If you need to have "self-describing" modules, you can generate module meta-data
 
 If you are writing modules that need to the well-labeled, you may want to look into creating manifests for your modules. But, manifest files are not required to use PS-Modules.
 
-# Finding and Importing Modules from the PS-Gallery
+# 
 
-Using a Powershell Module from the PowerShell Gallery is also quite easy - the hardest part is perhaps finding the module that you are looking for. This can speed your work, if you find a module that does exactly what you are looking for.
 
-It is not only possible to find and use modules, but also scripts from the PowerShell Gallery.
-
-Here the basic workflow is - find a Module, Download a Module, Import the Module.
-
-## Find a module
-
-The PS Find-Module command has some parameters to narrow your search, but I still get the impression that the best way to find out is to ask in StackOverflow or some other PS-Community.
-
-Use `find-module` , or Google, or a recommendation from someone in the PowerShell community to find a powershell module like "Desired State Configuration" to help you do your work. Once you have found a good candidate, you can download your module to see if it is what you really need.
-
-## Download a module
-
-Entering `Save-Module <ModuleName> -LiteralPath <PathToModuleFolder>` saves the moduleSaves the module to a valid module path on your system.
-
-Remember, you can view these paths by entering `$env:PSModulePath`at the PowerShell command line.
-
-You have to download a module before your can import it into your PowerShell Session.
-
-## Import your Module
-
-To load the module and use it you have to enter Import-Module &lt;ModuelName&gt; this loads it into you session. By calling a command from an imported module 
-
-Persisting the module
-
-## Remove a module
-
-Remove-Module
 
